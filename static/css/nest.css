@@ -131,28 +131,35 @@ h2 {
     margin-top: 40px;   
     margin-bottom: 40px;
 }
-h2:after {
+h2:after { /* This is the little bar under titles*/
     display: block;
     content: " ";
     margin-top: 10px;
-    width: 40px;
-    border-bottom: 3px solid rgba(235,35,68,1);
+    width: 40px; 
+    border-bottom: 3px solid #E65C00;
     /*border-bottom: 3px solid rgba(0,0,0,0.2);*/
 }
 
-h3 { 
-    font-size: 16px;
+h3 { /* Custom h3 */
+    font-size: 20px;
+    line-height: 1.285714285714286em; 
+    font-weight: 600;
+    margin-top: 30px;   
+    margin-bottom: 30px;
+}
+/*h3 { 
+    font-size: 18px;
     line-height: 1.285714285714286em; 
     font-weight: 600;
     margin-top: 30px; 
     margin-bottom: 30px;
-}
+}*/
 h3:after {
     display: block;
     content: " ";
     margin-top: 10px;
     width: 40px;
-    border-bottom: 3px solid rgba(235,35,68,1);
+    /*border-bottom: 3px solid rgba(235,35,68,1);*/
 }
 
 h4 { 
@@ -218,7 +225,8 @@ h4:after {
 .header-container {
     background: #f5f5f5;
     padding: 0;
-    min-height: 360px;
+    min-height: 150px;
+     /* max-height: 300px; NOTE: This might cause horrible anal leakage */
 }
 .header-wrapper{
     padding-left: 40px;
@@ -244,12 +252,12 @@ h4:after {
     color: #fff;
     text-decoration: underline;
 }
-.header-underline {
+.header-underline { /* NOTE: This is one value I want to tweak */
     display: inline-block;
     margin-top: 10px;
     margin-bottom: 15px;
     width: 50px;
-    border-bottom: 3px solid #eb2344;
+    border-bottom: 3px solid #E65C00;
 }
 .header-subtitle {
     font-size: 14px;
@@ -406,7 +414,7 @@ blockquote{
 
 /* Gradients */
 .gradient {
-    background-color: #356689;
+    background-color: #000A14;
 }
 
 /* Footer */

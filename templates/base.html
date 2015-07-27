@@ -82,7 +82,7 @@
             <div class="container">
                 <div class="header-nav">
                     <div class="header-logo">
-                        <a class="pull-left" href="{{ SITEURL }}/"><img class="mr20" src="{{ SITEURL }}{{NEST_HEADER_LOGO or "/logo.svg" }}" alt="logo">{{ SITENAME }}</a>
+                        <a class="pull-left" href="{{ SITEURL }}/"><img width=48px height=48px class="mr20" src="{{ SITEURL }}{{NEST_HEADER_LOGO or "/images/logo.png" }}" alt="logo">{{ SITENAME }}</a>
                     </div>
                     <div class="nav pull-right">
                         {% for title, link in MENUITEMS %}
@@ -156,8 +156,8 @@
                     </div> 
                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                         <p class="pull-right text-right">
-                            <small><em>Proudly powered by <a href="http://docs.getpelican.com/" target="_blank">pelican</a></em></small><br/>
-                            <small><em>Theme and code by <a href="https://github.com/molivier" target="_blank">molivier</a></em></small><br/>
+                            {# <small><em>Proudly powered by <a href="http://docs.getpelican.com/" target="_blank">pelican</a></em></small><br/>
+                            <small><em>Theme and code by <a href="https://github.com/molivier" target="_blank">molivier</a></em></small><br/> #}
                             <small>{{ NEST_COPYRIGHT }}</small>
                             {% if NEST_FOOTER_HTML %}<small><em>{{ NEST_FOOTER_HTML }}</em></small>{% endif %}
                         </p>
