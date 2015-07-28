@@ -31,11 +31,19 @@
 				<h1>{{ tag|capitalize }}</h1>
 				<dl class="dl-horizontal">
 
+					<!-- This section displays "pinned" articles for the blog tag page-->
+					{% if tag == 'blog' %}
+					<hr>
+						<dd>
+							<!--<p>This archive shows a steady stream of posts I make on this website across every category. While this is convenient to get an overview of all content or just historically follow along you can only also -->Browse the archive by <a href="{{ SITEURL }}/categories">category</a></p>
+						</dd>
+						<hr>
+					{% endif %}
+
 					<!-- This loops through all the articles -->
 					{% for article in articles %}
 						<dt><p>{{ article.locale_date}}</p></dt>
 						<dd>
-							
 							<a href="{{ SITEURL }}/{{ article.url }}"><h2>{{ article.title }}</h2></a>
 							<p>{{ article.summary }}</p>
 						</dd>
