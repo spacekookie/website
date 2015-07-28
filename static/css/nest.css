@@ -71,18 +71,18 @@ a.more{
 /* Syntax Highlighting */
 
 pre, code {
-    background: #f8f7fa;
-    padding: 34px;
+    background: #ECECEC; <!-- #f8f7fa -->
+    padding: 15px; <!-- 34 -->
     font-size: 16px;
     line-height: 24px;
     font-family: Consolas, monaco, monospace;
     border-radius: 0px;
     color: #4b505a;
     margin: 34px 0;
-    font-weight: 700; 
+    font-weight: 700;
 }
 
-code { padding: 3px 6px; }
+code { padding: 3px 3px; }
 
 .linenos pre{
 	border:none;
@@ -92,7 +92,7 @@ code { padding: 3px 6px; }
 	padding-bottom:20px;
 	padding-left:20px;
 	padding-right:0px;
-	background:#333;
+	background: #BBBBBB <!--#333-->;
 	font-size:14px;
 	font-weight:400;
 	font-family:Consolas,monaco,monospace;
