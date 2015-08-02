@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.title }} - {{ super() }}{% endblock title %}
+{% block description %}{{ page.content|striptags|truncate(200)|escape }}{% endblock description %}
+
+{% block headerstyle %}
+    {% if page.illustration %}
+    <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('{{ SITEURL }}/images/{{ page.illustration }}'); background-position: center; ">
+    {% elif NEST_HEADER_IMAGES %}
+    <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('{{ SITEURL }}/images/{{ NEST_HEADER_IMAGES }}'); background-position: center; ">
+    {% else %}
+    <div class="header-container gradient">
+    {% endif %}
+{% endblock headerstyle %}
+
+{% block header %}
+    <div class="container header-wrapper">
+        <div class="row">
+              <div class="col-lg-12">
+                  <div class="header-content">
+                      <h1 class="header-title text-uppercase">{{ page.title }}</h1>
+                      <div class="header-underline"></div>
+                  </div>
+              </div>
+        </div>
+    </div>
+{% endblock header %}
+
+{% block content %}
+  <div class="container content">
+    {{ page.content }}
+
+    <h1>Currently Hot</h1>
+
+    <div class="container-fluid">
+      <div class="row2">
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <h2>Reedb</h2>
+          <img src="images/red.png" class="img-responsive">
+          <p>Reedb is a free and opensource database that encrypts data locally before saving it to disk. It's made for applications that run on a users computer and need to protect sensitive information like passphrases or security tokens or keys. Data is encrypted with the Rijdael-256 Cipher and stored in a vault for users to interact with, sync across their devices or move onto a different computer conveniently.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <h2>Graviton</h2>
+          <img src="images/blue.png" class="img-responsive">
+          <p>Graviton is the first major game project that I started with my up and coming game studio "Lonely Robot". To learn more about us please go to <a href="https://lonelyrobot.io">lonelyrobot.io</a>.</p>
+        </div>
+      </div>
+    </div>
+
+    <!--
+    <h1>Not anymore but still warm</h1>
+
+    <div class="container-fluid">
+      <div class="row2">
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <h2>Novelist</h2>
+          <img src="images/blue.png" class="img-responsive"> 
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <h2>Poke</h2>
+          <img src="images/blue.png" class="img-responsive"> 
+        </div>
+      </div>
+    </div>
+
+    -->
+  </div>
+{% endblock %}
+
