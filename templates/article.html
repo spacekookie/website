@@ -50,7 +50,9 @@
             </dl>
         {% endif %}
 
-        {% if DISQUS_SITENAME and SITEURL and article.status != "draft" %}
+        <h2>The comments below</h2>
+
+       {% if DISQUS_SITENAME and SITEURL and article.status != "draft" %}
             <div class="comments">
                 <div id="disqus_thread"></div>
                     <script type="text/javascript">

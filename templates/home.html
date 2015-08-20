@@ -28,8 +28,20 @@
 
 {% block content %}
     <div class="container content">
-        <p>This is my custom template. Yay!</p>
-        {{ page.content }}
+      <!-- Displays the default content from the home page -->
+      {{ page.content }}
+      
+      <!-- Bootstrap rid container thingies with mobile views -->
+      <div class="row">
+        <div class="col-md-6 col-xs-12">
+          <h3>Reedb</h3>
+          <p>{{ page.reedb_text }}</p>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <h3>Lonely Robot</h3>
+          <p>{{ page.lonelyrobot_text }}</p>
+        </div>
+      </div>
     </div>
 {% endblock %}
 
