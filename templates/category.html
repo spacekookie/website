@@ -25,21 +25,19 @@
 {% endblock header %}
 
 {% block content %}
-    <div class="archive-container">
-      <div class="container content archive">
+<div class="container content archive">
 
-        <h1>{{ category|capitalize }}</h1>
-        <dl class="dl-horizontal">
+  <h1>{{ category|capitalize }}</h1>
+  <dl class="dl-horizontal">
 
-          <!-- This loops through all the articles -->
-          {% for article in articles %}
-            <dt><p>{{ article.locale_date}}</p></dt>
-            <dd>
-              <a href="{{ SITEURL }}/{{ article.url }}"><h2>{{ article.title }}</h2></a>
-              <p>{{ article.summary }}</p>
-            </dd>
-          {% endfor %}
-        </dl>
-      </div>
-    </div>
+    <!-- This loops through all the articles -->
+    {% for article in articles %}
+      <dt><p>{{ article.locale_date}}</p></dt>
+      <dd>
+        <a href="{{ SITEURL }}/{{ article.url }}"><h2>{{ article.title }}</h2></a>
+        <p>{{ article.summary }}</p>
+      </dd>
+    {% endfor %}
+  </dl>
+</div>
 {% endblock content %}
