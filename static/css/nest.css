@@ -32,6 +32,10 @@ body {
     text-rendering: optimizeLegibility;
 }
 
+div.home {
+	background-color: #252525;
+}
+
 /* Links */
 /* eb2344*/
 /* 009bff*/
@@ -162,6 +166,7 @@ h3 { /* Custom h3 */
     margin-top: 30px;   
     margin-bottom: 30px;
 }
+
 /*h3 { 
     font-size: 18px;
     line-height: 1.285714285714286em; 
@@ -358,6 +363,23 @@ h4:after {
   padding-bottom: 2px;
   opacity: 0.6;
 }
+
+.color_shit {
+	background-color: #252525;
+}
+
+pre.col {
+    background: #242424; <!-- #f8f7fa -->
+    padding: 15px; <!-- 34 -->
+    font-size: 16px;
+    line-height: 24px;
+    font-family: Consolas, monaco, monospace;
+    border-radius: 0px;
+    color: #FEFEFE;
+    margin: 34px 0;
+    font-weight: 700;
+}
+
 
 /* Article */
 .article-container{
