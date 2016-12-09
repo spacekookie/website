@@ -25,8 +25,9 @@
 {% endblock header %}
 
 {% block content %}
-<div class="container content archive">
 
+<div class="col-lg-9 content archive">
+  
   <h1>{{ category|capitalize }}</h1>
   <dl class="dl-horizontal">
 
@@ -40,4 +41,5 @@
     {% endfor %}
   </dl>
 </div>
+
 {% endblock content %}

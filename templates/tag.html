@@ -4,49 +4,52 @@
 {% block description %}{{ NEST_TAG_HEAD_DESCRIPTION }} {{ tag }}{% endblock description %}
 
 {% block headerstyle %}
-		{% if NEST_HEADER_IMAGES %}
-		<div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('{{ SITEURL }}/images/{{ NEST_HEADER_IMAGES }}'); background-position: center; ">
-		{% else %}
-		<div class="header-container gradient">
-		{% endif %}
+    {% if NEST_HEADER_IMAGES %}
+    <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('{{ SITEURL }}/images/{{ NEST_HEADER_IMAGES }}'); background-position: center; ">
+    {% else %}
+    <div class="header-container gradient">
+    {% endif %}
 {% endblock headerstyle %}
 
 {% block header %}
-		<div class="container header-wrapper">
-				<div class="row">
-							<div class="col-lg-12">
-									<div class="header-content">
-											<h1 class="header-title text-uppercase">{{ NEST_CATEGORY_HEADER_TITLE }} {{ tag|capitalize }}</h1>
-											<div class="header-underline"></div>
-									</div>
-							</div>
-				</div>
-		</div>
+    <div class="container header-wrapper">
+        <div class="row">
+              <div class="col-lg-12">
+                  <div class="header-content">
+                      <h1 class="header-title text-uppercase">{{ NEST_CATEGORY_HEADER_TITLE }} {{ tag|capitalize }}</h1>
+                      <div class="header-underline"></div>
+                  </div>
+              </div>
+        </div>
+    </div>
 {% endblock header %}
 
 {% block content %}
-<div class="container content archive">
 
-	<h1>{{ tag|capitalize }}</h1>
-	<dl class="dl-horizontal">
+<div class="col-lg-9 content archive">
+  
+  <h1>{{ tag|capitalize }}</h1>
+  <dl class="dl-horizontal">
 
-		<!-- This section displays "pinned" articles for the blog tag page-->
-		{% if tag == 'blog' %}
-		<hr>
-			<dd> 
-				<!--<p>This archive shows a steady stream of posts I make on this website across every category. While this is convenient to get an overview of all content or just historically follow along you can only also -->Browse the archive by <a href="{{ SITEURL }}/categories.html">category</a></p>
-			</dd>
-			<hr>
-		{% endif %}
+  <!-- This section displays "pinned" articles for the blog tag page-->
+  {% if tag == 'blog' %}
+    <hr>
+      <dd> 
+        Browse the archive by <a href="{{ SITEURL }}/categories.html">category</a></p>
+      </dd>
+    <hr>
+  {% endif %}
 
-		<!-- This loops through all the articles -->
-		{% for article in articles %}
-			<dt><p>{{ article.locale_date}}</p></dt>
-			<dd>
-				<a href="{{ SITEURL }}/{{ article.url }}"><h2>{{ article.title }}</h2></a>
-				<p>{{ article.summary }}</p>
-			</dd>
-		{% endfor %}
-	</dl>
+  <!-- This loops through all the articles -->
+  {% for article in articles %}
+    <dt><p>{{ article.locale_date}}</p></dt>
+    <dd>
+      <a href="{{ SITEURL }}/{{ article.url }}"><h2>{{ article.title }}</h2></a>
+      <p>{{ article.summary }}</p>
+    </dd>
+  {% endfor %}
+  </dl>
 </div>
+
+
 {% endblock content %}

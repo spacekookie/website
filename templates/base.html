@@ -56,17 +56,17 @@
         <![endif]-->
 
         {% if GOOGLE_ANALYTICS %}
-        <!-- Google Analytics -->
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            <!-- Google Analytics -->
+            <script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-          ga('create', '{{ GOOGLE_ANALYTICS }}', 'auto');
-          ga('send', 'pageview');
-        </script>
-        <!-- /Google Analytics -->
+              ga('create', '{{ GOOGLE_ANALYTICS }}', 'auto');
+              ga('send', 'pageview');
+            </script>
+            <!-- /Google Analytics -->
         {% endif %}
 
     {% endblock head %}
@@ -82,7 +82,7 @@
             <div class="container">
                 <div class="header-nav">
                     <div class="header-logo">
-                        <a class="pull-left" href="{{ SITEURL }}/"><img class="mr20" width=192px height=64px src="{{ SITEURL }}{{NEST_HEADER_LOGO or "/images/logo2.png" }}" alt="logo">{{ SITENAME }}</a>
+                        <a class="pull-left" href="{{ SITEURL }}/"><img class="mr20" width=192px height=64px src="{{ SITEURL }}{{NEST_HEADER_LOGO or "/images/logo2.png" }}" alt="logo"></a>
                     </div>
                     <div class="nav pull-right">
                         {% for title, link in MENUITEMS %}
@@ -112,8 +112,36 @@
 
 
         <!-- Content -->
-        {% block content %}
-        {% endblock %}
+
+        <div class="container">
+          <div class="row">
+
+            <!-- This is our content container in all it's glory -->
+            {% block content %}
+            {% endblock %}
+
+            <!-- Append the navigation box -->
+            <div class="col-lg-3 content archive">
+
+                <h3>Categories</h3>
+                <ul>
+                    {% for cat in categories %}
+                    <li><a href="{{ SITEURL }}/{{ cat[0].url }}">{{ cat[0] }}</a> ({{cat[1]|length}})</li>
+                    {% endfor %}
+                </ul>
+
+                <h3>Tags</h3>
+                <ul>
+                    {% for tag in tags %}
+                    <li><a href="{{ SITEURL }}/{{ tag[0].url }}">{{ tag[0] }}</a> ({{tag[1]|length}})</li>
+                    {% endfor %}
+                </ul>
+
+                <h3>A picture of a cat</h3>
+                <img src="{{ SITEURL }}/theme/img/cat.gif">
+
+            </div>
+        </div>
         <!-- /Content --> 
 
         <!-- Footer -->
