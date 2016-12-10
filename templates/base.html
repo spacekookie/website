@@ -146,9 +146,9 @@
 
         <!-- Footer -->
         <div class="footer gradient-2">
-            <div class="container footer-container ">
+            <div class="container footer-container">
                 <div class="row">
-                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                         <div class="footer-title">{{ NEST_SITEMAP_COLUMN_TITLE }}</div>
                         <ul class="list-unstyled">
                             {% for title, link in NEST_SITEMAP_MENU %}
@@ -162,7 +162,7 @@
                             {% endif %}
                         </ul>
                     </div>
-                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                         {% if SOCIAL %}
                         <div class="footer-title">{{ NEST_SOCIAL_COLUMN_TITLE }}</div>
                         <ul class="list-unstyled">
@@ -172,7 +172,7 @@
                         </ul>
                         {% endif %}
                     </div>
-                    <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                         {% if LINKS %}
                         <div class="footer-title">{{ NEST_LINKS_COLUMN_TITLE }}</div>
                         <ul class="list-unstyled">
@@ -182,14 +182,6 @@
                         </ul>
                         {% endif %}
                     </div> 
-                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                        <p class="pull-right text-right">
-                            {# <small><em>Proudly powered by <a href="http://docs.getpelican.com/" target="_blank">pelican</a></em></small><br/>
-                            <small><em>Theme and code by <a href="https://github.com/molivier" target="_blank">molivier</a></em></small><br/> #}
-                            <small>{{ NEST_COPYRIGHT }}</small>
-                            {% if NEST_FOOTER_HTML %}<small><em>{{ NEST_FOOTER_HTML }}</em></small>{% endif %}
-                        </p>
-                    </div>
                 </div>
             </div>
         </div>
