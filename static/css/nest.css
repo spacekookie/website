@@ -37,6 +37,10 @@ div.hacky_bg {
     background-image: url("../img/banner_bg2x.png");
 }
 
+div.cat {
+    box-shadow: 10px 10px 5px #888888;
+}
+
 div.home {
 	/*background-color: #252525;*/
     background-image: url("../img/banner_bg2x.png");
@@ -310,18 +314,18 @@ h4:after {
 .content img.dual{
     border: 5px;
     display: block;
-    width: 48%;
+    width: 45%;
     height: auto;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 45px;
-    margin-bottom: 45px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .content img.triple{
     border: 0;
     display: block;
-    width: 50%;
+    width: 33.33333333%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -329,13 +333,24 @@ h4:after {
     margin-bottom: 45px;
 }
 
-.content img{
+.content img {
     border: 0;
     display: block;
     width: 100%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.content img.padded {
+    border: 25;
+    display: block;
+    width: 350px;
+    height: auto;
+    margin-left: 45px;
+    margin-right: 45px;
     margin-top: 45px;
     margin-bottom: 45px;
 }
@@ -394,6 +409,18 @@ pre.col {
     font-family: Consolas, monaco, monospace;
     border-radius: 0px;
     color: #FEFEFE;
+    margin: 34px 0;
+    font-weight: 700;
+}
+
+pre.highlight {
+    background: #242424; <!-- #f8f7fa -->
+    padding: 15px; <!-- 34 -->
+    font-size: 16px;
+    line-height: 24px;
+    font-family: Consolas, monaco, monospace;
+    border-radius: 0px;
+    color: #ffa435;
     margin: 34px 0;
     font-weight: 700;
 }

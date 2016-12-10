@@ -7,6 +7,8 @@
 {% block headerstyle %}
     {% if article.illustration %}
     <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('{{ SITEURL }}/images/{{ article.illustration }}'); background-position: center; ">
+    {% elif NEST_HEADER_IMAGES %}
+    <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('{{ SITEURL }}/images/{{ NEST_HEADER_IMAGES }}'); background-position: center; ">
     {% else %}
     <div class="header-container gradient">
     {% endif %}
@@ -37,50 +39,19 @@
 {% endblock header %}
 
 {% block content %}
-    <div class="container content">
-        {{ article.content }}
+  <div class="col-lg-9 content">
+      {{ article.content }}
 
-        {% if article.related_posts %}
-            <h4>Articles connexes</h4>
-            <dl class="dl-horizontal">
-            {% for related_post in article.related_posts %}
-                <dt>{{ related_post.locale_date}}</dt>
-                <dd><a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a></dd>
-            {% endfor %}
-            </dl>
-        {% endif %}
+      {% if article.related_posts %}
+          <h4>Articles connexes</h4>
+          <dl class="dl-horizontal">
+          {% for related_post in article.related_posts %}
+              <dt>{{ related_post.locale_date}}</dt>
+              <dd><a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a></dd>
+          {% endfor %}
+          </dl>
+      {% endif %}
 
-        <hr/>
-        
-       {% if DISQUS_SITENAME and article.status != "draft" %}
-       <div id="disqus_thread"></div>
-					<script type="text/javascript">
-			    /* * * CONFIGURATION VARIABLES * * */
-			    var disqus_shortname = 'katesnullpointers';
-			    
-			    /* * * DON'T EDIT BELOW THIS LINE * * */
-			    (function() {
-			        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-			        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-			        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-			    })();
-					</script>
-					<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-
-            <!-- <div class="comments">
-                <div id="disqus_thread"></div>
-                    <script type="text/javascript">
-                        var disqus_shortname = '{{ DISQUS_SITENAME }}';
-                        var disqus_identifier = '{{ article.url }}';
-                        var disqus_url = '{{ SITEURL }}/{{ article.url }}';
-                        (function() {
-                            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                        })();
-                    </script>
-                <noscript>Please enable JavaScript to view the comments.</noscript>
-            </div> -->
-    {% endif %}
-    </div>
+      <hr/>
+  </div>
 {% endblock %}
