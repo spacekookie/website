@@ -1,6 +1,6 @@
 # Nest
 
-This is my very heavily customised website theme for [spacekookie.de](https://spacekookie.de). Not sure why I keep this public as it will probably never be any good for anyone. But oh well ¯\\_(ツ)_/¯
+This is my very heavily customised website theme for [spacekookie.de](https://spacekookie.de). Not sure why I keep this public as it will probably never be any good for anyone. But oh well ¯\\\_(ツ)_/¯
 
 ## Features
 
