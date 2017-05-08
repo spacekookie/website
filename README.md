@@ -1,39 +1,6 @@
 # Nest
 
-Nest is a theme for [Pelican](http://getpelican.com) 3.5, a static site generator written in Python.
-
-I initially created this theme for [my blog](http://www.molivier.com), but now the theme is supposed to be generic enough to have its own repository.
-
-## Screenshots
-
-### Homepage
-
-![Nest Index View](homepage.png)
-
-### Homepage with background
-
-![Nest Article View](homepage-background.png)
-
-Add a background image by configuring `NEST_HEADER_IMAGES` parameter in your pelican.conf. Image should be located in `content/images` directory.
-
-### Article
-
-![Nest Index View](article.png)
-
-### Article or page with background
-
-![Nest Article View](article-background.png)
-
-Add a background image by adding `Illustration` custom parameter in your markdown article or page. Image should be located in `content/images` directory.
-
-	Title: Ubuntu Install
-	Date: 2015-02-18 16:00
-	Category: server
-	Tags: ubuntu, kernel
-	Slug: ubuntu-install
-	Author: Matthieu OLIVIER
-	Illustration: background.jpg
-
+This is my very heavily customised website theme for [spacekookie.de](https://spacekookie.de). Not sure why I keep this public as it will probably never be any good for anyone. But oh well ¯\_(ツ)_/¯
 
 ## Features
 
