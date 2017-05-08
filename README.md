@@ -2,6 +2,8 @@
 
 This is my very heavily customised website theme for [spacekookie.de](https://spacekookie.de). Not sure why I keep this public as it will probably never be any good for anyone. But oh well ¯\\\_(ツ)_/¯
 
+This is a fork that I created as it's own repository. The original is from [https://github.com/molivier/nest](https://github.com/molivier/nest)
+
 ## Features
 
 * Featured site header image
