@@ -7,21 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{% block description %}{% endblock description %}">
     <meta name="keywords" content="{% block keywords %}{% endblock keywords %}">
-    <link rel="icon" href="{{ SITEURL }}/favicon.ico">
+    <link rel="icon" href="https://spacekookie.de/future/favicon.ico">
 
     <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
 
     <!-- Stylesheets -->
     {% if NEST_CSS_MINIFY %}
-    <link href="{{ SITEURL }}/theme/css/all.min.css" rel="stylesheet">
+    <link href="https://spacekookie.de/future/theme/css/all.min.css" rel="stylesheet">
     {% else %}
     <link href="https://fonts.googleapis.com/css?family=Inconsolata|Quicksand:300,400|Roboto:300,400&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="{{ SITEURL }}/theme/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{{ SITEURL }}/theme/css/fonts.css" rel="stylesheet">
-    <link href="{{ SITEURL }}/theme/css/nest.css" rel="stylesheet">
-    <link href="{{ SITEURL }}/theme/css/pygment.css" rel="stylesheet">
-    <link href="{{ SITEURL }}/theme/css/home.css" rel="stylesheet">
+    <link href="https://spacekookie.de/future/theme/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://spacekookie.de/future/theme/css/fonts.css" rel="stylesheet">
+    <link href="https://spacekookie.de/future/theme/css/nest.css" rel="stylesheet">
+    <link href="https://spacekookie.de/future/theme/css/pygment.css" rel="stylesheet">
+    <link href="https://spacekookie.de/future/theme/css/home.css" rel="stylesheet">
     {% endif %}
     <!-- /Stylesheets -->
 
@@ -85,7 +85,7 @@
       <div class="container">
         <div class="header-nav">
           <div class="header-logo">
-            <a class="pull-left" href="{{ SITEURL }}/"><img class="mr20" width=192px height=64px src="{{ SITEURL }}{{NEST_HEADER_LOGO or "/images/logo3.png" }}" alt="logo"></a>
+            <a class="pull-left" href="https://spacekookie.de/future/"><img class="mr20" width=192px height=64px src="https://spacekookie.de/future{{NEST_HEADER_LOGO or "/images/logo3.png" }}" alt="logo"></a>
           </div> <!-- header logo -->
 
           <div class="nav pull-right">
@@ -94,13 +94,13 @@
               {% if 'http://' in link or 'https://' in link %}
                 <a class="nav" href="{{ link }}">{{ title }}</a>
               {% else %}
-                <a class="nav" href="{{ SITEURL }}{{ link }}">{{ title }}</a>
+                <a class="nav" href="https://spacekookie.de/future{{ link }}">{{ title }}</a>
               {% endif %}
             {% endfor %}
       
             {% if DISPLAY_PAGES_ON_MENU %}
               {% for pg in PAGES %}
-                <a {% if pg == page %} class="active"{% endif %} href="{{ SITEURL }}/{{ pg.url }}">{{ pg.title }}</a>
+                <a {% if pg == page %} class="active"{% endif %} href="https://spacekookie.de/future/{{ pg.url }}">{{ pg.title }}</a>
               {% endfor %}
             {% endif %}
 
