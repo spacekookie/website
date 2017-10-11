@@ -1,0 +1,95 @@
+body {
+  font-family: Quicksand;
+  font-style: normal;
+  font-variant: normal;
+  font-size: 26px;
+  font-weight: 300;
+  color: #BEBEBE;
+  background-color: #222222;
+  background-image: none;
+  line-height: 32px;
+  -webkit-font-smoothing:antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+div.gradient {
+  background-color: #222222;
+}
+
+div.icons {
+  padding-top: 32px;
+  font-family: Inconsolata;
+  /*font-variant: slim;*/
+  font-size: 16px;
+  line-height: 16px;
+  font-style: normal;
+  font-variant: normal;
+}
+
+/* This is used for the ASCII art stuff */
+.icons p { 
+  white-space: pre;
+}
+
+.icons h1 {
+  padding-bottom: 15px;
+  padding-top: 0px;
+}
+
+.nav a {
+  font-size: 16px;
+  color: #FFBB44;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 64px;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+
+#twitter:hover {
+  color: #00aced;
+  animation: .45s jump infinite linear;
+}
+#github:hover {
+  color: #bd2c00;
+  animation: .45s jump infinite linear;
+}
+#keys:hover {
+  color: #8d55e0;
+  animation: .45s jump infinite linear;
+}
+
+#email:hover {
+  color: #FFBB44;
+}
+
+a, a:visited, a:hover, a:active, a:link{
+  color: #BEBEBE;
+  text-decoration: none;
+}
+
+p {
+  padding-top: 5px;
+  padding-right: 30px;
+  padding-left: 80px;
+}
+
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-.05em);
+  }
+  80% {
+    transform: translateY(.05em);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
