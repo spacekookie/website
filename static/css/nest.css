@@ -34,7 +34,9 @@ body {
 }
 
 div.hacky_bg {
-    background-image: url("../img/banner_bg2x.png");
+  background-color: #333333;
+
+    /*background-image: url("../img/banner_bg2x.png");*/
 }
 
 div.cat {
