@@ -38,16 +38,21 @@ div.icons {
 
 .nav a {
   font-size: 16px;
-  color: #FFBB44;
+  /*color: #FFBB44;*/
 }
 
 h1 {
+  /*color: #BEBEBE;*/
   font-weight: bold;
   font-size: 64px;
   padding-top: 50px;
   padding-right: 30px;
   padding-bottom: 50px;
   padding-left: 80px;
+}
+
+.span {
+  display: inline-block;
 }
 
 #twitter:hover {

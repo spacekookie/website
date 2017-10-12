@@ -3,22 +3,23 @@
 {% block title %}{{ NEST_INDEX_HEAD_TITLE }} {% if articles_page.has_previous() %}- page {{ articles_page.number }} {% endif %}- {{ super() }}{% endblock title %}
 {% block description %}{{ SITENAME }}, {{ SITESUBTITLE }}{% endblock description %}
 
-{% block headerstyle %}
+<!-- {% block headerstyle %}
     {% if NEST_HEADER_IMAGES %}
     <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('{{ SITEURL }}/images/{{ NEST_HEADER_IMAGES }}'); background-position: center; ">
     {% else %}
     <div class="header-container gradient">
     {% endif %}
-{% endblock headerstyle %}
+{% endblock headerstyle %} -->
 
 {% block header %}
+<!-- TEMPLATE: INDEX -->
     <div class="container header-wrapper">
         <div class="row">
               <div class="col-lg-12">
                   <div class="header-content">
                       <h1 class="header-title">{{ NEST_INDEX_HEADER_TITLE }}</h1>
                       <div class="header-underline"></div>
-                      {% if NEST_INDEX_HEADER_SUBTITLE %}
+                      {% if NEST_INDEX_HEADER_SUBTITLE %} WOOOOW
                       <p class="header-subtitle header-subtitle-homepage">{{ NEST_INDEX_HEADER_SUBTITLE }}</p>
                       {% endif %}
                   </div>

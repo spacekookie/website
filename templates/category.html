@@ -1,34 +1,33 @@
 {% extends "base.html" %}
 
-{% block title %}{{ NEST_CATEGORY_HEAD_TITLE }} {{ category|capitalize }} - {{ super() }}{% endblock title %}
-{% block description %}{{ NEST_CATEGORY_HEAD_DESCRIPTION }} {{ category|capitalize }}{% endblock description %}
+<!-- {% block title %}{{ NEST_CATEGORY_HEAD_TITLE }} {{ category|capitalize }} - {{ super() }} CATEGORY {% endblock title %} -->
+<!-- {% block description %}{{ NEST_CATEGORY_HEAD_DESCRIPTION }} {{ category|capitalize }}{% endblock description %} -->
 
-{% block headerstyle %}
+<!-- {% block headerstyle %}
     {% if NEST_HEADER_IMAGES %}
     <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('{{ SITEURL }}/images/{{ NEST_HEADER_IMAGES }}'); background-position: center; ">
     {% else %}
     <div class="header-container gradient">
     {% endif %}
-{% endblock headerstyle %}
+{% endblock headerstyle %} -->
 
 {% block header %}
-    <div class="container header-wrapper">
-        <div class="row">
-              <div class="col-lg-12">
-                  <div class="header-content">
-                      <h1 class="header-title text-uppercase">{{ NEST_CATEGORY_HEADER_TITLE }} {{ category|capitalize }}</h1>
-                      <div class="header-underline"></div>
-                  </div>
-              </div>
-        </div>
+<!-- TEMPLATE: CATEGORY -->
+<div class="container header-wrapper">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="header-content">
+        <h1 class="header-title text-uppercase">{{ NEST_CATEGORY_HEADER_TITLE }} {{ category|capitalize }}</h1>
+        <!-- <div class="header-underline"></div> -->
+      </div>
     </div>
-{% endblock header %}
+  </div>
+</div>
+{% endblock header %} 
 
 {% block content %}
 
-<div class="col-lg-9 content archive">
-  
-  <h1>{{ category|capitalize }}</h1>
+<div class="col-lg-12 content">
   <dl class="dl-horizontal">
 
     <!-- This loops through all the articles -->

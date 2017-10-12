@@ -3,20 +3,21 @@
 {% block title %}{{ NEST_AUTHOR_HEAD_TITLE }} {{ author }} - {{ super() }}{% endblock title %}
 {% block description %}{{ NEST_AUTHOR_HEAD_DESCRIPTION }} {{ author }}{% endblock description %}
 
-{% block headerstyle %}
+<!-- {% block headerstyle %}
     {% if NEST_HEADER_IMAGES %}
     <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('{{ SITEURL }}/images/{{ NEST_HEADER_IMAGES }}'); background-position: center; ">
     {% else %}
     <div class="header-container gradient">
     {% endif %}
-{% endblock headerstyle %}
+{% endblock headerstyle %} -->
 
 {% block header %}
+<!-- TEMPLATE: AUTHOR -->
     <div class="container header-wrapper">
         <div class="row">
               <div class="col-lg-12">
                   <div class="header-content">
-                      <h1 class="header-title text-uppercase">{{ author }}</h1>
+                      <h1 class="header-title text-uppercase">{{ author }} AUTHOR</h1>
                       <div class="header-underline"></div>
                       <p class="header-subtitle header-subtitle-homepage">{{ NEST_AUTHOR_HEADER_SUBTITLE }}</p>
                   </div>

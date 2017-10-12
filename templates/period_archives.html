@@ -1,15 +1,16 @@
 {% extends "base.html" %}
+<!-- TEMPLATE: PERIOD_ARCHIVE -->
 
 {% block title %}{{ NEST_PERIOD_ARCHIVES_HEAD_TITLE }} {{ period | reverse | join(' ') }} - {{ super() }}{% endblock title %}
 {% block description %}{{ NEST_PERIOD_ARCHIVES_HEAD_DESCRIPTION }} {{ period | reverse | join(' ') }}{% endblock description %}
 
-{% block headerstyle %}
+<!-- {% block headerstyle %}
     {% if NEST_HEADER_IMAGES %}
     <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('{{ SITEURL }}/images/{{ NEST_HEADER_IMAGES }}'); background-position: center; ">
     {% else %}
     <div class="header-container gradient">
     {% endif %}
-{% endblock headerstyle %}
+{% endblock headerstyle %} -->
 
 {% block header %}
     <div class="container header-wrapper">

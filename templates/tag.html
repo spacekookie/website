@@ -1,17 +1,18 @@
 {% extends "base.html" %}
+<!-- TEMPLATE: TAG -->
 
 {% block title %}{{ NEST_TAG_HEAD_TITLE }} {{ tag }} - {{ super() }}{% endblock title %}
 {% block description %}{{ NEST_TAG_HEAD_DESCRIPTION }} {{ tag }}{% endblock description %}
 
-{% block headerstyle %}
+<!-- {% block headerstyle %}
     {% if NEST_HEADER_IMAGES %}
     <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('{{ SITEURL }}/images/{{ NEST_HEADER_IMAGES }}'); background-position: center; ">
     {% else %}
     <div class="header-container gradient">
     {% endif %}
-{% endblock headerstyle %}
+{% endblock headerstyle %} -->
 
-{% block header %}
+<!-- {% block header %}
     <div class="container header-wrapper">
         <div class="row">
               <div class="col-lg-12">
@@ -22,7 +23,7 @@
               </div>
         </div>
     </div>
-{% endblock header %}
+{% endblock header %} -->
 
 {% block content %}
 

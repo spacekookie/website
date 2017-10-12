@@ -1,7 +1,7 @@
 /*!
- * Nest v1.0.0 (http://www.molivier.com)
- * Copyright 2015 Matthieu OLIVIER
- * Licensed under Apache V2 (https://github.com/molivier/nest/blob/master/LICENSE)
+ * Yo Mama v1.0.0
+ * Copyright 2017 Katharina Fey
+ * Licensed under Yo Mama v2.0
  */
 
 /* Responsive */
@@ -23,29 +23,21 @@
 
 /* Default styling */
 body {
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    color: #4b505a;
-    /*background-color: #f5f5f5;*/
-    background-image: url("../img/grey_2x.png");
-    line-height: 24px;
-    -webkit-font-smoothing:antialiased;
-    text-rendering: optimizeLegibility;
-}
-
-div.hacky_bg {
-  background-color: #333333;
-
-    /*background-image: url("../img/banner_bg2x.png");*/
+  font-family: Roboto;
+  font-style: normal;
+  font-variant: normal;
+  font-size: 22px;
+  font-weight: 200;
+  color: #414141;
+  background-color: #222222;
+  background-image: none;
+  line-height: 26px;
+  -webkit-font-smoothing:antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 div.cat {
     box-shadow: 10px 10px 5px #888888;
-}
-
-div.home {
-	/*background-color: #252525;*/
-    background-image: url("../img/banner_bg2x.png");
 }
 
 div.orange {
@@ -71,7 +63,7 @@ a, a:visited {
     transition: all 0.2s ease-out;
 }
 a:hover, a:active{ 
-    text-decoration:underline; 
+    text-decoration:none; 
     color:#eb2344; 
 /*    opacity: 0.8; */
 }
@@ -145,48 +137,31 @@ code { padding: 3px 3px; }
 
 /* Titles */
 
-h1 { 
-    font-size: 28px;
-    line-height: 1.285714285714286em; 
-    font-weight: 600;
-    letter-spacing: 2px;
-    border:none;
+h1, h2, h3, h4, h5, h6 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+}
+
+h1 {   
+  font-size: 32px;
+  line-height: 1.285714285714286em; 
+  font-weight: 600;
+  letter-spacing: 2px;
+  border:none;
 }
 
 h2 { 
-    font-size: 20px;
+    font-size: 28px;
     line-height: 1.285714285714286em; 
     font-weight: 600;
     margin-top: 40px;   
     margin-bottom: 40px;
 }
 
-h2:after { /* This is the little bar under titles*/
-    display: block;
-    content: " ";
-    margin-top: 10px;
-    width: 40px; 
-    border-bottom: 3px solid #E65C00;
-    /*border-bottom: 3px solid rgba(0,0,0,0.2);*/
-}
-
-h6 { 
-    font-size: 20px;
-    line-height: 1.285714285714286em; 
-    font-weight: 600;
-    margin-top: 40px;   
-    margin-bottom: 40px;
-}
-h6:after { /* This is the little bar under titles*/
-    display: block;
-    content: " ";
-    margin-top: 10px;
-    width: 40px;
-    /*border-bottom: 3px solid rgba(0,0,0,0.2);*/
-}
-
-h3 { /* Custom h3 */
-    font-size: 20px;
+h3 {
+    font-size: 24px;
     line-height: 1.285714285714286em; 
     font-weight: 600;
     margin-top: 30px;   
@@ -194,22 +169,25 @@ h3 { /* Custom h3 */
 }
 
 h4 { 
-    font-size: 12px;
+    font-size: 20px;
     line-height: 1.285714285714286em; 
     font-weight: 600;
     margin-top: 30px; 
     margin-bottom: 30px;
     text-transform: uppercase;
 }
-h4:after {
-    display: block;
-    content: " ";
-    margin-top: 10px;
-    width: 40px;
-    border-bottom: 3px solid rgba(0,0,0,0.2);    
+
+h5 { 
+    font-size: 18px;
+    line-height: 1.285714285714286em; 
+    font-weight: 600;
+    margin-top: 40px;   
+    margin-bottom: 40px;
 }
 
+
 /* Navbar */
+
 .header-nav{
     height:100px;
     line-height:100px;
@@ -220,20 +198,24 @@ h4:after {
 .header-nav .nav{
     float:right;
 }
-.header-nav .nav a{
-    font-weight:600;
-    color:#fff;
-    text-decoration:none;
-    padding:8px;
-    margin-left:20px;
-    text-transform: uppercase;
-    transition: all 0.2s ease-out;
+.header-nav .nav a {
+   font-weight:300;
+  font-size: 18px;
+  color:#fff;
+  text-decoration:none;
+  padding:8px;
+  margin-left:20px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-out;
 }
+
+.naughty {}
+
 .header-nav .nav a:hover{
     color:#fff;
-    font-weight:600;
+    font-weight:400;
     opacity: 1;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.1);
 }
 .header-nav .nav .active{
     /*color:#fff;*/
@@ -254,9 +236,8 @@ h4:after {
 /* Header */
 
 .header-container {
-    background: #f5f5f5;
-    padding: 0;
-    min-height: 150px;
+  padding: 0;
+  min-height: 350px;
      /* max-height: 300px; NOTE: This might cause horrible anal leakage */
 }
 .header-wrapper{
@@ -268,7 +249,7 @@ h4:after {
     padding: 25px 0 55px 0;
 }
 .header-title {
-    font-size: 28px;
+    font-size: 64px;
     color: #fff;
     font-weight: 700;
 }
@@ -490,11 +471,13 @@ pre.highlight {
     font-weight: 400;
     line-height: 24px;    
 }
+
+
 /* Styling */
 
 blockquote{
-    font-size: 15px;
-    opacity: 0.65;
+  font-size: 15px;
+  opacity: 0.65;
 }
 /* Comments */
 .comments{
@@ -507,33 +490,30 @@ blockquote{
 
 /* Gradients */
 .gradient {
-    background-color: #000A14;
+  /*box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
 }
 
 /* Footer */
 
 .footer{
-    background-color: #333;
-    font-size: 14px;
-    font-weight: 300;
-    text-align: left;
-    color: #fff;
+  background-color: #333;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: left;
+  color: #fff;
 }
 
 .footer-title {
-    text-transform: uppercase;
-    margin-bottom: 3px;
-    font-weight: 600;
-    font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+  font-weight: 600;
+  font-size: 12px;
 }
 .footer-container{
-    padding-top: 20px;
-    padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .footer a{
-    color: #fff;
+  color: #fff;
 }
 
-
-
-/********** DIRTY DIRTY HACKS ***********/
