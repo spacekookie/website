@@ -1,0 +1,69 @@
+Title: What I have done in GSoC 2016
+Category: Blog
+Date: 2016-08-19 18:13
+Tags: GSoC2016
+
+Google Summer of Code is coming to an end. And as the final bugs are getting squashed and more code is being prepared for the big merge, I am sitting here, trying to think of how to represent my work.
+
+I thought I would write up a little blog post, explaining what I've done and what still remains to be done. 
+
+### The TLDR
+
+My main contributions are all available [here](https://github.com/spacekookie/qaul.net/commits/qaul_crypto?author=spacekookie) (spacekookie/qaul.net on the `qaul_crypto` branch). I did a lot of small commits. Most of my code can be found in this [sub-directory](https://github.com/spacekookie/qaul.net/tree/qaul_crypto/src/libqaul/crypto).
+
+In addition to that I ported an existing project (from python) to C to be relevant for future front-end endevours of the client. It's called [librobohash](https://github.com/spacekookie/librobohash). I didn't end up finishing the port because there were more pressing issues in qaul.net and the UI was delayed.
+
+While most of my work has been in hidden backend systems there is a demo you can run. The source compiles and has been tested under Linux (Ubuntu 16.04 and Fedora 24) and is located under the `src/client/dbg/` directory. The demo creates two new users (to simulate communication between two nodes), adds the public keys to the keystore and then continues to sign and verify messages. If the demo returns lots of "0" and "OK" it went okay :)
+
+Feel free to play with the demo; for example, switch out `message` for `fakemessage` during verification :) The source for the demo can be found under `src/libqaul/qcry_wrapper.c`
+
+### The good (aka what I have done)
+
+<img class="dual" src="/images/gsoc/02_cryptoui.png" align="left">
+
+The two main components that I've written during GSoC2016 are internally referenced as `qcry_arbit` and `qcry_context`. They are two modules that make up the new crypto module in qaul.net.
+
+As I explained in my first blog post on the [Freifunk blog](http://blog.freifunk.net/2016/gsoc2016-wrapping-crypto-module-qaulnet) the Arbiter provides a static API for the rest of the library (libqaul) to interact with the crypto module. 
+
+The context holds the actual magic of holding user keys, signing and verifying messages and (theoretically) encrypting messages as well.
+
+Possible with this API at this time is to create users, to sign messages with a users private key and to verify messages that are sent to you from other users. Originally it was planned to split the arbiter into the actual API and a dispatcher which would allow for concurrent access to the inner functions. However it was established through tests that the design was overkill and was thus scrapped.
+
+A keystore was added in addition to the user store already existing in qaul.net to provide an easy way to store public keys (mapped against fingerprints) that are received from flood events on the network.
+
+In total the crypto submodule adds another ~2.2k lines of code to the project.
+
+
+### The bad (aka what I haven't yet done)
+
+So far completely un-implemented is encryption. Unfortunately working with the crypto library selected for the task turned out to be more challenging than expected. With almost no documentation and a few very niche examples I basically went through the library line-by-line to understand how it worked. 
+
+As such, my focus was set on signature exchanges at first because the verifiability of messages and the change to address users by their fingerprints was deemed more important.
+
+My contributions to qaul.net won't end with the end of Summer of Code. The function stubs are already provided and I plan on implementing the encryption features in the coming weeks.
+
+
+### The ugly (aka what I can't do yet)
+
+Signatures (and also encryption) of private messages (so messages that aren't flooded to everybody) is currently impossible. This is due to the way that the communication system in qaul.net works.
+
+I have talked to my mentor and he said that they were currently in the process of re-writing the communication sub-system in libqaul. This means two things:
+
+ 1. I need to wait for those changes to be done until I can finish what I set out to do
+ 2. Some of the code I wrote (hooking into the current communication system) is being made obsolete :(
+
+
+### In conclusion
+
+What I can say is this: qaul.net has gotten a very big step closer to becoming a more secure network of communication. The crypto submodule is tested and easy to use. What might happen is that parts of the code get merged (the crypto submodule itself) without merging any of the code that hooks into the communication stack.
+
+I had a lot of fun working on this project and I am looking forward to more contributions. I have a few cool ideas that I want to discuss with the rest of the team and I am glad that I participated in the Google Summer of Code.
+
+I was interested in open source before and I contributed to my own projects on github. But the experience I gained this summer will be helpful for me, not just for my own work, but to be less reluctant to join other developer communities.
+
+And I look forward to seeing my code get merged into qaul.net :)
+
+Read you soon,
+
+
+~Kate
