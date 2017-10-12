@@ -7,7 +7,7 @@ SITENAME = 'Fun Memory Violations'
 SITEURL = ''
 # DISQUS_SITENAME = 'katesnullpointers'
 
-THEME = 'nest'
+THEME = 'crumbs'
 # NEST_HEADER_IMAGES = 'banner_bg2x.png'
 
 EXTRA_PATH_METADATA = {
