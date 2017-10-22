@@ -1,0 +1,181 @@
+/*
+ *    This is my CSS y'all! It probably sucks 💩
+ */
+
+/* Responsive */
+@media (min-width: 768px) {
+  .container { width: 760px; }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 985px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1195px;
+  }
+}
+
+/* The body is basically the base */
+body {
+  font-family: Roboto;
+  font-style: normal;
+  font-variant: normal;
+  font-size: 26px;
+  font-weight: 300;
+  color: #BEBEBE;
+  background-color: #242424;
+  margin: 0px;
+  /*line-height: 32px;*/
+  -webkit-font-smoothing:antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Describes the header container */
+.header {
+  height: 75px;
+  line-height: 75px;
+  background-color: #393939;
+  width: 100%;
+  margin-top: 15px;
+}
+
+/* Probably a temporary hack */
+.header p {
+  margin-left: 25px;
+}
+
+.header .nav {
+  float: right;
+}
+
+.header .nav a {
+  margin-left: 20px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-out;
+}
+
+/* Mostly used on the front page */
+/*.highlight {
+  font-family: Inconsolata;
+}
+*/
+.title-text {
+  font-family: Inconsolata;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.title-text h1 { font-size: 64px; }
+
+/* Implements a blinking cursor */
+.blink {
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+/*************************
+
+COLOUR TILE THINGY
+
+**************************/
+
+.colours {
+  width: 1350px;
+  height: 90px;
+  padding-top: 75px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.colour {
+  display: flex;
+  flex-direction: column;
+  height: 90px;
+  width: 90px;
+}
+
+#colour1  { background-color: #3c3c3c; }
+#colour2  { background-color: #525252; }
+#colour3  { background-color: #74736a; }
+#colour4  { background-color: #9f9e93; }
+#colour5  { background-color: #d2cfc7; }
+#colour6  { background-color: #e7e5df; }
+#colour7  { background-color: #f1f0ec; }
+#colour8  { background-color: #ef787b; }
+#colour9  { background-color: #f6915f; }
+#colour10 { background-color: #fdcb71; }
+#colour11 { background-color: #99cb9b; }
+#colour12 { background-color: #6ccaca; }
+#colour13 { background-color: #6997c8; }
+#colour14 { background-color: #ca98c9; }
+#colour15 { background-color: #ce7b59; }
+
+/*************************
+
+BLINKING ANIMATIONS FOR DIFFERENT BROWSERS
+
+**************************/
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #BEBEBE;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #BEBEBE;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #BEBEBE;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #BEBEBE;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #BEBEBE;
+  }
+}
+
+/*.header-nav .nav{
+  float:right;
+}
+.header-nav .nav a {
+  font-weight:300;
+  font-size: 18px;
+  color:#fff;
+  text-decoration:none;
+  padding:8px;
+  margin-left:20px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-out;
+}

@@ -11,82 +11,75 @@
 
     <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Inconsolata:400,700&amp" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin-ext" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- <link href="{{ SITEURL }}/theme/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link href="{{ SITEURL }}/theme/css/fonts.css" rel="stylesheet"> -->
+    <!-- <link href="{{ SITEURL }}/theme/css/nest.css" rel="stylesheet"> -->
+    <!-- <link href="{{ SITEURL }}/theme/css/pygment.css" rel="stylesheet"> -->
+    <!-- <link href="{{ SITEURL }}/theme/css/home.css" rel="stylesheet"> -->
+
     <!-- Stylesheets -->
-    {% if NEST_CSS_MINIFY %}
-    <link href="{{ SITEURL }}/theme/css/all.min.css" rel="stylesheet">
-    {% else %}
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Quicksand:300,400|Roboto:300,400&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="{{ SITEURL }}/theme/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{{ SITEURL }}/theme/css/fonts.css" rel="stylesheet">
-    <link href="{{ SITEURL }}/theme/css/nest.css" rel="stylesheet">
-    <link href="{{ SITEURL }}/theme/css/pygment.css" rel="stylesheet">
-    <link href="{{ SITEURL }}/theme/css/home.css" rel="stylesheet">
-    {% endif %}
+    <!-- <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/nest.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/home.css">   -->
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/crumbs.css">
     <!-- /Stylesheets -->
-
-    <!-- RSS Feeds -->
-    {% if FEED_ALL_ATOM %}
-    <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
-    {% endif %}
-    {% if FEED_ALL_RSS %}
-    <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Full RSS Feed" />
-    {% endif %}
-    {% if FEED_ATOM %}
-    <link href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
-    {% endif %}
-    {% if FEED_RSS %}
-    <link href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
-    {% endif %}
-    {% if CATEGORY_FEED_ATOM and category %}
-    <link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(category.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Categories Atom Feed" />
-    {% endif %}
-    {% if CATEGORY_FEED_RSS and category %}
-    <link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_RSS|format(category.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Categories RSS Feed" />
-    {% endif %}
-    {% if TAG_FEED_ATOM and tag %}
-    <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(tag.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Tags Atom Feed" />
-    {% endif %}
-    {% if TAG_FEED_RSS and tag %}
-    <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS Feed" />
-    {% endif %}
-    <!-- /RSS Feeds -->
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    {% if GOOGLE_ANALYTICS %}
-        <!-- Google Analytics -->
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-          ga('create', '{{ GOOGLE_ANALYTICS }}', 'auto');
-          ga('send', 'pageview');
-        </script>
-        <!-- /Google Analytics -->
-    {% endif %}
 
   {% endblock head %}
   </head>
 
-  <body class="home">
-    <!-- <div class="hacky_bg nav"> -->
+  <body>
+
+    <!-- Navigation -->
+    <div class="container header">
+      <!-- <div class="nav pull-right"><a>Home</a></div> -->
+    </div>
+
+    <div class="">
+        
+      <!-- "# fun memory violations _" -->
+      <div class="title-text">
+        <h1># fun memory violations <span class="blink">_ </span></h1>
+      </div>
+
+      <div class="colours">
+        <div class="colour" id="colour1"></div>
+        <div class="colour" id="colour2"></div>
+        <div class="colour" id="colour3"></div>
+        <div class="colour" id="colour4"></div>
+        <div class="colour" id="colour5"></div>
+        <div class="colour" id="colour6"></div>
+        <div class="colour" id="colour7"></div>
+        <div class="colour" id="colour8"></div>
+        <div class="colour" id="colour9"></div>
+        <div class="colour" id="colour10"></div>
+        <div class="colour" id="colour11"></div>
+        <div class="colour" id="colour12"></div>
+        <div class="colour" id="colour13"></div>
+        <div class="colour" id="colour14"></div>
+        <div class="colour" id="colour15"></div>
+      </div>
+
+      <div class="title-text">
+        <p>Hi – Welcome to my dusty internet hangout place.</p>
+        <p>My name is Katharina Fey and I'm a software developer from Berlin. I like taking photos, writing stories and starting way too many personal projects.</p>
+      </div>
+
+    </div>
+  </body>
+
+
+
 
       <!-- Header -->
-      <div class="header-container gradient">
+<!--       <div class="header-container gradient">
 
-      <!-- Static nav bar and banner image and stuff -->
       <div class="container">
         <div class="header-nav">
           <div class="header-logo">
             <a class="pull-left" href="{{ SITEURL }}/"><img class="mr20" width=192px height=64px src="{{ SITEURL }}{{NEST_HEADER_LOGO or "/images/logo3.png" }}" alt="logo"></a>
-          </div> <!-- header logo -->
+          </div>
 
           <div class="nav pull-right">
 
@@ -104,8 +97,8 @@
               {% endfor %}
             {% endif %}
 
-          </div> <!-- end nav pull-right -->
-        </div> <!-- end header-nav -->
+          </div>
+        </div> 
 
         <h1>Fun memory violations</h1>
 
@@ -121,8 +114,7 @@
 
 
         <p>To get in touch with me, you can also send an e-mail to <a href="mailto:kookie@spacekookie.de" id="email"><b>kookie@spacekookie.de</b></a></p>
-      </div> <!-- end container -->
-
-    <!-- </div>  end hacky_bg -->
+      </div>
+       -->
   </body>
 </html>

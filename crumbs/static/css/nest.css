@@ -195,11 +195,11 @@ h5 {
     font-size:12px;
     font-weight:600;
 }
-.header-nav .nav{
+.header-nav .nav {
     float:right;
 }
 .header-nav .nav a {
-   font-weight:300;
+  font-weight: 300;
   font-size: 18px;
   color:#fff;
   text-decoration:none;
@@ -394,27 +394,27 @@ h5 {
 }
 
 pre.col {
-    background: #242424; <!-- #f8f7fa -->
-    padding: 15px; <!-- 34 -->
-    font-size: 16px;
-    line-height: 24px;
-    font-family: Consolas, monaco, monospace;
-    border-radius: 0px;
-    color: #FEFEFE;
-    margin: 34px 0;
-    font-weight: 700;
+  background: #242424; <!-- #f8f7fa -->
+  padding: 15px; <!-- 34 -->
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Consolas, monaco, monospace;
+  border-radius: 0px;
+  color: #FEFEFE;
+  margin: 34px 0;
+  font-weight: 700;
 }
-
-pre.highlight {
-    background: #242424; <!-- #f8f7fa -->
-    padding: 15px; <!-- 34 -->
-    font-size: 16px;
-    line-height: 24px;
-    font-family: Consolas, monaco, monospace;
-    border-radius: 0px;
-    color: #ffa435;
-    margin: 34px 0;
-    font-weight: 700;
+p
+re.highlight {
+  background: #242424; <!-- #f8f7fa -->
+  padding: 15px; <!-- 34 -->
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Consolas, monaco, monospace;
+  border-radius: 0px;
+  color: #ffa435;
+  margin: 34px 0;
+  font-weight: 700;
 }
 
 
