@@ -10,7 +10,8 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=Inconsolata|Quicksand:300,400|Roboto:300,400&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet"> -->
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500|Raleway:200,200i,300,300i,400,400i,500" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500|Raleway:200,200i,300,300i,400,400i,500" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet"> 
 
     <!-- Include font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,6 +19,7 @@
     <!-- Load bootstrap, then my own CSS -->
     <link href="{{ SITEURL }}/theme/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ SITEURL }}/theme/css/crums.css" rel="stylesheet">
+    <link href="{{ SITEURL }}/theme/css/cr_title.css" rel="stylesheet">
     <!-- /Stylesheets -->
 
     {% endblock head %}
@@ -28,31 +30,51 @@
     <!-- Outer bootstrap container -->
     <div class="container">
 
-      <h1>Fun Memory Violations</h1>
+      <!-- Add dynamic header -->
 
-      <div class="colours">
-        <div class="colour" id="colour1"></div>
-        <div class="colour" id="colour2"></div>
-        <div class="colour" id="colour3"></div>
-        <div class="colour" id="colour4"></div>
-        <div class="colour" id="colour5"></div>
-        <div class="colour" id="colour6"></div>
-        <div class="colour" id="colour7"></div>
-        <div class="colour" id="colour8"></div>
-        <div class="colour" id="colour9"></div>
-        <div class="colour" id="colour10"></div>
-        <div class="colour" id="colour11"></div>
-        <div class="colour" id="colour12"></div>
-        <div class="colour" id="colour13"></div>
-        <div class="colour" id="colour14"></div>
-        <div class="colour" id="colour15"></div>
+      <hr/>
+
+      <!-- The page title -->
+      <div class="title">
+        <h1>
+          <span id="t-color-red"><b># ~ </b></span>
+          <span id="t-color-org">Fun</span>
+          <span id="t-color-ylw">Memory</span>
+          <span id="t-color-grn">Violations</span>
+          <span class="cursor" id="cursor">▁</span>
+        </h1>
       </div>
 
-      <br/>
-   
-      <p>Hi – Welcome to my dusty internet hangout place.</p>
+      <!-- Cool colour bar, yo -->
+      <div class="colours">
+        <div class="colour colour1"></div>
+        <div class="colour colour2"></div>
+        <div class="colour colour3"></div>
+        <div class="colour colour4"></div>
+        <div class="colour colour5"></div>
+        <div class="colour colour6"></div>
+        <div class="colour colour7"></div>
+        <div class="colour colour8"></div>
+        <div class="colour colour9"></div>
+        <div class="colour colour10"></div>
+        <div class="colour colour11"></div>
+        <div class="colour colour12"></div>
+        <div class="colour colour13"></div>
+        <div class="colour colour14"></div>
+        <div class="colour colour15"></div>
+      </div>
 
-      <p>I'm a software developer from Berlin. I like taking photos, writing stories and starting way too many personal projects.</p>
+      <p>
+        <b>Hi – </b>Welcome to my dusty internet hangout place.
+      </p>
+      <p>
+        My name is <b>Katharina Fey</b> and I'm a software developer from Berlin. 
+        I like taking photos, writing stories and starting way too many personal projects.
+      </p>
+
+
+
+
     </div>
 
   </body>

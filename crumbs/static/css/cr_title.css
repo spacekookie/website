@@ -1,0 +1,67 @@
+/* 
+
+This file contains all definitions are are EXCLUSIVE for the title
+
+*/
+
+.title {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.title h1 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 48px;
+}
+
+.cursor {
+    animation: flash 0.75s infinite alternate;  
+}
+
+@keyframes flash {
+    0%   { opacity: 1; }
+    49%  { opacity: 1; }
+    50%  { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+#t-color-red { color: #ef787b; }
+#t-color-org { color: #f6915f; }
+#t-color-ylw { color: #fdcb71; }
+#t-color-grn { color: #99cb9b; }
+
+
+/* This is the block container */
+.colours {
+    width: 0 auto;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    padding-bottom: 150px;
+  }
+  
+  /* This is a block */
+  .colour {
+    display: flex;
+    flex-direction: column;
+    height: 75px;
+    width: 75px;
+  }
+  
+  /* Colour defitions */
+  .colour1  { background-color: #3c3c3c; }
+  .colour2  { background-color: #525252; }
+  .colour3  { background-color: #74736a; }
+  .colour4  { background-color: #9f9e93; }
+  .colour5  { background-color: #d2cfc7; }
+  .colour6  { background-color: #e7e5df; }
+  .colour7  { background-color: #f1f0ec; }
+  .colour8  { background-color: #ef787b; }
+  .colour9  { background-color: #f6915f; }
+  .colour10 { background-color: #fdcb71; }
+  .colour11 { background-color: #99cb9b; }
+  .colour12 { background-color: #6ccaca; }
+  .colour13 { background-color: #6997c8; }
+  .colour14 { background-color: #ca98c9; }
+  .colour15 { background-color: #ce7b59; }
+  
