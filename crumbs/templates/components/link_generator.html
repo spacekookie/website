@@ -1,0 +1,8 @@
+{% for title, link in MENUITEMS %}
+    {# Do magic with http/https #}
+    {% if 'http://' in link or 'https://' in link %}
+        <a class="nav-item" href="{{ link }}">{{ title }} </a>
+    {% else %}
+        <a class="nav-item" href="{{ SITEURL }}{{ link }}">{{ title }} </a>
+    {% endif %}
+{% endfor %}
