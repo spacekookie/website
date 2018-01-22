@@ -2,8 +2,10 @@
     <p>< Back</p>
 </div> -->
 
-{% if in_article == true %}
+{% if type == 'single' %}
 <h3 class="card-header-url"><a href="{{ SITEURL }}/{{ article.category|lower }}"> ⇠ Back</a></h3>
+{% else %}
+<h2 class="card-header-url"><b><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></b></h2>
 {% endif %}
 
 <div class="article-meta">

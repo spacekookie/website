@@ -14,6 +14,7 @@ body {
   -webkit-font-smoothing:antialiased;
   text-rendering: optimizeLegibility;
   margin: 0;
+  overflow-y: scroll;
 }
 
 a {
@@ -63,8 +64,8 @@ h1, h2, h3, h4 {
   line-height: 50px;
   font-weight: 500;
   font-size: 22px;
-  padding-top: 12px;
-  padding-bottom: 25px;
+  padding-top: 22px;
+  padding-bottom: 32px;
   /* 
   padding-right: 32px;
   height: 50px;
@@ -199,8 +200,8 @@ code { padding: 3px 3px; }
   font-size: 22px;
   font-weight: 300;
   padding-bottom: 15px;
-  padding-left: 35px;
-  padding-right: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
   text-indent: 25px;
 }
 

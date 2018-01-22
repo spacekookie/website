@@ -1,0 +1,14 @@
+
+<div class="card">
+    <div class="card-header">
+        {% include "article_header.html" %}        
+    </div>
+
+    <div class="card-content">
+        {% if type == 'single' %}
+            {{ article.content }}
+        {% else %}
+            {{ article.summary }}
+        {% endif %}
+    </div>
+</div>

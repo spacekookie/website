@@ -8,29 +8,8 @@
 
 <h1>{{ article.title }}</h1>
 
-<div class="card">
+{% with type='single' %}
+{% include "card_content.html" %}
+{% endwith %}
 
-    <div class="card-header">
-        {% set in_article = true %}
-        {% include "article_header.html" %}
-    </div>
-
-    <div class="card-content">
-            {{ article.content }}
-    </div>
-</div>
-
-    <!-- <div class="col-lg-9 content">
-        {{ article.content }}
-
-        {% if article.related_posts %}
-            <h4>Articles connexes</h4>
-            <dl class="dl-horizontal">
-            {% for related_post in article.related_posts %}
-                <dt>{{ related_post.locale_date}}</dt>
-                <dd><a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a></dd>
-            {% endfor %}
-            </dl>
-        {% endif %}
-  </div> -->
 {% endblock %}

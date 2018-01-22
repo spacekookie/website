@@ -40,10 +40,10 @@ p {
     display: inline-block;
 } */
 
-/* a:hover, a:active, a:link{
+a, a:visited a:hover, a:active, a:link {
     color: #BEBEBE;
     text-decoration: none;
-} */
+}
 
 #twitter:hover {
     color: #6997c8;
