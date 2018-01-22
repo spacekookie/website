@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% extends "base.html" %}
 
 {# Define what html head we include #}
@@ -28,3 +29,125 @@
 
     <p>To get in touch with me, you can also send an e-mail to <a href="mailto:kookie@spacekookie.de" id="email"><b>kookie@spacekookie.de</b></a></p>
 {% endblock %}
+=======
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+  <head>
+  {% block head %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{% block description %}{% endblock description %}">
+    <meta name="keywords" content="{% block keywords %}{% endblock keywords %}">
+    <link rel="icon" href="{{ SITEURL }}/favicon.ico">
+
+    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Inconsolata:400,700&amp" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin-ext" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- <link href="{{ SITEURL }}/theme/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link href="{{ SITEURL }}/theme/css/fonts.css" rel="stylesheet"> -->
+    <!-- <link href="{{ SITEURL }}/theme/css/nest.css" rel="stylesheet"> -->
+    <!-- <link href="{{ SITEURL }}/theme/css/pygment.css" rel="stylesheet"> -->
+    <!-- <link href="{{ SITEURL }}/theme/css/home.css" rel="stylesheet"> -->
+
+    <!-- Stylesheets -->
+    <!-- <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/nest.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/home.css">   -->
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/crumbs.css">
+    <!-- /Stylesheets -->
+
+  {% endblock head %}
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <div class="container header">
+      <!-- <div class="nav pull-right"><a>Home</a></div> -->
+    </div>
+
+    <div class="">
+        
+      <!-- "# fun memory violations _" -->
+      <div class="title-text">
+        <h1># fun memory violations <span class="blink">_ </span></h1>
+      </div>
+
+      <div class="colours">
+        <div class="colour" id="colour1"></div>
+        <div class="colour" id="colour2"></div>
+        <div class="colour" id="colour3"></div>
+        <div class="colour" id="colour4"></div>
+        <div class="colour" id="colour5"></div>
+        <div class="colour" id="colour6"></div>
+        <div class="colour" id="colour7"></div>
+        <div class="colour" id="colour8"></div>
+        <div class="colour" id="colour9"></div>
+        <div class="colour" id="colour10"></div>
+        <div class="colour" id="colour11"></div>
+        <div class="colour" id="colour12"></div>
+        <div class="colour" id="colour13"></div>
+        <div class="colour" id="colour14"></div>
+        <div class="colour" id="colour15"></div>
+      </div>
+
+      <div class="title-text">
+        <p>Hi – Welcome to my dusty internet hangout place.</p>
+        <p>My name is Katharina Fey and I'm a software developer from Berlin. I like taking photos, writing stories and starting way too many personal projects.</p>
+      </div>
+
+    </div>
+  </body>
+
+
+
+
+      <!-- Header -->
+<!--       <div class="header-container gradient">
+
+      <div class="container">
+        <div class="header-nav">
+          <div class="header-logo">
+            <a class="pull-left" href="{{ SITEURL }}/"><img class="mr20" width=192px height=64px src="{{ SITEURL }}{{NEST_HEADER_LOGO or "/images/logo3.png" }}" alt="logo"></a>
+          </div>
+
+          <div class="nav pull-right">
+
+            {% for title, link in MENUITEMS %}
+              {% if 'http://' in link or 'https://' in link %}
+                <a class="nav" href="{{ link }}">{{ title }}</a>
+              {% else %}
+                <a class="nav" href="{{ SITEURL }}{{ link }}">{{ title }}</a>
+              {% endif %}
+            {% endfor %}
+      
+            {% if DISPLAY_PAGES_ON_MENU %}
+              {% for pg in PAGES %}
+                <a {% if pg == page %} class="active"{% endif %} href="{{ SITEURL }}/{{ pg.url }}">{{ pg.title }}</a>
+              {% endfor %}
+            {% endif %}
+
+          </div>
+        </div> 
+
+        <h1>Fun memory violations</h1>
+
+        <p><b>Hi –</b> Welcome to my dusty internet hangout place.</p>
+
+        <p>My name is <b>Katharina Fey</b> and I'm a software developer from Berlin. I like taking photos, writing stories and starting way too many personal projects.</p>
+
+        <div class="icons">
+          <a href="https://twitter.com/spacekookie"><h1 id="twitter"><i class="fa fa-twitter"></i> Twitter</h1></a>
+          <a href="https://github.com/spacekookie"><h1 id="github"><i class="fa fa-github"></i> Github</h1></a>
+          <a href="https://spacekookie.de/kookie.txt"><h1 id="keys"><i class="fa fa-key"></i> Keys</h1></a>
+        </div>
+
+
+        <p>To get in touch with me, you can also send an e-mail to <a href="mailto:kookie@spacekookie.de" id="email"><b>kookie@spacekookie.de</b></a></p>
+      </div>
+       -->
+  </body>
+</html>
+>>>>>>> 6386c12fc0e606829d2b5bfea31d647852f2b491
