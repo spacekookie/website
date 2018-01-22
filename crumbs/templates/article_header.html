@@ -1,0 +1,27 @@
+<!-- <div class="article-title">
+    <p>< Back</p>
+</div> -->
+
+<div class="article-title text-right">
+
+    {% if in_article == true %}
+    <div class="pull-left">
+        <h3><a href="{{ SITEURL }}/{{ article.category|lower }}"> ⇠ Back</a></h3>
+    </div>
+    {% endif %}
+
+    <div class="pull-right">
+        <p>
+            {% if article.tags|length > 0 %}
+                {% for tag in article.tags|sort %}
+                <strong>{{ tag }} |</strong>
+                {% endfor %}
+                Tags
+            {% endif %}
+        </p>
+        <p>Published <span class="tc-brown"><strong>{{ article.locale_date }}</strong></span></p>
+        <p>This article takes <span class="tc-brown"><strong>{{article.read_time_string}}</strong></span> to read.</p>
+    </div>
+
+</div>
+<hr />

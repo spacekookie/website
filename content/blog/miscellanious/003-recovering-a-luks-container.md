@@ -1,5 +1,5 @@
 Title: Recovering a destroyed LUKs container
-Category: Blog
+Category: OldBlog
 Date: 2015-11-19 11:41
 Tags: Dev Diary
 

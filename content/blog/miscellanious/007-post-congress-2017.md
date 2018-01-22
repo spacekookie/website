@@ -1,5 +1,5 @@
 Title: Post 33C3, what next?
-Category: Blog
+Category: OldBlog
 Tags: Dev Diary, Congress, CCC, Hamburg
 Date: 2017-01-03 12:28
 

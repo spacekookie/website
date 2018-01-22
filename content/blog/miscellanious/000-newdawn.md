@@ -1,5 +1,5 @@
 Title: Static sites vs Wordpress
-Category: Blog
+Category: OldBlog
 Date: 2015-08-14 20:59
 Tags: Dev Diary, Meta
 

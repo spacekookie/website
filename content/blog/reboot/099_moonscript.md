@@ -1,6 +1,6 @@
 Title: Dabbling with Moonscript
-Category: OldBlog
-Tags: Dev Diary, moonscript, programming
+Category: Blog
+Tags: /dev/diary, moonscript, programming
 Date: 2017-05-06 11:55
 
 ![Lua means moon in portuguese](/images/lua_moon_banner.png)
@@ -55,6 +55,6 @@ So...I'm kinda excited about this. Most of the code I write is either in C or Ja
 
 But I've long been looking for a dynamicly typed, interpreted/ just-in-time compiled language that I can use for anything from little scripts to medium-sized desktop applications. I used to use python for this but have recently (over the last 6-9 months) fallen out of love and developed a rather passionate dislike of it and it's ecosystem.
 
-My current project will get it's own little article at some point but I don't mind teasing the progress here. I'm writing a new UI for redshift which works with X11 linux backends and is heavily inspired by f.lux on MacOS. It's written in moonscript, with my own forked version of redshift (which I call [libredshift](https://github.com/spacekookie/libredshift)). It's on [github](https://github.com/spacekookie/redshift_ctrl) and licensed under MIT. 
+My current project will get it's own little article at some point but I don't mind teasing the progress here. I'm writing a new UI for redshift which works with X11 linux backends and is heavily inspired by f.lux on MacOS. It's written in moonscript, with my own forked version of redshift (which I call [libredshift](https://github.com/spacekookie/libredshift)). It's on [github](https://github.com/spacekookie/redshift_ctrl) and licensed under MIT.
 
-Hope I've made you a little curious about Moonscript. And stay tuned for updates on future projects with it :)
+Hope I've made you a little curious about Moonscript :)

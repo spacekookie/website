@@ -12,8 +12,10 @@
 <dl class="dl-horizontal">
     {% for article in articles %}
     <div class="card">
-        <h2><b>{{ article.title }}</b></h2>
-        <hr class="divider" />
+        <h2><b><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></b></h2>
+        {% set in_article = false %}
+        {% include "article_header.html" %}
+
         <p>{{ article.summary }}</p>
     </div>
     {% endfor %}

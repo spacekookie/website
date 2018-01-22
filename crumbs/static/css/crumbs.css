@@ -16,18 +16,44 @@ body {
   margin: 0;
 }
 
+a {
+  color: #ce7b59;
+}
+
+a:hover {
+  color: #f6915f;
+  text-decoration: none;
+}
+
 p {
   font-size: 22px;
   font-weight: 300;
+  padding-bottom: 15px;
+  padding-left: 35px;
+  padding-right: 50px;
+  text-indent: 25px;
 }
 
-p.timer {
-  font-style: italic;
-  font-size: 16px;
+li {
+  font-size: 22px;
+  font-weight: 300;
+  padding-bottom: 15px;
+  padding-left: 35px;
+  padding-right: 50px;
+  text-indent: 25px;
+}
+
+strong {
+  font-weight: 500;
 }
 
 h1, h2, h3, h4 {
   font-family: 'Inconsolata', monospace;
+  padding-bottom: 15px;
+}
+
+.card h2, h3, h4 {
+  padding-left: 15px;
 }
 
 div.navigation {
@@ -56,6 +82,25 @@ div.navigation a {
   margin-left: 25px;
 }
 
+pre, code {
+  background: #222222;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Inconsolata, monospace;
+  border-radius: 0px;
+  color: #BEBEBE;
+  margin: 34px 0;
+  font-weight: 700;
+}
+
+code {
+  background: #bdbab1;
+  color: #4b505a;
+}
+
+code { padding: 3px 3px; }
+
 
 /*
 
@@ -80,6 +125,7 @@ div.navigation a {
 #t-color-org { color: #f6915f; }
 #t-color-ylw { color: #fdcb71; }
 #t-color-grn { color: #99cb9b; }
+.tc-brown { color: #ce7b59; }
 
 
 .colour1  { background-color: #3c3c3c; }
@@ -127,14 +173,19 @@ div.card hr {
 }
 
 
-/* hr {
-  display: ;
-  color: #222222;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #222222;
-  margin: 1em 0;
-  padding: 0; 
-  padding-bottom: 15px;
-  padding-top: 15px;
-} */
+div.article-title {
+  padding-bottom: 50px;
+  margin-bottom: 15px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+div.article-title p {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 16px;
+  padding-bottom: 0px;
+  /* padding-bottom: 15px; */
+}

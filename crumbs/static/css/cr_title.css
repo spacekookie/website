@@ -19,6 +19,16 @@ div.navigation {
     font-size: 58px;
 }
 
+/* For the title page we want other paragraph styles */
+p {
+    font-size: 22px;
+    font-weight: 300;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 0px;
+    text-indent: 0px;
+  }
+
 
 /* This is the block container */
 .gay {

@@ -1,6 +1,6 @@
 Title: 01. Omnitool - Introduction
 Slug: 01-omnitool-introduction
-Category: Blog
+Category: OldBlog
 Tags: Dev Diary, Hardware
 Date: 17-09-2015 15:45
 Status: published

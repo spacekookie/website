@@ -2,7 +2,7 @@
 <html lang="{{ DEFAULT_LANG }}">
     <head>
         <meta charset="utf-8">
-        <!-- <title>{% block title %}{{ SITENAME }}{% endblock title %}</title> -->
+        <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
 
         <!-- Load Montserrat, Inconsolata and font-awesome -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500;subset=cyrillic,latin-ext" rel="stylesheet"> 
@@ -11,9 +11,9 @@
 
         <!-- Load bootstrap, then my own CSS -->
         <link href="{{ SITEURL }}/theme/css/bootstrap.min.css" rel="stylesheet">
+        <link href="{{ SITEURL }}/theme/css/pygment.css" rel="stylesheet">
         <link href="{{ SITEURL }}/theme/css/crumbs.css" rel="stylesheet">
         <link href="{{ SITEURL }}/theme/css/cr_gay_override.css" rel="stylesheet">
-
     </head>
 
     <body>
@@ -22,7 +22,6 @@
             <!-- HEADER FOR EVERY PAGE -->
             <div>
                 <div class="navigation">
-
                     <div class="nav pull-left">
     
                         <!-- The page title -->

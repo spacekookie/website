@@ -1,5 +1,5 @@
 Title: An open source GPU
-Category: Blog
+Category: OldBlog
 Tags: OpenMPU, matrices, opengl, hardware
 
 

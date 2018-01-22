@@ -1,5 +1,5 @@
 Title: I got accepted to GSoC 2016
-Category: Blog
+Category: OldBlog
 Date: 2016-04-27 18:47
 Tags: GSoC2016
 
