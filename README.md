@@ -1,14 +1,24 @@
-# Fun memory violations
+# fun memory violations
 
-This is my website built with pelican (mostly) and a lot of HTML/CSS/JS hacks. Is this artsy enough yet?!
+This is my website, running at [[spacekookie.de]]. It's built with Pelican and my own theme called `crumbs` (because kookies...).
 
-Dependencies are `pelican markdown webassets`
+To understand the theme, you need to understand jinja because it's not very linear. Every sub-component is structured as such and then included. Sometimes parameters are given to the sub-component to distinguish between different page behaviour.
 
-The pelican build.
+If you have questions, just ask :)
 
-Host with `pelican content` and `make devserver`
-Default port is 8000.
+## How to build
 
-Hosted on Github because...not really sure exactly. Maybe someone can learn something from it (ha...yea).
+You need to have python3 (not sure if it works with python2...) installed. Then you can build the website as follows...
 
-**This is the `develop` branch which is hosted on [beta.spacekookie.de](https://beta.spacekookie.de)**
+```bash
+pip install pelican markdown webassets
+pelican content
+make devserver
+# The server is hosted on port 8000
+```
+
+I hope someone can learn from this :)
+
+## License
+
+It's all MIT. Fuck anything to do with the GNU project 💩
