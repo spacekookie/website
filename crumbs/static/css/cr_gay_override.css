@@ -1,0 +1,16 @@
+/* This is the block container */
+.gay {
+    width: 0 auto;
+    height: 12px;
+    margin: 0 auto;
+    display: flex;
+    padding-bottom: 25px;
+}
+
+/* This is a block */
+.colour {
+    display: flex;
+    flex-direction: column;
+    height: 12px;
+    width: 75px;
+}

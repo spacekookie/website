@@ -21,13 +21,16 @@ p {
   font-weight: 300;
 }
 
+h1, h2, h3, h4 {
+  font-family: 'Inconsolata', monospace;
+}
 
 div.navigation {
   padding-top: 12px;
-  padding-bottom: 75px;
+  padding-bottom: 25px;
   padding-right: 32px;
-  height: 75px;
-  line-height: 75px;
+  height: 50px;
+  line-height: 50px;
 }
 
 div.navigation a {
@@ -42,6 +45,26 @@ div.navigation a {
   /* transition: all 0.2s ease-out; */
 }
 
-div.navigation a:hover {
+/*
 
-}
+    ✨ COLOUR DEFINITIONS ✨
+
+  These colours are re-used in many parts of the website
+
+*/
+
+.colour1  { background-color: #3c3c3c; }
+.colour2  { background-color: #525252; }
+.colour3  { background-color: #74736a; }
+.colour4  { background-color: #9f9e93; }
+.colour5  { background-color: #d2cfc7; }
+.colour6  { background-color: #e7e5df; }
+.colour7  { background-color: #f1f0ec; }
+.colour8  { background-color: #ef787b; } /* Red */
+.colour9  { background-color: #f6915f; } /* Orange */
+.colour10 { background-color: #fdcb71; } /* Yellow */
+.colour11 { background-color: #99cb9b; } /* Green */
+.colour12 { background-color: #6ccaca; } /* Cyan */
+.colour13 { background-color: #6997c8; } /* Blue */
+.colour14 { background-color: #ca98c9; } /* Purple */
+.colour15 { background-color: #ce7b59; } /* Brown */

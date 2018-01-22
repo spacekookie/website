@@ -26,56 +26,38 @@
     <!-- Outer bootstrap container -->
     <div class="container">
 
-      <!-- Add dynamic header -->
-      <div class="navigation">
-        <div class="nav pull-right">
+        <!-- Add dynamic header -->
+        <div class="navigation">
+            <div class="nav pull-right">
 
-          <!-- Loop through all pages -->
-          {% for title, link in MENUITEMS %}
-
-            <!-- Do magic with http/https -->
-            {% if 'http://' in link or 'https://' in link %}
-              <a class="naughty" href="{{ link }}">{{ title }} </a>
-            {% else %}
-              <a class="naughty" href="{{ SITEURL }}{{ link }}">{{ title }} </a>
-            {% endif %}
-
-          {% endfor %}
+                <!-- Loop through all pages -->
+                {% for title, link in MENUITEMS %}
+                    <!-- Do magic with http/https -->
+                    {% if 'http://' in link or 'https://' in link %}
+                        <a class="naughty" href="{{ link }}">{{ title }} </a>
+                    {% else %}
+                        <a class="naughty" href="{{ SITEURL }}{{ link }}">{{ title }} </a>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
-      </div>
-      <!-- /Static navbar -->
+        <!-- /Static navbar -->
 
-      <hr/>
+        <hr/>
 
-      <!-- The page title -->
-      <div class="title" title="Inconsolata is my favourite monospace font">
-        <h1>
-          <span id="t-color-red"><b># ~ </b></span>
-          <span id="t-color-org">Fun</span>
-          <span id="t-color-ylw">Memory</span>
-          <span id="t-color-grn">Violations</span>
-          <span class="cursor" id="cursor">▁</span>
-        </h1>
-      </div>
+        <!-- The page title -->
+        <div class="title" title="Inconsolata is my favourite monospace font, after all...">
+            <h1>
+                <span id="t-color-red"><b># ~ </b></span>
+                <span id="t-color-org">Fun</span>
+                <span id="t-color-ylw">Memory</span>
+                <span id="t-color-grn">Violations</span>
+                <span class="cursor" id="cursor">▁</span>
+            </h1>
+        </div>
 
       <!-- Cool colour bar, yo -->
-      <div class="colours">
-        <div class="colour colour1"></div>
-        <div class="colour colour2"></div>
-        <div class="colour colour3"></div>
-        <div class="colour colour4"></div>
-        <div class="colour colour5"></div>
-        <div class="colour colour6"></div>
-        <div class="colour colour7"></div>
-        <div class="colour colour8"></div>
-        <div class="colour colour9"></div>
-        <div class="colour colour10"></div>
-        <div class="colour colour11"></div>
-        <div class="colour colour12"></div>
-        <div class="colour colour13"></div>
-        <div class="colour colour14"></div>
-        <div class="colour colour15"></div>
-      </div>
+      {% include "super_gay.html" %}
 
       <p>
         <b>Hi – </b>Welcome to my dusty internet hangout place.
@@ -92,6 +74,7 @@
       </div>
 
       <p>To get in touch with me, you can also send an e-mail to <a href="mailto:kookie@spacekookie.de" id="email"><b>kookie@spacekookie.de</b></a></p>
+      <!-- <p>(My RFC2549 complient Prime MTU is currently out of comission)</p> -->
 
     </div>
 
