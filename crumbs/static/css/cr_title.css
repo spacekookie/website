@@ -5,13 +5,13 @@ This file contains all definitions are are EXCLUSIVE for the title
 */
 
 .title {
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 50px;
 }
 
 .title h1 {
     font-family: 'Inconsolata', monospace;
-    font-size: 48px;
+    font-size: 58px;
 }
 
 .cursor {
@@ -38,30 +38,84 @@ This file contains all definitions are are EXCLUSIVE for the title
     margin: 0 auto;
     display: flex;
     padding-bottom: 150px;
-  }
+}
   
   /* This is a block */
-  .colour {
+.colour {
     display: flex;
     flex-direction: column;
     height: 75px;
     width: 75px;
+}
+
+/* Colour defitions */
+.colour1  { background-color: #3c3c3c; }
+.colour2  { background-color: #525252; }
+.colour3  { background-color: #74736a; }
+.colour4  { background-color: #9f9e93; }
+.colour5  { background-color: #d2cfc7; }
+.colour6  { background-color: #e7e5df; }
+.colour7  { background-color: #f1f0ec; }
+.colour8  { background-color: #ef787b; }
+.colour9  { background-color: #f6915f; }
+.colour10 { background-color: #fdcb71; }
+.colour11 { background-color: #99cb9b; }
+.colour12 { background-color: #6ccaca; }
+.colour13 { background-color: #6997c8; }
+.colour14 { background-color: #ca98c9; }
+.colour15 { background-color: #ce7b59; }
+  
+
+.span {
+    display: inline-block;
+}
+
+a, a:visited, a:hover, a:active, a:link{
+    color: #BEBEBE;
+    text-decoration: none;
+}
+
+#twitter:hover {
+    color: #6997c8;
+    animation: .45s jump infinite linear;
+}
+#github:hover {
+    color: #ef787b;
+    animation: .45s jump infinite linear;
+}
+#keys:hover {
+    color: #ca98c9;
+    animation: .45s jump infinite linear;
+}
+
+#email:hover {
+    color: #99cb9b;
+}
+
+div.icons {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.icons h1 {
+    font-family: Inconsolata;
+    font-size: 42px;
+    line-height: 42px;
+    font-style: normal;
+    font-variant: normal;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
   }
-  
-  /* Colour defitions */
-  .colour1  { background-color: #3c3c3c; }
-  .colour2  { background-color: #525252; }
-  .colour3  { background-color: #74736a; }
-  .colour4  { background-color: #9f9e93; }
-  .colour5  { background-color: #d2cfc7; }
-  .colour6  { background-color: #e7e5df; }
-  .colour7  { background-color: #f1f0ec; }
-  .colour8  { background-color: #ef787b; }
-  .colour9  { background-color: #f6915f; }
-  .colour10 { background-color: #fdcb71; }
-  .colour11 { background-color: #99cb9b; }
-  .colour12 { background-color: #6ccaca; }
-  .colour13 { background-color: #6997c8; }
-  .colour14 { background-color: #ca98c9; }
-  .colour15 { background-color: #ce7b59; }
-  
+  20% {
+    transform: translateY(-.075em);
+  }
+  80% {
+    transform: translateY(.025em);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

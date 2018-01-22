@@ -2,15 +2,12 @@
 <html lang="{{ DEFAULT_LANG }}">
   <head>
     <meta charset="utf-8">
-    {% block head %}
 
-    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
-
-    <!-- Inconsolata for code? -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Inconsolata|Quicksand:300,400|Roboto:300,400&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet"> -->
+    <title{{ SITENAME }}</title>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500|Raleway:200,200i,300,300i,400,400i,500" rel="stylesheet"> 
+    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500|Raleway:200,200i,300,300i,400,400i,500" rel="stylesheet">  -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500;subset=cyrillic,latin-ext" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet"> 
 
     <!-- Include font awesome -->
@@ -18,11 +15,10 @@
 
     <!-- Load bootstrap, then my own CSS -->
     <link href="{{ SITEURL }}/theme/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{{ SITEURL }}/theme/css/crums.css" rel="stylesheet">
+    <link href="{{ SITEURL }}/theme/css/crumbs.css" rel="stylesheet">
     <link href="{{ SITEURL }}/theme/css/cr_title.css" rel="stylesheet">
     <!-- /Stylesheets -->
 
-    {% endblock head %}
   </head>
 
   <body>
@@ -31,11 +27,28 @@
     <div class="container">
 
       <!-- Add dynamic header -->
+      <div class="navigation">
+        <div class="nav pull-right">
+
+          <!-- Loop through all pages -->
+          {% for title, link in MENUITEMS %}
+
+            <!-- Do magic with http/https -->
+            {% if 'http://' in link or 'https://' in link %}
+              <a class="naughty" href="{{ link }}">{{ title }} </a>
+            {% else %}
+              <a class="naughty" href="{{ SITEURL }}{{ link }}">{{ title }} </a>
+            {% endif %}
+
+          {% endfor %}
+        </div>
+      </div>
+      <!-- /Static navbar -->
 
       <hr/>
 
       <!-- The page title -->
-      <div class="title">
+      <div class="title" title="Inconsolata is my favourite monospace font">
         <h1>
           <span id="t-color-red"><b># ~ </b></span>
           <span id="t-color-org">Fun</span>
@@ -72,8 +85,13 @@
         I like taking photos, writing stories and starting way too many personal projects.
       </p>
 
+      <div class="icons">
+        <a href="https://twitter.com/spacekookie"><h1 id="twitter"><i class="fa fa-twitter"></i> Twitter</h1></a>
+        <a href="https://github.com/spacekookie"><h1 id="github"><i class="fa fa-github"></i> Github</h1></a>
+        <a href="https://spacekookie.de/kookie.txt"><h1 id="keys"><i class="fa fa-key"></i> Keys</h1></a>
+      </div>
 
-
+      <p>To get in touch with me, you can also send an e-mail to <a href="mailto:kookie@spacekookie.de" id="email"><b>kookie@spacekookie.de</b></a></p>
 
     </div>
 

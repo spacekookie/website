@@ -5,13 +5,8 @@
 **************************************/
 
 
-
 body {
   font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-variant: normal;
-  /* font-size: 26px; */
-  /* font-weight: 400; */
   color: #BEBEBE;
   background-color: #222222;
   background-image: none;
@@ -24,4 +19,29 @@ body {
 p {
   font-size: 22px;
   font-weight: 300;
+}
+
+
+div.navigation {
+  padding-top: 12px;
+  padding-bottom: 75px;
+  padding-right: 32px;
+  height: 75px;
+  line-height: 75px;
+}
+
+div.navigation a {
+  font-weight: 500;
+  font-size: 22px;
+  color:#FFF;
+  
+  text-decoration: none;
+  padding-left: 48px;
+  /* margin-left: 20px; */
+  text-transform: lowercase;
+  /* transition: all 0.2s ease-out; */
+}
+
+div.navigation a:hover {
+
 }
