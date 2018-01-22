@@ -16,10 +16,11 @@ EXTRA_PATH_METADATA = {
 }
 
 PLUGIN_PATHS = ['plugins/',]
-PLUGINS = ['summary', ]
+PLUGINS = ['summary', 'read_time']
 
 TEMPLATE_DEBUG = True
 DEBUG = True
+READ_TIME = 180
 
 PATH = 'content'
 STATIC_PATHS = ['images', 'downloads', 'kookie.txt']
