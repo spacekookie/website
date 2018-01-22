@@ -2,13 +2,11 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'Kate'
+AUTHOR = 'Katharina Fey'
 SITENAME = 'Fun Memory Violations'
 SITEURL = ''
-# DISQUS_SITENAME = 'katesnullpointers'
 
 THEME = 'crumbs'
-# NEST_HEADER_IMAGES = 'banner_bg2x.png'
 
 EXTRA_PATH_METADATA = {
 		# 'robots.txt': {'path': 'robots.txt'},
@@ -16,10 +14,11 @@ EXTRA_PATH_METADATA = {
 }
 
 PLUGIN_PATHS = ['plugins/',]
-PLUGINS = ['summary', ]
+PLUGINS = ['summary', 'read_time']
 
 TEMPLATE_DEBUG = True
 DEBUG = True
+READ_TIME = 180
 
 PATH = 'content'
 STATIC_PATHS = ['images', 'downloads', 'kookie.txt']
@@ -31,18 +30,15 @@ SUMMARY_MAX_LENGTH = 140
 
 # THEME = 'lazystrap' # Why doesn't this work? :(
 
-DEFAULT_CATEGORY = 'Dev Diary'
+DEFAULT_CATEGORY = 'Blog'
 DEFAULT_DATE = 'fs'
 
 DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = False
 
 MENUITEMS = (
-	('Home', '/'),
+	('WHOAMI', '/'),
 	('Blog', '/blog/'),
-	# ('Guides', '/guides/'),
-	# ('Showcase', '/showcase/'),
-	('About Me', '/about/'),
 )
 
 ARTICLE_URL = '{category}/{slug}'

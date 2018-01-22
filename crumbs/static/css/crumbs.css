@@ -1,0 +1,217 @@
+/**************************************
+
+   BASIC DEFINITIONS 
+
+**************************************/
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #BEBEBE;
+  background-color: #222222;
+  background-image: none;
+  line-height: 32px;
+  -webkit-font-smoothing:antialiased;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  overflow-y: scroll;
+}
+
+a {
+  color: #ce7b59;
+}
+
+a:hover {
+  color: #f6915f;
+  text-decoration: none;
+}
+
+li {
+  font-size: 22px;
+  font-weight: 300;
+  padding-bottom: 15px;
+  padding-left: 35px;
+  padding-right: 50px;
+  text-indent: 25px;
+}
+
+strong {
+  font-weight: 500;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Inconsolata', monospace;
+  padding-bottom: 15px;
+}
+
+h1 {
+  padding-top: 50px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* .card h2, h3, h4 {
+  padding-left: 15px;
+} */
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 50px;
+  line-height: 50px;
+  font-weight: 500;
+  font-size: 22px;
+  padding-top: 22px;
+  padding-bottom: 32px;
+  /* 
+  padding-right: 32px;
+  height: 50px;
+  line-height: 50px; */
+
+  padding-right: 32px;
+}
+
+.navigation a {
+  
+  color:#FFF;
+  
+  text-decoration: none;
+  padding-left: 48px;
+  text-transform: lowercase;
+}
+
+.title {
+  font-size: 22px;
+  text-transform: lowercase;
+  margin-left: 25px;
+}
+
+.page-title {
+  flex-grow: 1;
+}
+
+.gay {
+  display: flex;
+  flex-direction: row;
+}
+
+/* This is a block */
+.colour {
+  max-height: calc(1100px / 15);
+  height: 12px;
+  flex-grow: 1;
+}
+
+pre, code {
+  background: #222222;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Inconsolata, monospace;
+  border-radius: 0px;
+  color: #BEBEBE;
+  margin: 34px 0;
+  font-weight: 700;
+}
+
+code {
+  background: #bdbab1;
+  color: #4b505a;
+}
+
+code { padding: 3px 3px; }
+
+
+/*
+
+    ✨ COLOUR DEFINITIONS ✨
+
+  These colours are re-used in many parts of the website
+
+*/
+
+.cursor {
+  animation: flash 0.75s infinite alternate;  
+}
+
+@keyframes flash {
+  0%   { opacity: 1; }
+  49%  { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+#t-color-red { color: #ef787b; }
+#t-color-org { color: #f6915f; }
+#t-color-ylw { color: #fdcb71; }
+#t-color-grn { color: #99cb9b; }
+.tc-brown { color: #ce7b59; }
+
+
+.colour1  { background-color: #3c3c3c; }
+.colour2  { background-color: #525252; }
+.colour3  { background-color: #74736a; }
+.colour4  { background-color: #9f9e93; }
+.colour5  { background-color: #d2cfc7; }
+.colour6  { background-color: #e7e5df; }
+.colour7  { background-color: #f1f0ec; }
+.colour8  { background-color: #ef787b; } /* Red */
+.colour9  { background-color: #f6915f; } /* Orange */
+.colour10 { background-color: #fdcb71; } /* Yellow */
+.colour11 { background-color: #99cb9b; } /* Green */
+.colour12 { background-color: #6ccaca; } /* Cyan */
+.colour13 { background-color: #6997c8; } /* Blue */
+.colour14 { background-color: #ca98c9; } /* Purple */
+.colour15 { background-color: #ce7b59; } /* Brown */
+
+/*
+
+    ✨ CARD DEFINITIONS ✨
+
+*/
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  background-color: #CECECE;
+  color: #222222;
+  margin-bottom: 25px;
+}
+
+.card-header {
+  border-bottom: 1px solid #222222;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-header-url {
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.card-content p {
+  font-size: 22px;
+  font-weight: 300;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-indent: 25px;
+}
+
+.article-meta p {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: right;
+}

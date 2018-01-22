@@ -1,5 +1,5 @@
 Title: Getting started with XMPP/ Jabber
-Category: Blog
+Category: OldBlog
 Date: 2015-11-24 12:14
 Tags: Dev Diary
 

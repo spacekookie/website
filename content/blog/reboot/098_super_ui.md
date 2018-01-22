@@ -1,6 +1,6 @@
-Title: LibGDX UI utility: Super UI
-Category: OldBlog
-Tags: Dev Diary, LibGDX, Game Dev, Lonely Robot
+Title: LibGDX interface containers
+Category: Blog
+Tags: /dev/diary, libgdx, game dev, java
 Date: 2017-01-24 00:14
 
 **Let me tell you a factual statement**

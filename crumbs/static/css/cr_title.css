@@ -1,0 +1,84 @@
+
+/* Use different paddings for titles */
+.title h1 {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+/* Use a white navigation divider */
+.navigation {
+    border-bottom: 1px solid white;
+}
+
+/* Use a larger text on the front page */
+p {
+    font-size: 22px;
+    font-weight: 300;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 0px;
+    text-indent: 0px;
+}
+
+/* Colour blocks are bigger on the front page */
+.colour {
+    height: calc((100vw - 2rem) / 15);
+}
+
+/* Override link behaviour differently */
+a, a:visited a:hover, a:active, a:link {
+    color: #BEBEBE;
+    text-decoration: none;
+}
+
+/**
+ *
+ * Classes and IDs for the social media links & animation
+ *
+ **/
+
+#twitter:hover {
+    color: #6997c8;
+    animation: .45s jump infinite linear;
+}
+#github:hover {
+    color: #ef787b;
+    animation: .45s jump infinite linear;
+}
+#keys:hover {
+    color: #ca98c9;
+    animation: .45s jump infinite linear;
+}
+#email:hover {
+    color: #99cb9b;
+}
+
+.icons {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.icons h1 {
+    font-family: Inconsolata;
+    font-size: 42px;
+    line-height: 42px;
+    font-style: normal;
+    font-variant: normal;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-.075em);
+  }
+  80% {
+    transform: translateY(.025em);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

@@ -1,5 +1,5 @@
 Title: Lonely Robot and the future
-Category: Blog
+Category: OldBlog
 Date: 2015-08-25 15:30
 Tags: Dev Diary, Lonely Robot
 

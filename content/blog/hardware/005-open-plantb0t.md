@@ -1,5 +1,5 @@
 Title: Open Plantb0t - Rev A
-Category: Blog
+Category: OldBlog
 Date: 2016-03-16 12:08
 Tags: Dev Diary, Hardware
 Illustration: banners/plantb0t_revA.png
