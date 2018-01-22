@@ -38,11 +38,11 @@ DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = False
 
 MENUITEMS = (
-	('Home', '/'),
+	('WHOAMI', '/'),
 	('Blog', '/blog/'),
 	# ('Guides', '/guides/'),
 	# ('Showcase', '/showcase/'),
-	('About Me', '/about/'),
+	# ('WHOAMI', '/whoami/'),
 )
 
 ARTICLE_URL = '{category}/{slug}'
