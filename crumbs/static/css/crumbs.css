@@ -21,6 +21,11 @@ p {
   font-weight: 300;
 }
 
+p.timer {
+  font-style: italic;
+  font-size: 16px;
+}
+
 h1, h2, h3, h4 {
   font-family: 'Inconsolata', monospace;
 }
