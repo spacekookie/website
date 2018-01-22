@@ -1,1 +1,10 @@
+# Python and pelican directories
+__pycache__/
+env/
+output/
+plugins/
+
+# Weird files
+**/*.pyc
+*.pid
 .directory
