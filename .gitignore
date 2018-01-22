@@ -1,5 +1,5 @@
 # Python and pelican directories
-__pycache__/
+**/__pycache__/
 env/
 output/
 plugins/
