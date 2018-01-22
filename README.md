@@ -1,6 +1,6 @@
 # fun memory violations
 
-This is my website, running at [[spacekookie.de]]. It's built with Pelican and my own theme called `crumbs` (because kookies...).
+This is my website, running at [spacekookie.de](https://spacekookie.de). It's built with Pelican and my own theme called `crumbs` (because kookies...).
 
 To understand the theme, you need to understand jinja because it's not very linear. Every sub-component is structured as such and then included. Sometimes parameters are given to the sub-component to distinguish between different page behaviour.
 
