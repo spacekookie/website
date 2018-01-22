@@ -6,10 +6,10 @@
 
 {% block content %}
 
-<h1>{{ article.title }}</h1>
+    <h1>{{ article.title }}</h1>
 
-{% with type='single' %}
-{% include "components/card_content.html" %}
-{% endwith %}
+    {% with type='single' %}
+    {% include "components/card_content.html" %}
+    {% endwith %}
 
 {% endblock %}
