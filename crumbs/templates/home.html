@@ -1,20 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ DEFAULT_LANG }}">
-    <head>
-        <meta charset="utf-8">
-        <title>{{ SITENAME }}</title>
-
-        <!-- Load bootstrap, then my own CSS -->
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
-        <!-- <link href="{{ SITEURL }}/theme/css/bootstrap.min.css" rel="stylesheet"> -->
-        <link href="{{ SITEURL }}/theme/css/crumbs.css" rel="stylesheet">
-       <link href="{{ SITEURL }}/theme/css/cr_title.css" rel="stylesheet">
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,500" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet"> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
+    {% with type='home' %}
+    {% include "components/html_head.html" %}
+    {% endwith %}
 
     <body class="home">
 
@@ -34,20 +22,11 @@
                     {% endif %}
                 {% endfor %}
             </div>
-            <!-- /Static navbar -->
-
-            <!-- <hr/> -->
-
-            <!-- The page title -->
-            <div class="title" title="Inconsolata is my favourite monospace font, after all...">
-                <h1>
-                    <span id="t-color-red"><b># ~ </b></span>
-                    <span id="t-color-org">Fun</span>
-                    <span id="t-color-ylw">Memory</span>
-                    <span id="t-color-grn">Violations</span>
-                    <span class="cursor" id="cursor">▁</span>
-                </h1>
-            </div>
+            
+            {% with title_type='title' %}
+            {% include "components/title_text.html" %}
+            {% endwith %}
+        
 
         {% include "components/super_gay.html" %}
 

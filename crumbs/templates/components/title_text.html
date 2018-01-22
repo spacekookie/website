@@ -1,7 +1,13 @@
-<div class="page-title" title="Inconsolata is my favourite monospace font, after all...">
+<div class="{{ title_type }}" title="Inconsolata is my favourite monospace font, after all...">
+    {% if title_type == 'title' %}
+    <h1>
+    {% endif %}
     <span id="t-color-red"><b># ~ </b></span>
     <span id="t-color-org">Fun</span>
     <span id="t-color-ylw">Memory</span>
     <span id="t-color-grn">Violations</span>
     <span class="cursor" id="cursor">&nbsp;▁</span>
+    {% if title_type == 'title' %}
+    </h1>
+    {% endif %}
 </div>

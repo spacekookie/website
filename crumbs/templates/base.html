@@ -1,21 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ DEFAULT_LANG }}">
-    <head>
-        <meta charset="utf-8">
-        <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
-
-        <!-- Load bootstrap, then my own CSS -->
-        <!-- <link href="{{ SITEURL }}/theme/css/bootstrap.min.css" rel="stylesheet"> -->
-        <link href="{{ SITEURL }}/theme/css/pygment.css" rel="stylesheet">
-        <link href="{{ SITEURL }}/theme/css/crumbs.css" rel="stylesheet">
-        <link href="{{ SITEURL }}/theme/css/cr_gay_override.css" rel="stylesheet">
-
-        <!-- Load Montserrat, Inconsolata and font-awesome -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500;subset=cyrillic,latin-ext" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet"> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
-    </head>
+    {% with type='base' %}
+    {% include "components/html_head.html" %}
+    {% endwith %}
 
     <body class="not-home">
         <div class="container">
@@ -23,13 +10,9 @@
             <!-- HEADER FOR EVERY PAGE -->
             <div class="navigation">
 
-                <div class="page-title" title="Inconsolata is my favourite monospace font, after all...">
-                    <span id="t-color-red"><b># ~ </b></span>
-                    <span id="t-color-org">Fun</span>
-                    <span id="t-color-ylw">Memory</span>
-                    <span id="t-color-grn">Violations</span>
-                    <span class="cursor" id="cursor">&nbsp;▁</span>
-                </div>
+                {% with title_type='page-title' %}
+                {% include "components/title_text.html" %}
+                {% endwith %}
 
                 <!-- Loop through all pages -->
                 {% for title, link in MENUITEMS %}
