@@ -54,6 +54,10 @@ a, a:visited a:hover, a:active, a:link {
 #email:hover {
     color: #99cb9b;
 }
+#legal:hover {
+    color: #e7d853;
+    animation: .45s jump infinite linear;
+}
 
 .icons {
     padding-top: 25px;

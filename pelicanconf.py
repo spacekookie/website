@@ -79,3 +79,18 @@ JINJA_EXTENSIONS = ['webassets.ext.jinja2.AssetsExtension', 'jinja2.ext.with_']
 SOCIAL = (('Twitter', 'https://www.twitter.com/spacekookie'),('Github','https://www.github.com/spacekookie'),)
 
 DEFAULT_PAGINATION = 20
+
+
+from pygments.lexer import RegexLexer
+from pygments.token import *
+
+class LoveLexer(RegexLexer):
+    name = 'Love'
+    aliases = ['love']
+    filenames = ['*.love']
+
+    tokens = {
+        'root': [
+            ("❤", Keyword.Namespace),
+        ]
+    }

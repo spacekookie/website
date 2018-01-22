@@ -19,6 +19,7 @@ body {
 
 a {
   color: #ce7b59;
+  outline: 0;
 }
 
 a:hover {
@@ -47,6 +48,12 @@ h1, h2, h3, h4 {
 h1.normal {
   padding-top: 50px;
 }
+
+.footer {
+  border-top: 1px solid #BEBEBE;
+  margin-top: 15px;
+}
+
 
 .container {
   display: flex;
