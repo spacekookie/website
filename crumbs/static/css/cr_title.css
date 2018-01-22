@@ -19,21 +19,6 @@ div.navigation {
     font-size: 58px;
 }
 
-.cursor {
-    animation: flash 0.75s infinite alternate;  
-}
-
-@keyframes flash {
-    0%   { opacity: 1; }
-    49%  { opacity: 1; }
-    50%  { opacity: 0; }
-    100% { opacity: 0; }
-}
-
-#t-color-red { color: #ef787b; }
-#t-color-org { color: #f6915f; }
-#t-color-ylw { color: #fdcb71; }
-#t-color-grn { color: #99cb9b; }
 
 /* This is the block container */
 .gay {

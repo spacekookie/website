@@ -1,44 +1,38 @@
 {% extends "base.html" %}
 
-<!-- {% block title %}{{ NEST_CATEGORY_HEAD_TITLE }} {{ category|capitalize }} - {{ super() }} CATEGORY {% endblock title %} -->
-<!-- {% block description %}{{ NEST_CATEGORY_HEAD_DESCRIPTION }} {{ category|capitalize }}{% endblock description %} -->
-
-<!-- {% block headerstyle %}
-    {% if NEST_HEADER_IMAGES %}
-    <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('{{ SITEURL }}/images/{{ NEST_HEADER_IMAGES }}'); background-position: center; ">
-    {% else %}
-    <div class="header-container gradient">
-    {% endif %}
-{% endblock headerstyle %} -->
-
-{% block header %}
-<!-- TEMPLATE: CATEGORY -->
-<div class="container header-wrapper">
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="header-content">
-        <h1 class="header-title text-uppercase">{{ NEST_CATEGORY_HEADER_TITLE }} {{ category|capitalize }}</h1>
-        <!-- <div class="header-underline"></div> -->
-      </div>
-    </div>
-  </div>
-</div>
-{% endblock header %} 
+{% block title %}{{ NEST_CATEGORY_HEAD_TITLE }} {{ category|capitalize }} - {{ super() }} CATEGORY {% endblock title %}
+{% block description %}{{ NEST_CATEGORY_HEAD_DESCRIPTION }} {{ category|capitalize }}{% endblock description %}
 
 {% block content %}
 
-<div class="col-lg-12 content">
-  <dl class="dl-horizontal">
+<h1>{{ category }}</h1>
+
+<br/>
+
+<dl class="dl-horizontal">
+    {% for article in articles %}
+    <div class="card">
+        <h2><b>{{ article.title }}</b></h2>
+        <hr class="divider" />
+        <p>{{ article.summary }}</p>
+    </div>
+    {% endfor %}
+</dl>
+
+
+
+<!-- <div class="col-lg-12 content"> -->
+  <!-- <dl class="dl-horizontal"> -->
 
     <!-- This loops through all the articles -->
-    {% for article in articles %}
-      <dt><p>{{ article.locale_date}}</p></dt>
-      <dd>
-        <a href="{{ SITEURL }}/{{ article.url }}"><h2>{{ article.title }}</h2></a>
-        <p>{{ article.summary }}</p>
-      </dd>
-    {% endfor %}
-  </dl>
-</div>
+    <!-- {% for article in articles %} -->
+      <!-- <dt><p>{{ article.locale_date}}</p></dt> -->
+      <!-- <dd> -->
+        <!-- <a href="{{ SITEURL }}/{{ article.url }}"><h2>{{ article.title }}</h2></a> -->
+        <!-- <p>{{ article.summary }}</p> -->
+      <!-- </dd> -->
+    <!-- {% endfor %} -->
+  <!-- </dl> -->
+<!-- </div> -->
 
 {% endblock content %}

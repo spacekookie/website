@@ -45,6 +45,13 @@ div.navigation a {
   /* transition: all 0.2s ease-out; */
 }
 
+.title {
+  font-size: 22px;
+  text-transform: lowercase;
+  margin-left: 25px;
+}
+
+
 /*
 
     ✨ COLOUR DEFINITIONS ✨
@@ -52,6 +59,23 @@ div.navigation a {
   These colours are re-used in many parts of the website
 
 */
+
+.cursor {
+  animation: flash 0.75s infinite alternate;  
+}
+
+@keyframes flash {
+  0%   { opacity: 1; }
+  49%  { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+#t-color-red { color: #ef787b; }
+#t-color-org { color: #f6915f; }
+#t-color-ylw { color: #fdcb71; }
+#t-color-grn { color: #99cb9b; }
+
 
 .colour1  { background-color: #3c3c3c; }
 .colour2  { background-color: #525252; }
@@ -68,3 +92,44 @@ div.navigation a {
 .colour13 { background-color: #6997c8; } /* Blue */
 .colour14 { background-color: #ca98c9; } /* Purple */
 .colour15 { background-color: #ce7b59; } /* Brown */
+
+/*
+
+    ✨ CARD DEFINITIONS ✨
+
+*/
+
+div.card {
+  padding: 25px;
+  background-color: #CECECE;
+  color: #222222;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+div.card h1 {
+  font-weight: 500;
+}
+
+div.card hr {
+  background-color: #222222;
+  height: 1px;
+  border: 1px;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+
+/* hr {
+  display: ;
+  color: #222222;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #222222;
+  margin: 1em 0;
+  padding: 0; 
+  padding-bottom: 15px;
+  padding-top: 15px;
+} */

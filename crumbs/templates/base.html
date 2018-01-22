@@ -15,17 +15,28 @@
         <link href="{{ SITEURL }}/theme/css/cr_gay_override.css" rel="stylesheet">
 
     </head>
+
     <body>
         <div class="container">
 
             <!-- HEADER FOR EVERY PAGE -->
             <div>
                 <div class="navigation">
+
+                    <div class="nav pull-left">
+    
+                        <!-- The page title -->
+                        <div class="title" title="Inconsolata is my favourite monospace font, after all...">
+                                <span id="t-color-red"><b># ~ </b></span>
+                                <span id="t-color-org">Fun</span>
+                                <span id="t-color-ylw">Memory</span>
+                                <span id="t-color-grn">Violations</span>
+                                <span class="cursor" id="cursor">&nbsp;▁</span>
+                        </div>
+                    </div>
+
                     <div class="nav pull-right">
-        
-                        <!-- Loop through all pages -->
                         {% for title, link in MENUITEMS %}
-                            <!-- Do magic with http/https -->
                             {% if 'http://' in link or 'https://' in link %}
                                 <a class="naughty" href="{{ link }}">{{ title }} </a>
                             {% else %}
@@ -42,159 +53,10 @@
             </div>
             <!-- END HEADER FOR EVERY PAGE -->
 
+            {% block content %}
+            {% endblock %}
 
         </div>
 
     </body>
 </html>
-
-
-<!-- <!DOCTYPE html> -->
-<!-- TEMPLATE: BASE -->
-
-<!-- <html lang="{{ DEFAULT_LANG }}"> -->
-    <!-- <head> -->
-    <!-- {% block head %} -->
-
-    <!-- <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{% block description %}{% endblock description %}">
-    <meta name="keywords" content="{% block keywords %}{% endblock keywords %}">
-    <link rel="icon" href="{{ SITEURL }}/favicon.ico"> -->
-
-    <!-- Stylesheets -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Inconsolata|Quicksand:300,400|Roboto:300,400&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="{{ SITEURL }}/theme/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{{ SITEURL }}/theme/css/fonts.css" rel="stylesheet">
-    <link href="{{ SITEURL }}/theme/css/nest.css" rel="stylesheet">
-    <link href="{{ SITEURL }}/theme/css/pygment.css" rel="stylesheet"> -->
-
-    <!-- <link href="{{ SITEURL }}/theme/css/home.css" rel="stylesheet"> -->
-    <!-- /Stylesheets -->
-
-    <!-- {% endblock head %}
-    </head>
-
-    <body> -->
-
-      <!-- Header -->
-      <!-- {% block headerstyle %}
-      {% endblock headerstyle %} -->
-
-      <!-- Static navbar -->
-      <!-- <div class="container">
-        <div class="header-nav">
-          <div class="header-logo">
-            <a class="pull-left" href="{{ SITEURL }}/"><img class="mr20" width=192px height=64px src="{{ SITEURL }}{{NEST_HEADER_LOGO or "/images/logo3.png" }}" alt="logo"></a>
-          </div>
-          <div class="nav pull-right">
-            {% for title, link in MENUITEMS %}
-              {% if 'http://' in link or 'https://' in link %}
-                <a class="naughty" href="{{ link }}">{{ title }}</a>
-              {% else %}
-                <a class="naughty" href="{{ SITEURL }}{{ link }}">{{ title }}</a>
-              {% endif %}
-            {% endfor %}
-
-            {% if DISPLAY_PAGES_ON_MENU %}
-              {% for pg in PAGES %}
-                <a class="naughty" href="{{ SITEURL }}/{{ pg.url }}">{{ pg.title }}</a>
-              {% endfor %}
-            {% endif %}
-          </div>
-        </div>
-      </div> -->
-      <!-- /Static navbar -->
-
-      <!-- Header -->
-      <!-- {% block header %}
-      {% endblock header %} -->
-      <!-- /Header -->
-
-    <!-- </div> -->
-    <!-- /Header -->
-
-
-        <!-- Content -->
-
-        <!-- <div class="container">
-          <div class="row"> -->
-
-            <!-- This is our content container in all it's glory -->
-            <!-- {% block content %}
-            {% endblock %} -->
-
-            <!-- Append the navigation box -->
-<!--             <div class="col-lg-3 content archive">
-
-                <h3>Categories</h3>
-                <ul>
-                    {% for cat in categories %}
-                    <li><a href="{{ SITEURL }}/{{ cat[0].url }}">{{ cat[0] }}</a> ({{cat[1]|length}})</li>
-                    {% endfor %}
-                </ul>
-
-                <h3>Tags</h3>
-                <ul>
-                    {% for tag in tags %}
-                    <li><a href="{{ SITEURL }}/{{ tag[0].url }}">{{ tag[0] }}</a> ({{tag[1]|length}})</li>
-                    {% endfor %}
-                </ul>
-
-                <h3>About the Author</h3>
-                <img src="{{ SITEURL }}/theme/img/cat.png">
-
-            </div> -->
-        <!-- </div> -->
-        <!-- /Content --> 
-
-        <!-- Footer -->
-        <!-- <div class="footer gradient-2">
-            <div class="container footer-container">
-                <div class="row">
-                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                        <div class="footer-title">{{ NEST_SITEMAP_COLUMN_TITLE }}</div>
-                        <ul class="list-unstyled">
-                            {% for title, link in NEST_SITEMAP_MENU %}
-                            <li><a href="{{ SITEURL }}{{ link }}">{{ title }}</a></li>
-                            {% endfor %}
-                            {% if FEED_ALL_ATOM %}
-                            <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate">{{ NEST_SITEMAP_ATOM_LINK }}</a></li>
-                            {% endif %}
-                            {% if FEED_ALL_RSS %}
-                            <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate">{{ NEST_SITEMAP_RSS_LINK }}</a></li>
-                            {% endif %}
-                        </ul>
-                    </div>
-                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                        {% if SOCIAL %}
-                        <div class="footer-title">{{ NEST_SOCIAL_COLUMN_TITLE }}</div>
-                        <ul class="list-unstyled">
-                            {% for name, link in SOCIAL %}
-                            <li><a href="{{ link }}" target="_blank">{{name}}</a></li>
-                            {% endfor %}
-                        </ul>
-                        {% endif %}
-                    </div>
-                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                        {% if LINKS %}
-                        <div class="footer-title">{{ NEST_LINKS_COLUMN_TITLE }}</div>
-                        <ul class="list-unstyled">
-                            {% for name, link in LINKS %}
-                            <li><a href="{{ link }}" target="_blank">{{name}}</a></li>
-                            {% endfor %}
-                        </ul>
-                        {% endif %}
-                    </div> 
-                </div>
-            </div>
-        </div> -->
-        <!-- /Footer -->
-    <!-- </body> -->
-
-
-
-    <!-- <script src="{{ SITEURL }}/theme/js/random_colour.js"></script> -->
-<!-- </html> -->
