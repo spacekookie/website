@@ -7,20 +7,16 @@
     {% endwith %}
 {% endblock head %}
 
-
 {% block wrapped %}
-    <div class="navigation">
-        {% include "components/link_generator.html" %}
-    </div>
-    
+    {% with type='home' %} {% include "components/navbar_generator.html" %} {% endwith %}
     {% with title_type='title' %} {% include "components/title_text.html" %} {% endwith %}
     {% include "components/super_gay.html" %}
 
     <p>
-        <b>Hi – </b>Welcome to my dusty internet hangout place.
+        <strong>Hi – </strong>Welcome to my dusty internet hangout place.
     </p>
     <p>
-        My name is <b>Katharina Fey</b> and I'm a software developer from Berlin. 
+        My name is <strong>Katharina Fey</strong> and I'm a software developer from Berlin. 
         I like taking photos, writing stories and starting way too many personal projects.
     </p>
 

@@ -1,0 +1,8 @@
+<div class="navigation">
+    {% if type == 'home' %}
+        {% include "components/link_generator.html" %}
+    {% else %}
+        {% with title_type='page-title' %} {% include "components/title_text.html" %} {% endwith %}
+        {% include "components/link_generator.html" %}
+    {% endif %}
+</div>

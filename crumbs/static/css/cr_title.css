@@ -1,18 +1,5 @@
-/* 
 
-This file contains all definitions are are EXCLUSIVE for the title
-
-*/
-
-/* div.navigation {
-    padding-top: 12px;
-    padding-bottom: 75px;
-    padding-right: 32px;
-    height: 75px;
-    line-height: 75px;
-  } */
-  
-
+/* Use different paddings for titles */
 .title h1 {
     padding-top: 20px;
     padding-bottom: 50px;
@@ -20,11 +7,12 @@ This file contains all definitions are are EXCLUSIVE for the title
     font-weight: 500;
 }
 
+/* Use a white navigation divider */
 .navigation {
     border-bottom: 1px solid white;
 }
 
-/* For the title page we want other paragraph styles */
+/* Use a larger text on the front page */
 p {
     font-size: 22px;
     font-weight: 300;
@@ -32,18 +20,24 @@ p {
     padding-left: 5px;
     padding-right: 0px;
     text-indent: 0px;
-  }
+}
 
+/* Colour blocks are bigger on the front page */
+.colour {
+    height: calc((100vw - 2rem) / 15);
+}
 
-/* 
-.span {
-    display: inline-block;
-} */
-
+/* Override link behaviour differently */
 a, a:visited a:hover, a:active, a:link {
     color: #BEBEBE;
     text-decoration: none;
 }
+
+/**
+ *
+ * Classes and IDs for the social media links & animation
+ *
+ **/
 
 #twitter:hover {
     color: #6997c8;
@@ -57,12 +51,11 @@ a, a:visited a:hover, a:active, a:link {
     color: #ca98c9;
     animation: .45s jump infinite linear;
 }
-
 #email:hover {
     color: #99cb9b;
 }
 
-div.icons {
+.icons {
     padding-top: 25px;
     padding-bottom: 25px;
 }
