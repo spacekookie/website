@@ -5,19 +5,20 @@
 {% block keywords %}{% for tag in article.tags|sort %}{{ tag }}{% if not loop.last %}, {% endif %}{% endfor %}{% endblock keywords %}
 
 {% block content %}
-  <div class="col-lg-9 content">
-      {{ article.content }}
 
-      {% if article.related_posts %}
-          <h4>Articles connexes</h4>
-          <dl class="dl-horizontal">
-          {% for related_post in article.related_posts %}
-              <dt>{{ related_post.locale_date}}</dt>
-              <dd><a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a></dd>
-          {% endfor %}
-          </dl>
-      {% endif %}
+    <p>This article takes {{article.read_time_string}} to read.</p>
 
-      <hr/>
+    <div class="col-lg-9 content">
+        {{ article.content }}
+
+        {% if article.related_posts %}
+            <h4>Articles connexes</h4>
+            <dl class="dl-horizontal">
+            {% for related_post in article.related_posts %}
+                <dt>{{ related_post.locale_date}}</dt>
+                <dd><a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a></dd>
+            {% endfor %}
+            </dl>
+        {% endif %}
   </div>
 {% endblock %}
