@@ -1,16 +1,11 @@
-{% extends "base.html" %}
+{% extends "normal.html" %}
 
-{% block title %}{{ NEST_CATEGORY_HEAD_TITLE }} {{ category|capitalize }} - {{ super() }} CATEGORY {% endblock title %}
-{% block description %}{{ NEST_CATEGORY_HEAD_DESCRIPTION }} {{ category|capitalize }}{% endblock description %}
+{% block title %} {{ category }} {% endblock title %}
 
 {% block content %}
-
-<h1>{{ category }}</h1>
-
-{% for article in articles %}
-    {% with type='multi' %}
-    {% include "components/card_content.html" %}
-    {% endwith %}
-{% endfor %}
-
+    {% for article in articles %}
+        {% with type='multi' %}
+        {% include "components/card_content.html" %}
+        {% endwith %}
+    {% endfor %}
 {% endblock content %}

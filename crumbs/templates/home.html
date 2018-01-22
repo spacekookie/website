@@ -1,52 +1,34 @@
-<!DOCTYPE html>
-<html lang="{{ DEFAULT_LANG }}">
+{% extends "base.html" %}
+
+{# Define what html head we include #}
+{% block head %}
     {% with type='home' %}
     {% include "components/html_head.html" %}
     {% endwith %}
+{% endblock head %}
 
-    <body class="home">
 
-        <!-- Outer bootstrap container -->
-        <div class="container">
+{% block wrapped %}
+    <div class="navigation">
+        {% include "components/link_generator.html" %}
+    </div>
+    
+    {% with title_type='title' %} {% include "components/title_text.html" %} {% endwith %}
+    {% include "components/super_gay.html" %}
 
-            <!-- Add dynamic header -->
-            <div class="navigation">
+    <p>
+        <b>Hi – </b>Welcome to my dusty internet hangout place.
+    </p>
+    <p>
+        My name is <b>Katharina Fey</b> and I'm a software developer from Berlin. 
+        I like taking photos, writing stories and starting way too many personal projects.
+    </p>
 
-                <!-- Loop through all pages -->
-                {% for title, link in MENUITEMS %}
-                    <!-- Do magic with http/https -->
-                    {% if 'http://' in link or 'https://' in link %}
-                        <a class="nav-item" href="{{ link }}">{{ title }} </a>
-                    {% else %}
-                        <a class="nav-item" href="{{ SITEURL }}{{ link }}">{{ title }} </a>
-                    {% endif %}
-                {% endfor %}
-            </div>
-            
-            {% with title_type='title' %}
-            {% include "components/title_text.html" %}
-            {% endwith %}
-        
+    <div class="icons">
+        <a href="https://twitter.com/spacekookie"><h1 id="twitter"><i class="fa fa-twitter"></i> Twitter</h1></a>
+        <a href="https://github.com/spacekookie"><h1 id="github"><i class="fa fa-github"></i> Github</h1></a>
+        <a href="https://spacekookie.de/kookie.txt"><h1 id="keys"><i class="fa fa-key"></i> Keys</h1></a>
+    </div>
 
-        {% include "components/super_gay.html" %}
-
-        <p>
-            <b>Hi – </b>Welcome to my dusty internet hangout place.
-        </p>
-        <p>
-            My name is <b>Katharina Fey</b> and I'm a software developer from Berlin. 
-            I like taking photos, writing stories and starting way too many personal projects.
-        </p>
-
-        <div class="icons">
-            <a href="https://twitter.com/spacekookie"><h1 id="twitter"><i class="fa fa-twitter"></i> Twitter</h1></a>
-            <a href="https://github.com/spacekookie"><h1 id="github"><i class="fa fa-github"></i> Github</h1></a>
-            <a href="https://spacekookie.de/kookie.txt"><h1 id="keys"><i class="fa fa-key"></i> Keys</h1></a>
-        </div>
-
-        <p>To get in touch with me, you can also send an e-mail to <a href="mailto:kookie@spacekookie.de" id="email"><b>kookie@spacekookie.de</b></a></p>
-        <!-- <p>(My RFC2549 complient Prime MTU is currently out of comission)</p> -->
-
-        </div>
-    </body>
-</html>
+    <p>To get in touch with me, you can also send an e-mail to <a href="mailto:kookie@spacekookie.de" id="email"><b>kookie@spacekookie.de</b></a></p>
+{% endblock %}

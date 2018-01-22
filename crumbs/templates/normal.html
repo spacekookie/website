@@ -1,2 +1,23 @@
 {% extends "base.html" %}
 
+{# Define what html head we include #}
+{% block head %}
+    {% with type='base' %}
+    {% include "components/html_head.html" %}
+    {% endwith %}
+{% endblock head %}
+
+{% block wrapped %}
+    <div class="navigation">
+        {% with title_type='page-title' %} {% include "components/title_text.html" %} {% endwith %}
+        {% include "components/link_generator.html" %}
+    </div>
+
+    {# Include the colour bar as a divider #}
+    {% include "components/super_gay.html" %}
+
+    <h1>{% block title %}{% endblock %}</h1>
+
+    {% block content %}
+    {% endblock %}
+{% endblock %}

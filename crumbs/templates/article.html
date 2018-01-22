@@ -1,15 +1,9 @@
-{% extends "base.html" %}
+{% extends "normal.html" %}
 
-{% block title %}{{ article.title }} - {{ super() }}{% endblock title %}
-{% block description %}{{ article.content|striptags|truncate(200)|escape }}{% endblock description %}
-{% block keywords %}{% for tag in article.tags|sort %}{{ tag }}{% if not loop.last %}, {% endif %}{% endfor %}{% endblock keywords %}
+{% block title %}{{ article.title }} {% endblock title %}
 
 {% block content %}
-
-    <h1>{{ article.title }}</h1>
-
     {% with type='single' %}
     {% include "components/card_content.html" %}
     {% endwith %}
-
 {% endblock %}

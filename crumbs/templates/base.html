@@ -1,38 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ DEFAULT_LANG }}">
-    {% with type='base' %}
-    {% include "components/html_head.html" %}
-    {% endwith %}
 
-    <body class="not-home">
+    {% block head %}
+    {% endblock head %}
+
+    <body>
         <div class="container">
-
-            <!-- HEADER FOR EVERY PAGE -->
-            <div class="navigation">
-
-                {% with title_type='page-title' %}
-                {% include "components/title_text.html" %}
-                {% endwith %}
-
-                <!-- Loop through all pages -->
-                {% for title, link in MENUITEMS %}
-                    <!-- Do magic with http/https -->
-                    {% if 'http://' in link or 'https://' in link %}
-                        <a class="nav-item" href="{{ link }}">{{ title }} </a>
-                    {% else %}
-                        <a class="nav-item" href="{{ SITEURL }}{{ link }}">{{ title }} </a>
-                    {% endif %}
-                {% endfor %}
-            </div>
-
-            {% include "components/super_gay.html" %}
-
-            <!-- END HEADER FOR EVERY PAGE -->
-
-            {% block content %}
+            {% block wrapped %}
             {% endblock %}
-
         </div>
-
     </body>
 </html>
