@@ -1,17 +1,5 @@
-/* This is the block container */
-.gay {
-    width: 0 auto;
-    height: 12px;
-    margin: 0 auto;
-    display: flex;
-    align-self: center;
-    padding-bottom: 25px;
-}
 
 /* This is a block */
 .colour {
-    display: flex;
-    flex-direction: column;
     height: 12px;
-    width: 78px;
 }

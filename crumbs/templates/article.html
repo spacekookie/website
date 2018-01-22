@@ -6,24 +6,20 @@
 
 {% block content %}
 
-<dl class="dl-horizontal">
+<h1>{{ article.title }}</h1>
 
-    <h1>{{ article.title }}</h1>
-    <br />
+<div class="card">
 
-    <div class="card">
-
+    <div class="card-header">
         {% set in_article = true %}
         {% include "article_header.html" %}
-        <!-- <h1>{{ article.title }}</h1>
-
-        <div class="pull-right">
-            <p class="timer">This article takes {{article.read_time_string}} to read.</p>
-        </div> -->
-        {{ article.content }}
     </div>
-</dl>
- 
+
+    <div class="card-content">
+            {{ article.content }}
+    </div>
+</div>
+
     <!-- <div class="col-lg-9 content">
         {{ article.content }}
 

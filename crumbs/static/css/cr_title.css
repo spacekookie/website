@@ -4,19 +4,24 @@ This file contains all definitions are are EXCLUSIVE for the title
 
 */
 
-div.navigation {
+/* div.navigation {
     padding-top: 12px;
     padding-bottom: 75px;
     padding-right: 32px;
     height: 75px;
     line-height: 75px;
-  }
+  } */
   
 
-.title {
+.title h1 {
     padding-top: 20px;
     padding-bottom: 50px;
-    font-size: 58px;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.navigation {
+    border-bottom: 1px solid white;
 }
 
 /* For the title page we want other paragraph styles */
@@ -30,31 +35,15 @@ p {
   }
 
 
-/* This is the block container */
-.gay {
-    width: 0 auto;
-    height: 50px;
-    margin: 0 auto;
-    display: flex;
-    padding-bottom: 150px;
-}
-
-/* This is a block */
-.colour {
-    display: flex;
-    flex-direction: column;
-    height: 75px;
-    width: 75px;
-}
-
+/* 
 .span {
     display: inline-block;
-}
+} */
 
-a, a:visited, a:hover, a:active, a:link{
+/* a:hover, a:active, a:link{
     color: #BEBEBE;
     text-decoration: none;
-}
+} */
 
 #twitter:hover {
     color: #6997c8;
