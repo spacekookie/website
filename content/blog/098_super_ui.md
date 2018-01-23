@@ -3,19 +3,15 @@ Category: Blog
 Tags: /dev/diary, libgdx, game dev, java
 Date: 2017-01-24 00:14
 
-**Let me tell you a factual statement**
+**Let me tell you a factual statement**: UI programming is terrible
 
-*UI programming is terrible*
-
-**Let me tell you an even more factual statement**
-
-*UI programming in LibGDX is even more terrible*
+**Let me tell you an even more factual statement**: UI programming in LibGDX is even more terrible
 
 I am a big fan of LibGDX. It's a really nifty library/ framework to get started with game development if you're more comfortable inside a code editor than a full blown game engine that is more targeted towards designers and artists. And I put my money where my mouth is: I have a series about LibGDX development for beginners on this blog and work almost exclusively with it when it comes to my own projects.
 
 Yet, there is something that bothers me and there didn't seem to be a great solution to fix it. UI code structure. In this post I want to highlight a utility I have written for LibGDX which is very easily embeddable into your existing projects which will you help structure UI code more efficiently.
 
-## The root problem
+# The root problem
 
 The reason I dislike UI programming with LibGDX is that it usually results in very long code files or passing dozens of parameters into sub-classes that are needed to update the UI for button presses, etc.
 
@@ -28,6 +24,8 @@ Let's look at an example problem that I wanted to solve.
 Looking at this structure we have three main components that interact with each other. We have a class that handles UI logic (setting up actors in tables, adding listeners, etc), we have a window state which in the particular case which made me write an alternative was a "Lobby Handle" which coordinated what players were going to enter a match, the map, game mode and if everybody in the multiplayer match was set to "Ready". Lastly we have the actual network signal handlers that listen to TCP/ UDP packets and execute code to write/ read from the window state as well as update UI elements.
 
 Implementing this structure with Scene2D and LibGDX will result in a lot of very ugly code. Because the network signals need to know everything about the UI (how it is structured, etc). And our window state can be written to by two different sources which means that we need to mutex it to avoid race conditions.
+
+# Maybe a solution
 
 So, what was I trying to solve? First a bit of limitation of scope. Because a lot of UI problems have been solved over and over again and usually at the cost of runtime performance or with a *lot* of extra code.
 

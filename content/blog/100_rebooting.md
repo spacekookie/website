@@ -1,7 +1,7 @@
 Title: Rebuilding my Website (again)
 Category: Blog
-Tags: /dev/diary
-Date: 2018-01-25
+Tags: /dev/diary, meta
+Date: 2018-01-3 01:31
 
 It's winter, rebuilding my website is a tradition...right? **Happy new year everybody.**
 

@@ -1,7 +1,7 @@
 Title: Jolly Christmas Decoration
-Category: OldBlog
+Category: Blog
 Date: 2015-09-17 15:30
-Tags: Dev Diary, Hardware
+Tags: /dev/diary, hardware
 
 Christmas is getting closer (not really but let's just roll with it) and I wanted to learn [KiCad](www.kicad-pcb.com) a software that let's you create circuits and design PCB for manufacture.
 
@@ -9,7 +9,7 @@ I found a tutorial series online by a guy named [Ashley Mills](https://www.youtu
 
 The series focused on getting to know KiCad and all it's features. And while I did that in the first revision of my board, I've diverged from it since. I can however recommend his videos on KiCad to anyone who wants to dive into PCB design, has no clue about the software and could use a little chuckle while also learning some really awesome software (youtube channel link above).
 
-### My Christmas Bauble
+# My Christmas Bauble
 
 So this is what I've got.
 
@@ -23,11 +23,11 @@ It took me two more revisions to get the board to a state where it's not too com
 
 It uses a round cell battery on the back of the board to hide it away and has a hole at the top to actually hang off a christmas tree. Theoretically the battery should lasta few days, so maybe have a few spare ones around in the christmas season.
 
-### What now?
+# What now?
 
 I haven't manufactured this yet. I am still thinking about refining the design slightly. I have the **entire** back to work with and add things. I was thinking about adding a simple bluetooth chip so that patterns could be pushed to the device via an android app. But that's the future. For now it should actually be functional and maybe I'll order some `Revision 3` boards just to see that everything worked.
 
 Here is a dynamic render from KiCad as well.
 ![Kookies Christmas Bauble Rendered](/images/christmas_bauble_render.png "Kookies Christmas Bauble Rendered")
 
-And be sure to checkout my Github repo for the project if you want the KiCad files. Either to play around with them or to manufacture some baubles yourself. If you do, I'd be interested in pictures of the decorations on your christmas trees so I can add them to this article as a slideshow :)
+And be sure to checkout my Github repo for the project if you want the KiCad files. Either to play around with them or to manufacture some baubles yourself. If you do, I'd be interested in pictures of the decorations on your christmas trees so I can add them to this article as a slideshow 😊

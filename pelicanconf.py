@@ -23,7 +23,9 @@ READ_TIME = 180
 PATH = 'content'
 STATIC_PATHS = ['images', 'downloads', 'kookie.txt']
 SITE_LOGO = 'favicon.ico'
+
 SUMMARY_MAX_LENGTH = 140
+# SUMMARY_END_MARKER = "( ... )"
 
 #############################################
 #############################################

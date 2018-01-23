@@ -216,9 +216,38 @@ code { padding: 3px 3px; }
   text-indent: 25px;
 }
 
+.card-content img {
+  width: calc(100% - 50px);
+  max-width: 1200px;
+}
+
+.card-content img.original {
+  max-width: 100%;
+  width: auto;
+}
+
 .article-meta p {
   font-style: italic;
   font-size: 16px;
   line-height: 16px;
   text-align: right;
+}
+
+.card-content blockquote {
+  background: #EFEFEF;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+.card-content blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+.card-content blockquote p {
+  display: inline;
 }

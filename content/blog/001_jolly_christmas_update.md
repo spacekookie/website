@@ -1,7 +1,7 @@
 Title: [Update] Jolly Christmas Decoration
-Category: OldBlog
+Category: Blog
 Date: 2015-11-27 15:30
-Tags: Dev Diary, Hardware
+Tags: /dev/diary, hardware
 
 You might remember I played around with Kicad a few months ago and made this [tacky little thing](/hardware/jolly-christmas-decoration/). Just about 2 1/2 weeks ago I went onto [DirtyPCB](http://dirtypcbs.com/) to get them actually made. I wanted to have gone through the production process and get something built before I started doing more complicated projects.
 
@@ -19,20 +19,20 @@ Now, I have another smaller electronics project in the making where I am, again,
 
 [But realistically for the production quality I saw with these, I'd be happy to give them my money again for future projects. Especially at that price, just unbeatable.](https://www.youtube.com/watch?v=d36wUmJGzvA)
 
-:)
+😊
 
 Anyways, enough ramblings. Read you later.
 
-### Update...update
+# Update...update
 
 Right...so after tinkering with the bauble a bit I found out a few things. The most important one being that I made some mistakes. Some big ones :)
 
- - Pin 9 of the shift register was connected to both input A and input B of the XOR gate. Which meant that both inputs were always the same...which also meant that the output was always 0.
- - The 555-timer clock ran at several hundred kilohertz. I had to change the capacitor down to ~12µF and the resistors to ~4.7 ohms.
- - The coin-cell battery didn't have enough juice to run it. Two had to be put in parallel. Even then, two batteries would not be able to run for very long.
+- Pin 9 of the shift register was connected to both input A and input B of the XOR gate. Which meant that both inputs were always the same...which also meant that the output was always 0.
+- The 555-timer clock ran at several hundred kilohertz. I had to change the capacitor down to ~12µF and the resistors to ~4.7 ohms.
+- The coin-cell battery didn't have enough juice to run it. Two had to be put in parallel. Even then, two batteries would not be able to run for very long.
 
- To make the bauble work I bridget the xor gate completely, so just feeding back the shift register end to the beginning.
+To make the bauble work I bridget the xor gate completely, so just feeding back the shift register end to the beginning.
 
- In addition to those things some of the LED's sometimes didn't work. I'm not sure if that is due to broken shift registers, traces or LEDs. All in all I do consider it to have tought me quite a lot about electronics, going through the process of producing a PCB and debugging electronics once it arrived and inevidably goes wrong :)
+In addition to those things some of the LED's sometimes didn't work. I'm not sure if that is due to broken shift registers, traces or LEDs. All in all I do consider it to have tought me quite a lot about electronics, going through the process of producing a PCB and debugging electronics once it arrived and inevidably goes wrong :)
 
 I am currently in the process of redesigning the entire circuite from scratch. And making it easier to solder. I want to make it into a beginner soldering kit that people can both learn how to solder with and also have something to hang off their christmas tree in the jolly season. 

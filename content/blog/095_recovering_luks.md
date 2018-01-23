@@ -1,23 +1,23 @@
 Title: Recovering a destroyed LUKs container
-Category: OldBlog
+Category: Blog
 Date: 2015-11-19 11:41
-Tags: Dev Diary
+Tags: /dev/diary, data recovery, linux
 
-So...funny thing happened to me the other day. And by funny I mean not funny. Actually I mean quite the oposite of funny. I booted my computer after a normal night of sleep (after I had actually shut down my laptop after several weeks of activity) and...nothing.
+So...funny thing happened to me the other day. And by funny I mean not funny. Actually I mean quite the oposite of funny. I booted my laptop after shutting it shut down for the first time after several weeks of activity and...nothing.
 
 I stared at my plymouth boot screen while nothing prompted me to type in my passphrase to decrypt my harddrive and the first thought through my mind was:
 
-> Fuck...I don't have backup.
+> Fuck...I don't have a backup.
 
-### How to debug
+# How to debug
 
 Now...not to worry, after some time I was dropped into a recovery console where I could ask very simple questions like what kernel modules were present and what Systemd had been up to. And at first I thought the problem was clear: `Module failed to load: vboxdrv` and other messages populated my screen – all about VirtualBox kernel modules.
 
 So the problem was clear. I had fucked up something when installing a new kernel or VirtualBox or anything else. So I blacklisted the modules and moved on...just...that it didn't. The problem persisted. Thinking that I had fucked something up when dealing with the GRUB config or the GRUB recovery console I got my trusty Fedora 22 live-USB out and booted off that.
 
-### How not to panic
+# How not to panic
 
-To the realise that my 256GB SSD was only 500MB full (which was rightfully detected as an `ext4` formatted volume. The rest of my drive was marked as `unpartitioned space`. \jawdrop.
+Looking at the partitioning on the disk I realised that my 256GB SSD was only 500MB full (which was rightfully detected as an `ext4` formatted volume. The rest of my drive was marked as `unpartitioned space`. 😱
 
 Now...here is where things get and got interesting. But first let's have a look at my setup.
 
@@ -34,7 +34,7 @@ So as you can see my boot drive is outside the LUKS container and unencrypted wh
 
 Knowing this didn't help very much though and it took me a few hours to fix this.
 
-### Restoring the Partition Table
+# Restoring the Partition Table
 
 So the main problem was that my partition table was broken. I don't want to start speculating as to why this happened. Maybe my SSD just lost a few blocks, maybe it was bombarded by solar radiation or maybe (just maybe) I was obducted by aliens in the night, refused to give out my master passphrase in my sleep and because of frustration of not being able to get to my data they deleted some junks from my partition table just to spite me.
 

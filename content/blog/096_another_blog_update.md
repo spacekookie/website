@@ -1,6 +1,6 @@
 Title: Winter update
-Category: OldBlog
-Tags: Dev Diary, Meta
+Category: Blog
+Tags: /dev/diary, meta
 Date: 2016-12-2 10:43
 
 Howdy everybody!
@@ -13,15 +13,15 @@ And so, for the last few days I have tweaked the layout (and design - as some mi
 
 I was also considering to change theme but after not finding anything I liked I decided to hack the fuck out of my current one instead. You can check out all of my horrible changes [here](https://github.com/spacekookie/nest).
 
-I've also finally done some stuff that I've wanted to do for ages - such as pimping up the front page, adding a proper projects page and go through some of my old tutorial series, fix their formatting (yea right "perfect wordpress import...") and update them to newer API's of libraries. Some articles have just been dropped because I would have had to re-work their formatting and they were no longer relevant. Stuff will slowly be introduced again, with proper formatting :)
+I've also finally done some stuff that I've wanted to do for ages - such as pimping up the front page, adding a proper projects page and go through some of my old tutorial series, fix their formatting (yea right "perfect wordpress import...") and update them to newer API's of libraries. Some articles have just been dropped because I would have had to re-work their formatting and they were no longer relevant. Stuff will slowly be introduced again, with proper formatting 😊
 
 
-### Everything else
+## Everything else
 
 In the terms of literally everything except my blog: I'm looking forward to the **33C3**. I'll be joining with the c-base assembly. My first congress in almost a decade! Expect maybe an update from that. And maybe there might be some christmas hacking. It's always more fun to do silly RGB LED stuff if it ends up annoying people on the tree!
 
-Also, with the blog now in a bit better shape I will try to keep a closer journal of what I'm doing. But hey...no promises, right? ;)
+Also, with the blog now in a bit better shape I will try to keep a closer journal of what I'm doing. But hey...no promises, right? 😉
 
 I shall leave you with this piece of relaxing GIF.
 
-<img class="padded" src="http://i.imgur.com/KZquOZM.gif" align="center">
+<img class="original" src="http://i.imgur.com/KZquOZM.gif" />
