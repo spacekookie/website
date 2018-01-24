@@ -63,10 +63,6 @@ h1.normal {
   padding: 0 1rem;
 }
 
-/* .card h2, h3, h4 {
-  padding-left: 15px;
-} */
-
 .navigation {
   display: flex;
   flex-direction: row;
@@ -77,11 +73,6 @@ h1.normal {
   font-size: 22px;
   padding-top: 22px;
   padding-bottom: 32px;
-  /* 
-  padding-right: 32px;
-  height: 50px;
-  line-height: 50px; */
-
   padding-right: 32px;
 }
 
@@ -210,7 +201,7 @@ code { padding: 3px 3px; }
 .card-content p {
   font-size: 22px;
   font-weight: 300;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
   padding-left: 25px;
   padding-right: 25px;
   text-indent: 25px;
