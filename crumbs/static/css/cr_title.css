@@ -47,12 +47,16 @@ a, a:visited a:hover, a:active, a:link {
     color: #ef787b;
     animation: .45s jump infinite linear;
 }
+#flickr:hover {
+    color: #99cb9b;
+    animation: .45s jump infinite linear;
+}
 #keys:hover {
     color: #ca98c9;
     animation: .45s jump infinite linear;
 }
 #email:hover {
-    color: #99cb9b;
+    color: #6ccaca;
 }
 #legal:hover {
     color: #e7d853;
