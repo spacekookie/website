@@ -2,6 +2,7 @@ Title: The Kernel is dead! Long live the Kernel
 Category: Blog
 Tags: /dev/diary, linux, arch linux, pacman
 Date: 2018-02-08
+Status: Draft 
 
 
 So I run Arch Linux and mostly I love it (I'm weird, I know 😝). But there is one thing that's really been annoying me which happens after some `pacman -Syyu` runs: all of my old kernel modules become unavailable, forcing me to do a reboot. But recently I found some stuff online to prevent that from happening so let's document all of it here.
