@@ -32,7 +32,7 @@ It's been nearly a year since I worked on this project (or the 5th iteration of 
 
 I had started programming in Rust before, during a very stressful time in 2016. And I never managed to get into it much. This year was different though. The toolchain had matured and maybe I had also matured as a developer. And maybe I was in a better state of mind to learn new concepts. Whatever it was, I'm glad it happened.
 
-Rust is a systems programming language by Mozilla. It's a compiled and safe language which prevents segfaults and allows for *fearless concurrency* (as they put it), without sacrificing speed. In fact, it runs [almost as fast as regular old C code]().
+Rust is a systems programming language by Mozilla. It's a compiled and safe language which prevents segfaults and allows for *fearless concurrency* (as they put it), without sacrificing speed. In fact, it runs [almost as fast as regular old C code](http://benchmarksgame.alioth.debian.org/u64q/rust.html).
 
 Now though, that's only half the reason why Rust is amazing, and I will show in a moment how the first part of this story is in any way relevant.
 
