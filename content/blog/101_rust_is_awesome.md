@@ -1,7 +1,7 @@
 Title: Failure. Or: why Rust is probably the best programming language ever created
 Category: Blog
 Tags: /dev/diary, reflections, programming, rust
-Date: 2018-01-28
+Date: 2018-03-11
 
 
 *This post is two stories.* One is about accepting and recognising personal failure, reflecting and growing from it; the other is about an incredibly and seemingly endlessly powerful programming language, called *Rust*.
