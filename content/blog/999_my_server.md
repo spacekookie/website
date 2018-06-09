@@ -1,7 +1,7 @@
 Title: Making my server completely replacable
 Category: Blog
 Tags: /dev/diary, linux, ancible
-<!-- Date: 2018-02-08 -->
+Date: 2018-02-08
 Status: Draft 
 
 **This is mostly a draft so far, so maybe pad it a bit more 😉**

@@ -1,8 +1,8 @@
 Title: Why I still use Unity
 Category: Blog
 Tags: /dev/diary, linux
-<!-- Date: 2018-04-04 -->
-<!-- Status: Draft  -->
+Date: 2018-04-04
+Status: Draft 
 
 In early 2016, AMD announced a new graphics driver for Linux: `amdgpu`. I was incredibly curious what they had been doing and as such, I installed Ubuntu 16.04 on my workstaton/ gaming PC and bought an R9 380X graphics card to test the new driver (previously using an older NVidia card). Over the following months I played around with custom Kernel modules, tested driver flags and did *so many benchmarks...*
 

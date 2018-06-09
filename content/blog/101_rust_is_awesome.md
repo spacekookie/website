@@ -53,3 +53,5 @@ But secondly that sometimes failure looks different than what we might expect. I
 Rust is an amazing language for many things but it also has it's limits. There are countless people in the hacker culture who stick to their technologies because they feel familiar, dragging others into their little bubbles because they want to expand their influence, never considering if what they're advocating is sensible or scalable.
 
 This isn't just something we (as a culture) do with tools, it also happens on a social level. And in the end, shouldn't we all strife to learn new things, broaden our horizons and, last but not least, choose the right tool, for the right job?
+
+Sometimes a new technology can enable us to break out of our bubble and achieve something that we previously thought impossible.
