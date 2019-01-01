@@ -7,10 +7,11 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  color: #BEBEBE;
+  color: #EFEFEF;
   background-color: #222222;
   background-image: none;
-  line-height: 42px;
+  font-size: 16px;
+  line-height: 1.5;
   margin: 0;
   overflow-y: scroll;
 }
@@ -40,7 +41,7 @@ strong {
 
 h1, h2, h3, h4 {
   font-family: 'Inconsolata', monospace;
-  padding-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 h1 { font-size: 36px; }
@@ -59,7 +60,7 @@ h1.normal {
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -200,9 +201,9 @@ code { padding: 3px 3px; }
 }
 
 .card-content p {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 400;
-  padding-bottom: 15px;
+  margin: 18px 0;
   padding-left: 25px;
   padding-right: 25px;
 }
