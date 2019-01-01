@@ -10,9 +10,7 @@ body {
   color: #BEBEBE;
   background-color: #222222;
   background-image: none;
-  line-height: 32px;
-  -webkit-font-smoothing:antialiased;
-  text-rendering: optimizeLegibility;
+  line-height: 42px;
   margin: 0;
   overflow-y: scroll;
 }
@@ -45,6 +43,9 @@ h1, h2, h3, h4 {
   padding-bottom: 15px;
 }
 
+h1 { font-size: 36px; }
+h2 { font-size: 28px; }
+
 h1.normal {
   padding-top: 50px;
 }
@@ -58,7 +59,7 @@ h1.normal {
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -102,7 +103,7 @@ h1.normal {
 
 /* This is a block */
 .colour {
-  max-height: calc(1100px / 15);
+  max-height: calc(1000px / 15);
   height: 12px;
   flex-grow: 1;
 }
@@ -179,7 +180,7 @@ code { padding: 3px 3px; }
   display: flex;
   flex-direction: column;
   padding: 50px;
-  background-color: #CECECE;
+  background-color: #E2E2E2;
   color: #222222;
   margin-bottom: 25px;
 }
@@ -199,12 +200,11 @@ code { padding: 3px 3px; }
 }
 
 .card-content p {
-  font-size: 22px;
-  font-weight: 300;
-  padding-bottom: 5px;
+  font-size: 24px;
+  font-weight: 400;
+  padding-bottom: 15px;
   padding-left: 25px;
   padding-right: 25px;
-  text-indent: 25px;
 }
 
 .card-content img {
