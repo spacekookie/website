@@ -1,6 +1,7 @@
 Title: `home-manager`. Or: how not to yakhave
 Category: Blog
 Tags: /dev/diary, reflections, programming, nix
+Status: Draft
 Date: 2018-12-07
 
 Don't expect the bait-and-switch titles to remain forever.
@@ -27,7 +28,7 @@ As in, I didn't neccessarily want the same configs on all of them.
 Because this is where it becomes complicated.
 
 I had been thinking about writing a tool to do the things I wanted to do before.
-Thinking back to my last post, about limiting scope, I never started it.
+Thinking back to my post about failure and limiting scope, I never started it.
 While making a lot of drawing board attempts, I never wrote a single line of code
 because I could tell that it would lead me down a dark path.
 
@@ -37,15 +38,15 @@ I felt like I was doing the right thing by not even starting.
 
 So nothing happened for a while. Until recently.
 
-## Enter: `nix`
+## Enter: nix
 
 In case you don't know it, `nix` is a functional programming language
 and pure package-manager for unix systems.
 Yes, that includes MacOS and whatnot.
-There is a linux distribution built around it called [`NixOS`] which utilises
+There is a linux distribution built around it called [NixOS] which utilises
 `nix` as a package manager and configuration language heavily.
 
-[`NixOS`]: https://nixos.org/nixos
+[NixOS]: https://nixos.org/nixos
 
 So what does pure-packaging really even mean?
 Have you ever had the situation where you upgraded your system
@@ -68,10 +69,14 @@ Well okay so why am I fangirling about `nix` here?
 Apart from the fact that I've been dabbling with NixOS quite a bit recently,
 wanting to replace all my [Arch] installs with NixOS...
 
-## Enter: `home-manager`
+[Arch]: https://archlinux.org
+
+## Enter: home-manager
 
 You already saw it in the title of this post, but I wanted to re-introduce it.
-What exactly is `home-manager`? It's `nix`, but for your userspace!
+What exactly is `home-manager`? 
+
+It's `nix`, but for your userspace!
 Not only does it not require root permissions,
 meaning you can install packages just for you locally
 (well okay, `nix` can do this as well but...besides the point).
@@ -109,4 +114,4 @@ and `home-manager` in particular.
 
 I'd much rather help write some re-usable modules,
 that other people can also take advantage of,
-than reinventing the wheel from scratch again.
+than reinventing the wheel from scratch. Again.
