@@ -11,22 +11,10 @@
         <link href="{{ SITEURL }}/theme/css/crumbs.css" rel="stylesheet">
     {% endif %}
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500;subset=cyrillic,latin-ext" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600;subset=latin-ext" rel="stylesheet"> -->
+
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
     <link rel="alternate" type="application/rss+xml" href="{{ SITEURL }}/rss.xml" title="{{ SITENAME }} — Latest Posts" />
-
-    {# Use my own Matomo for some visitor tracking #}
-    <script type="text/javascript">
-        var _paq = _paq || [];
-        _paq.push(['trackPageView']);
-        _paq.push(['enableLinkTracking']);
-        (function() {
-            var u="//stats.spacekookie.de/";
-            _paq.push(['setTrackerUrl', u+'piwik.php']);
-            _paq.push(['setSiteId', '1']);
-            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-        })();
-    </script>
 </head>
