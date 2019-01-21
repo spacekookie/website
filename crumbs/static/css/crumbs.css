@@ -26,13 +26,19 @@ a:hover {
   text-decoration: none;
 }
 
+ul {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+ol {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 li {
-  font-size: 22px;
-  font-weight: 300;
-  padding-bottom: 15px;
-  padding-left: 35px;
-  padding-right: 50px;
-  text-indent: 25px;
+  font-size: 19px;
+  margin-left: 15px;
+  text-indent: 5px;
 }
 
 strong {
