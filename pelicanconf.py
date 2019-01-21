@@ -39,8 +39,8 @@ DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = False
 
 MENUITEMS = (
-	('WHOAMI', '/'),
-	('Blog', '/blog/'),
+  ('WHOAMI', '/'),
+  ('Blog', '/blog/'),
 )
 
 ARTICLE_URL = '{category}/{slug}'
@@ -72,8 +72,11 @@ AUTHOR_FEED_ATOM = None
 FEED_RSS = 'rss.xml'
 CATEGORY_FEED_RSS = '%s/rss.xml'
 
+JINJA_ENVIRONMENT = {
+  'extensions': ['webassets.ext.jinja2.AssetsExtension', 'jinja2.ext.with_']
+}
 
-JINJA_EXTENSIONS = ['webassets.ext.jinja2.AssetsExtension', 'jinja2.ext.with_']
+
 # Blogroll
 # LINKS = (('Lonely Robot', 'http://www.lonelyrobot.io'), )
 
