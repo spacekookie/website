@@ -192,6 +192,12 @@ code { padding: 3px 3px; }
   margin-bottom: 25px;
 }
 
+@media (max-width: 850px) {
+    .card {
+        padding: 20px;
+    }
+}
+
 .card-header {
   border-bottom: 1px solid #222222;
   margin-bottom: 15px;
