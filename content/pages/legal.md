@@ -5,6 +5,7 @@ Template: page
 
 - E-Mail: [legal@spacekookie.de](mailto:legal@spacekookie.de)
 - Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
+- Anschrift: Abteilung für Redundanz Abteilung c/o Katharina Fey, Margaretenstraße 30, 10317 Berlin
 
 ### Haftung für Inhalte
 
