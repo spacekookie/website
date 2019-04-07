@@ -1,8 +1,7 @@
 Title: `home-manager`. Or: how not to yakhave
 Category: Blog
 Tags: /dev/diary, reflections, programming, nix
-Status: Draft
-Date: 2018-12-07
+Date: 2019-03-21
 
 Don't expect the bait-and-switch titles to remain forever.
 I just thought it was fitting for this one too 😉.
@@ -20,8 +19,7 @@ or nobody had come at the problem from the same angle as me before.
 This is not to bash on other projects or solutions.
 I know many people who are very happy with
 either keeping their dotfiles in a large git repo, symlinking manually,
-making `~` a git repo or using various tools that automate the symlink
-process.
+making `~` a git repo or using various tools that automate the symlink process.
 
 The problem I had was that not all my computers were the same.
 As in, I didn't neccessarily want the same configs on all of them.
@@ -42,7 +40,7 @@ So nothing happened for a while. Until recently.
 
 In case you don't know it, `nix` is a functional programming language
 and pure package-manager for unix systems.
-Yes, that includes MacOS and whatnot.
+Yes, that includes MacOS.
 There is a linux distribution built around it called [NixOS] which utilises
 `nix` as a package manager and configuration language heavily.
 
@@ -67,7 +65,7 @@ Yes, that's right: no more "DLL hell"!
 
 Well okay so why am I fangirling about `nix` here?
 Apart from the fact that I've been dabbling with NixOS quite a bit recently,
-wanting to replace all my [Arch] installs with NixOS...
+to the point where I have basically replaced all my [Arch] installs with NixOS now...
 
 [Arch]: https://archlinux.org
 
