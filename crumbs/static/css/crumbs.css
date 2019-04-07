@@ -1,6 +1,6 @@
 /**************************************
 
-   BASIC DEFINITIONS 
+   BASIC DEFINITIONS
 
 **************************************/
 
@@ -85,9 +85,9 @@ h1.normal {
 }
 
 .navigation a {
-  
+
   color:#FFF;
-  
+
   text-decoration: none;
   padding-left: 48px;
   text-transform: lowercase;
@@ -127,6 +127,14 @@ pre, code {
   font-weight: 700;
 }
 
+pre {
+  white-space: pre-wrap;       /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
 code {
   background: #bdbab1;
   color: #4b505a;
@@ -144,7 +152,7 @@ code { padding: 3px 3px; }
 */
 
 .cursor {
-  animation: flash 0.75s infinite alternate;  
+  animation: flash 0.75s infinite alternate;
 }
 
 @keyframes flash {

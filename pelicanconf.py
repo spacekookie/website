@@ -71,6 +71,7 @@ AUTHOR_FEED_ATOM = None
 
 FEED_RSS = 'rss.xml'
 CATEGORY_FEED_RSS = '%s/rss.xml'
+RSS_FEED_SUMMARY_ONLY = False
 
 JINJA_ENVIRONMENT = {
   'extensions': ['webassets.ext.jinja2.AssetsExtension', 'jinja2.ext.with_']
