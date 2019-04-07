@@ -63,15 +63,12 @@ def calculate_wpm(text, data, language):
     for word in text.split(' '):
         if '<skip>' in word:
             skipping = True
-            print("Starting to skip")
 
         if not skipping:
             new_text += word + ' '
-            print("Word: ", word)
 
         if '</skip>' in word:
             skipping = False
-            print("Ending skipping")
 
     read_time = len(new_text.split(' ')) / wpm
 
