@@ -2,13 +2,22 @@ Title: Making my server completely replacable
 Category: Blog
 Tags: /dev/diary, linux, ancible
 Date: 2018-02-08
-Status: Draft 
+Status: Draft
 
 **This is mostly a draft so far, so maybe pad it a bit more 😉**
 
-I have a virtual server running Arch Linux hosted somewhere in Germany which I want to use to host some personal services and toolchains. Currently this is done via LXD which I was a fan of for quite a while. I am using Zfs as a backend for these containers which means that I can do quick snapshots and deduplication between the base systems. But...I'm not really sure this is a nice way to do it anymore. I would like to run services in Containers just because it means that the host can be setup in a more clean way.
+I have a virtual server running Arch Linux hosted somewhere in Germany
+which I want to use to host some personal services and toolchains.
+Currently this is done via LXD which I was a fan of for quite a while.
+I am using Zfs as a backend for these containers which means
+that I can do quick snapshots and deduplication between the base systems.
+But...I'm not really sure this is a nice way to do it anymore.
+I would like to run services in Containers just because
+it means that the host can be setup in a more clean way.
 
-But right now there is a lot of manual configuration required because I'm struggling with the new way that LXD handles network taps. And while I'm gonna have to touch my configs anyways, I thought: why not go a bit further?
+But right now there is a lot of manual configuration required because
+I'm struggling with the new way that LXD handles network taps.
+And while I'm gonna have to touch my configs anyways, I thought: why not go a bit further?
 
 # Existing setup
 
@@ -52,8 +61,9 @@ Ultimately I want to run a few core services:
  - Turtl (a cool evernote clone)
  - My own Quassel core (instead of using my ex-girlfriend's one 😉)
 
-And maybe some more that I haven't setup yet. Including a VPN between my server, my NAS and all of my other devices.
-
+And maybe some more that I haven't setup yet.
+Including a VPN between my server,
+my NAS and all of my other devices.
 
 # Future setup idea
 
@@ -62,4 +72,4 @@ I have two servers running pretty much all the time:
  - My cloud server
  - My NAS at home
 
-What I want to get over is having to manually configure containers and 
+What I want to get over is having to manually configure containers and
