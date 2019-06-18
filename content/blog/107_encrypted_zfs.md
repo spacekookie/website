@@ -7,7 +7,7 @@ I recently got a new Thinkpad. Well...new is a stretch.
 It's an X230, featuring an i5 and 16GB of RAM.
 
 One of the first things I did with this laptopwas to
-[flash coreboot on it](https://octodon.social/users/spacekookie/statuses/10215070602456466)!
+[flash coreboot on it](https://octodon.social/@spacekookie/102150706024564666).
 And generally I felt like setting up a laptop in the way I would have always wanted.
 
 And that's where this post begins...
