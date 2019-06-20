@@ -21,7 +21,8 @@ DEBUG = True
 READ_TIME = 180
 
 PATH = 'content'
-STATIC_PATHS = ['images', 'downloads', 'kookie.txt']
+STATIC_PATHS = ['images', 'downloads',
+                'keys.txt', '555F2E4B6F87F91A4110.txt' ]
 SITE_LOGO = 'favicon.ico'
 
 SUMMARY_MAX_LENGTH = 140

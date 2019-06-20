@@ -1,15 +1,3 @@
-Title: Keys
-Template: page
-
-I cycled my encryption key on **2019-06-20**.
-If you still have a key from before that date,
-please update it from a keyserver (or from [here])!
-
-[here]:/555F2E4B6F87F91A4110.txt
-
-Following is a signed key statement:
-
-<pre class="keys">
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA256
 
@@ -224,4 +212,3 @@ t5wilY7ChEbIi7bx1Q0cqL27fORFiRPJTKj2tw3bSytOruEH3w3rYraGjb+gOVeW
 E2VDdIRxafgjNq7N+oSt+fG2fgkKnIsRPEDzSuxoeKIxv57xc+U=
 =X9Tu
 -----END PGP SIGNATURE-----
-</pre>

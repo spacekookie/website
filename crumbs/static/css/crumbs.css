@@ -142,6 +142,20 @@ code {
 
 code { padding: 3px 3px; }
 
+.keys {
+  color: #BEBEBE;
+  background: #222222;
+
+  padding: 15px;
+  border-radius: 0px;
+  margin: 34px 0;
+  
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Inconsolata, monospace;
+  font-weight: 400;
+}
+
 
 /*
 
