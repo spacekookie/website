@@ -2,6 +2,7 @@ Title: Bikeshedding disk partitioning
 Category: Blog
 Tags: linux, zfs, nixos
 Date: 2019-06-14
+Status: Draft
 
 I recently got a new Thinkpad. Well...new is a stretch.
 It's an X230, featuring an i5 and 16GB of RAM.
