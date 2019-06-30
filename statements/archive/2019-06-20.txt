@@ -18,30 +18,17 @@ sub   rsa4096 2019-06-19 [A] [expires: 2020-06-18]
 22A7F057 C44A4C0A 45AF7D72 3FD5D4A4 E3B22F59 7B1A8DCD 1E229F48 C696A573
 248f5a4b e938c0dd e186c22d ea5748cb 846add47 168368ea 928ed9f0 d036623a
  ❤ (uwu) ~> cat message
-AN IMPORTANT NOTE:
-
-On 2019-06-29 this notice was published:
-https://gist.github.com/rjhansen/67ab921ffb4084c865b3618d6955275f. It
-outlines a vulnerability to the SKS keyserver network that makes it
-dangerous to use (read the notice!)
-
-Considering this, I will stop updating my keys on the SKS network and
-instead move to keys.openpgp.org. I would strongly recommend you no
-longer try to fetch my (or any other) keys from the SKS network.
-
-- ---
-
 This statement is available
 
-As HTML: https://spacekookie.de/keys
+As HTML: https://spacekookie.de/keys/
 Plain: https://spacekookie.de/keys.txt
 Plain copy of the signing key: https://spacekookie.de/555F2E4B6F87F91A4110.txt
 
 This file should be signed shortly after:
 
  ❤ (uwu) ~> date
-Sun 30 Jun 14:40:31 BST 2019
- ❤ (uwu) gpg -a --export 555F2E4B6F87F91A4110669E90734A9E619C8A6C
+Thu 20 Jun 22:22:46 CEST 2019
+ ❤ (uwu) ~> gpg -a --export 555F2E4B6F87F91A4110669E90734A9E619C8A6C
 - -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQINBFsOuoQBEADXJ7bgMzIwmlvm8cJJqwN5yogK+mFA7k29uyqbcIuWLqx5sVFp
@@ -211,17 +198,17 @@ ifAWqL5txQ2D9t7hr0YjRg2YVmPXKg==
 - -----END PGP PUBLIC KEY BLOCK-----
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEU1yozzD8YhxLtnIc+XKu6iiH1UcFAl0Yu+IACgkQ+XKu6iiH
-1UcToQ//SZ2WgQl5L9P0LgrwWlXijSYvh/zloPGXR851dqGAAvcODcBYBuBihFAe
-2eSQk8FemchstWudeGzxtO1eUlA83QW6IM47m2gwtHv4tgDf/LexKtNQJD4R7tA1
-yuem+HTcebYpNpRC7GNUUf8tHZ3M4IMKFWBgZqoRW2iLUPMOOM8EGFEYa/mIt6WB
-VTxxzZAXm6VxBBmZ/M5jyoHaCqXmJ6EG6kacJR2fDd3CRxy9jUmjIjK2BYMZmdQo
-q87nTxrFNbC8M20Z87sxqbXpGtO1XSAnKIqmrw9gFeWEa4bt0TO+ikew/Ruhw+R7
-EWBayyfcX2d1p3aGXvmXUTb7CELbyVuOP1t3GcnM9fatUm4kJfS2NSh7ZMg7gMiM
-7fjmOxj5oMV8RYsrLXKibC2eaRuZaihKsCjCFSYvKds7zEQ4VRhD9Hkg3cvXAYgv
-LOaVz+k4d1tcBmAuiFehcKSqMbBNIHcGNcn9HSEwccZKkpMSxxVH6AF6TqpkjVSq
-sM5tsFSwANyPHzVMgRB8z9TtyB/o+2EtZb0Frp2gF34nzB5/Bq22TJYfNFWRYGDq
-ZJX0D0GKo2OR41pvVQiZPLjtNwT/ADlh4ppKjmDrjbkU7ZummQO+SjzV+L0sR9wE
-3FNH8W6KhmTmKReYFBdVtpmSxZ+/g5pTmBUI09MCb8O3U/JKFEY=
-=Tgpi
+iQIzBAEBCAAdFiEEVV8uS2+H+RpBEGaekHNKnmGcimwFAl0L6xwACgkQkHNKnmGc
+imyzXQ/+KbJV9jguBewJYfh2LsPNBGnEUmfiPIGdrzin5QNyQnym/SkcM8jfsNxn
+rGc106lNR58Bvn5chJ3hIkh8I4INlJCG4lujBLseHApiCTeDYYXLrbJi98hTT64Q
+fSG67Bkr/zvZ3DJ5tCGGmGcqwsOmGEcIF4Y8aX9ZvPvJabyPHv8TDrIFeYMz86eR
+nnQxh9F0qrLcJ1wgJsKdJ1wErMf35CTbNCL9CIq4HGInrKhH+ZLC8loRMQz6QinJ
+qD9TV0eIrFug9ArsF9aL3JeEIgw6+NtBzuIMsfN4ayFXNQ3VQeKuHemgMn2Xd5pI
+92+79cK6LOpHBRNvCQn4nDUvAZUqXg3dPgaFpGr2uCwtYeAPN2C4QbHdfdj9dQNC
+69jW1hBLVN4Lwtf95qZf71Rh/0ydfm9GGohvvz0S7AmlLIuyCG5qy228Rc2jFe4z
+cFPVA0dbfE6/U6xw/Ctzam6lEkhjEexCD5uFWT7RV9gBYr5rly9FZxjNLTtKhvgZ
+t5wilY7ChEbIi7bx1Q0cqL27fORFiRPJTKj2tw3bSytOruEH3w3rYraGjb+gOVeW
+7Auv0PE6+0nFV0Xzd66i4zOeGXs0ZTMbkR064JODcYRfLKgiaxgcokviIumnjcX7
+E2VDdIRxafgjNq7N+oSt+fG2fgkKnIsRPEDzSuxoeKIxv57xc+U=
+=X9Tu
 -----END PGP SIGNATURE-----

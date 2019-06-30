@@ -1,0 +1,21 @@
+AN IMPORTANT NOTE:
+
+On 2019-06-29 this notice was published:
+https://gist.github.com/rjhansen/67ab921ffb4084c865b3618d6955275f. It
+outlines a vulnerability to the SKS keyserver network that makes it
+dangerous to use (read the notice!)
+
+Considering this, I will stop updating my keys on the SKS network and
+instead move to keys.openpgp.org. I would strongly recommend you no
+longer try to fetch my (or any other) keys from the SKS network.
+
+---
+
+This statement is available
+
+- As HTML: https://spacekookie.de/keys
+- Plain: https://spacekookie.de/keys.txt
+- Plain copy of the signing key: https://spacekookie.de/555F2E4B6F87F91A4110.txt
+
+This file should be signed shortly after:
+
