@@ -21,7 +21,7 @@ DEBUG = True
 READ_TIME = 180
 
 PATH = 'content'
-STATIC_PATHS = ['images', 'downloads',
+STATIC_PATHS = ['images', 'downloads', '.well-known',
                 'keys.txt', '555F2E4B6F87F91A4110.txt' ]
 SITE_LOGO = 'favicon.ico'
 
