@@ -56,6 +56,9 @@ You can use [this][cryptii] convenient encoding website.
 
 [cryptii]: https://cryptii.com/pipes/z-base-32
 
+Export the **binary** version of your pubkey (so without `-a`)
+and place it in the `hu` folder, under the name that you just computed.
+
 The resulting folder structure should look something like this:
 
 ```
