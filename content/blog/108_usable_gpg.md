@@ -47,12 +47,19 @@ You need to create a `.well-known/openpgpkey` directory on your server.
 In this directory, place a `policy` file.
 This can be zero-length, but is used to check for WKD capability.
 Next, create a `hu` folder inside it
-(no idea what this stands for...)
+(<strike>no idea what this stands for...</strike>
+— as pointed out by an attentive reader, it stands for [hashed-userid])
+
+[hashed-userid]: https://www.gnupg.org/blog/20160830-web-key-service.html
 
 Next, take the prefix of your e-mail address
 (i.e. in `kookie@spacekookie.de`, this would be `kookie`),
 hash it with SHA-1 and then encode the output with z-base-32.
 You can use [this][cryptii] convenient encoding website.
+
+**Edit:** Also pointed out by a reader, you can actually use 
+`gpg --with-wkd -l <email>` to display your hashed User ID
+instead of using an external resource for this.
 
 [cryptii]: https://cryptii.com/pipes/z-base-32
 
