@@ -68,7 +68,7 @@ the disk with random data. After this is done, you might want to
 actually wipe the first bunch of bytes.
 
 ```console
-$cryptsetup luksClose sda_crypto
+$ cryptsetup luksClose sda_crypto
 $ dd if=/dev/urandom of=/dev/sda bs=1M count=8
 ```
 
