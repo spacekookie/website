@@ -5,8 +5,7 @@ Tags: /dev/diary, NixOS, Virtualisation
 
 With the release of NixOS 19.09 any second now, I thought I wanted to
 blog about something that I've been working on, that [recently][0]
-made it into `master`, and thus the new stable channel. So I thought,
-why not blog about it a bunch.
+made it into `master`, and thus the new stable channel.
 
 [0]: https://github.com/NixOS/nixpkgs/pull/56411
 
