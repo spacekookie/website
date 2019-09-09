@@ -2,6 +2,7 @@ Title: No, I won't work at Google
 Category: Blog
 Tags: ethics
 Date: 2019-07-28
+Status: Draft
 
 Once in a while (about every 6-9 months or so), I get an e-mail like this in my inbox:
 

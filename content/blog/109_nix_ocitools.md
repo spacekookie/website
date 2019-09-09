@@ -1,23 +1,23 @@
-Title: `ociTools` in NixOS
+Title: ociTools in NixOS
 Category: Blog
-Date: 2019-09-09 10:00
-Tags: /dev/diary, NixOS, Containers
+Date: 2019-09-09 18:00
+Tags: /dev/diary, NixOS, Virtualisation
 
-With the release of NixOS 19.09, I thought I wanted to blog about
-something that I've been working on, that [recently][0] made it into
-`master`, and thus this new stable channel. So I thought, why not blog
-about it a bunch.
+With the release of NixOS 19.09 any second now, I thought I wanted to
+blog about something that I've been working on, that [recently][0]
+made it into `master`, and thus the new stable channel. So I thought,
+why not blog about it a bunch.
 
 [0]: https://github.com/NixOS/nixpkgs/pull/56411
 
 ## What are OCI tools?
 
-[Open Container Initiative][1] (or OCI) is a spec that standardised what
-format containers should use. It is implemented by a bunch of runners,
-such as `runc` (the Docker/ standard Kubernetes backend) and `railcar`
-(more to that later) and outlines in exactly what format a containers
-metadata and filesystem are to be stored, so to achieve the largest
-possible reusability.
+[Open Container Initiative][1] (or OCI) produced a spec that
+standardised what format containers should use. It is implemented by a
+bunch of runners, such as `runc` (the Docker/ standard Kubernetes
+backend) and `railcar` (more to that later) and outlines in exactly
+what format a containers metadata and filesystem are to be stored, so
+to achieve the largest possible reusability.
 
 [1]: https://www.opencontainers.org/
 
@@ -29,17 +29,16 @@ specification.
 [3]: https://github.com/opencontainers/runtime-spec
 [4]: https://blogs.oracle.com/developers/building-a-container-runtime-in-rust
 
-## What are `ociTools`?
+## What are ociTools?
 
 So now the question is, what does that have to do with
-NixOS/`nixpkgs`. The answer is simple: I wanted to be able to
+NixOS/nixpkgs. The answer is simple: I wanted to be able to
 containerise single applications on my server, without requiring a
 container daemon (such as docker) or relying on externally built
 "Docker containers" from a registry.
 
-So, `ociTools.buildContainer` was recently merged into `nixpkgs`
-`master`, allowing you to do exactly that. It's usage is farely
-straight forward:
+So, `ociTools.buildContainer` was recently merged into `nixpkgs/master`, allowing you to do exactly that. It's usage is farely
+straight forward
 
 ```nix
 with pkgs; ociTools.buildContainer {
@@ -54,7 +53,9 @@ with pkgs; ociTools.buildContainer {
 The `args` parameter refers to a list of paths and arguments that are
 handed to a container runner to run as init. In this case it's
 creating a shell script with some commands in it, then getting the
-output derivation path.
+output derivation path. Alternatively, if you only want to run a
+single application, you can pass it `<package>.outPath` directly
+instead.
 
 There's other options available, such as the `os`, `arch` and
 `readonly` flags (which aren't very interesting and have sane
@@ -111,5 +112,4 @@ especially considering the vastness of the OCI spec. Plus, at the
 moment `ociTools` does require a bunch of manual setup work for an
 application to function, if it, say, runs a webserver. It would be
 cool if some NixOS modules could be re-used to make this configuration
-easier. But I'm sure someone else is gonna have fun figuring that out
-x)
+easier. But I'm sure someone else is gonna have fun figuring that out.
