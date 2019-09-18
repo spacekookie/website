@@ -48,11 +48,15 @@ understand why I am an anarchist and what that means.
 
 **And that's the fucking job of labels!** We can't have the same 5
 conversations over and over again and we can't rely on the trust that
-people around us are always gonna be on our side. We shouldn't get
-distracted with pointless label bikeshedding (whether it be anarchy,
-libertarian socialist, libertarian communist), these are all kind of
-similar enough to be able to have a productive conversation without
-having to re-define first principles.
+people around us are always gonna be on our side. We should have
+conversations from time to time about what these labels mean to us,
+especially when it becomes clear that there's miscommunication. 
+
+But also, just because we're having a conversation about labels,
+doesn't mean we need to start bikeshedding their definitions and scope
+(whether it be anarchy, libertarian socialist, libertarian
+communists - these are all kind of similar enough to work with). Their
+context is still there to be used.
 
 That doesn't mean that I am okay with any vaguely leftist label. I
 have, over the last year or so, become more sceptical of communism,
@@ -64,13 +68,13 @@ maybe I don't _want_ to have this conversation in certain situations
 so why would I have to engage with tankies when I don't want to?
 
 Most of the time the people who say "I don't care about labels, I
-wanna do poltics", then never do any politics for reasons of not
-having a platform or language to engage with similarly minded people
-about strategy. That's because political action depends on the people
-doing it having some understanding of the work they're doing, how it
-relates to others and themselves. There's a reason why minority groups
-rely on labels (such as people in the LGBTQ community), and they serve
-an important role in our discourse.
+wanna do poltics", never do any politics due to lack of a platform or
+language to engage with similarly minded people about strategy.
+That's because political action depends on the people doing it having
+some understanding of the work they're doing, how it relates to others
+and themselves. There's a reason why minority groups rely on labels
+(such as people in the LGBTQ community), and they serve an important
+role in our discourse.
 
 This is not to say that we should try to make the onboarding easier
 and use less jargon language when dealing with outsiders. Making
