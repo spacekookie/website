@@ -1,8 +1,7 @@
 Title: Labels are language
 Category: Blog
-Date: 2015-09-17 15:30
+Date: 2019-09-20 15:38
 Tags: politics
-Status: Draft
 
 
 A phrase that I've heard way too fucking often recently (this edition
