@@ -46,15 +46,15 @@ strong {
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Inconsolata', monospace;
-  margin-bottom: 18px;
+    margin-bottom: 18px;
+    font-weight: 500;
 }
 
 h1 { font-size: 36px; }
 h2 { font-size: 28px; }
 
 h1.normal {
-  padding-top: 50px;
+  padding-top: 10px;
 }
 
 .footer {
@@ -80,27 +80,24 @@ h1.normal {
   font-weight: 500;
   font-size: 22px;
   padding-top: 22px;
+  padding-left: 15px;
+  padding-right: 15px;
   padding-bottom: 32px;
-  padding-right: 32px;
 }
 
 .navigation a {
-
   color:#FFF;
-
   text-decoration: none;
   padding-left: 48px;
   text-transform: lowercase;
-}
-
-.title {
-  font-size: 22px;
-  text-transform: lowercase;
-  margin-left: 25px;
+  font-family: monospace;
+  font-size: 28px;
 }
 
 .page-title {
-  flex-grow: 1;
+    flex-grow: 1;
+    font-size: 28px;
+    font-family: monospace;
 }
 
 .gay {
@@ -237,10 +234,7 @@ code { padding: 3px 3px; }
 
 .card-content p {
   font-size: 18px;
-  font-weight: 400;
   margin: 18px 0;
-  padding-left: 25px;
-  padding-right: 25px;
 }
 
 .card-content img {
