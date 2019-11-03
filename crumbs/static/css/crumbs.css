@@ -136,8 +136,9 @@ pre {
 }
 
 code {
-  background: #CECECE;
-  color: #4b505a;
+  /* background-color: #E2E2E2; */
+  background-color: #DBDBDB;
+  color: #333333;
 }
 
 code { padding: 3px 3px; }
