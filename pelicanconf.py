@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Katharina Fey'
-SITENAME = 'Fun Memory Violations'
+SITENAME = 'fun memory violations'
 SITEURL = ''
 
 THEME = 'crumbs'
