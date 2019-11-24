@@ -1,8 +1,7 @@
 Title: Part 1: Against Primitivism
 Category: Blog
-Date: 2019-11-22
+Date: 2019-11-24
 Tags: culture, technology, anarchy
-Status: Draft
 
 This is the first of two blog posts that will be slightly more
 philosophical than other texts on my blog.
