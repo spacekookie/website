@@ -1,7 +1,8 @@
 Title: Part 1: Against Primitivism
 Category: Blog
-Date: 1312-13-13
+Date: 2019-11-22
 Tags: culture, technology, anarchy
+Status: Draft
 
 This is the first of two blog posts that will be slightly more
 philosophical than other texts on my blog.
@@ -19,22 +20,21 @@ In simple terms, primitivism yearns to return to a simpler time,
 removing technology from human lives as much as possible. This is
 meant to address one of the largest sources of anguish and anxiety in
 our modern society, removing it from the equation. In many places
-primitivism even frames itsels as revolutionary.
+primitivism even frames itself as revolutionary.
 
 The problem with this analysis is that it is inherently linked with
-privilege. This can take many forms. A mild form would seek to
-abolish the internet, personal computers and phones, arguing that
-letting people return to real-life communities will result in more
-happiness and a more "natural" life.
+privilege. This can take many forms. A mild form would seek to abolish
+the internet, personal computers and phones, arguing that letting
+people return to real-life communities will result in more happiness
+and a more "natural" life.
 
 This fails to acknowledge that these technologies are life saving for
 many, giving both social outcasts and various disabled people a space
 to have a community.
 
 But most often it is not those affected who make the case for these
-measures. Usually it is white, able bodied men that fail to
-understand how their perception of society is skewed because of their
-own biases.
+measures. Usually it is white, able bodied men that fail to understand
+how their perception of society is skewed because of their own biases.
 
 An even more extreme form of primitivism would reject more general
 technological advancements, arguing for things to be "good" because
@@ -44,15 +44,15 @@ with: what about medicine, what about artificial aids?
 
 ## Against the internet
 
-It is true, that in the modern world technology has been turned against
-us. Except for a small group of technologists (software developers,
-hackers, ...) the usage of technology is heavily controlled by
-companies, that use it to spy on people, control their behaviour and
-[more][rigging]...
+It is true, that in the modern world technology has been turned
+against us. Except for a small group of technologists (software
+developers, hackers, ...) the usage of technology is heavily
+controlled by companies, that use it to spy on people, control their
+behaviour and more...
 
 On some level it is understandable that the narrative of primitivism
-has emerged (not that it is in any way new, but it feels like the
-ideas are making a comeback in various communities). 
+has emerged. This is not to say that these ideas are in any way new,
+but in a way they are making a comeback in certain leftist circles.
 
 For someone, not being able to code and only having minor
 technological literacy, this fight might seem lost. Approaches like
@@ -60,7 +60,7 @@ the one previously outlined seem welcome. I feel it is important to
 point out though that the demographic of people coming to this
 conclusion is already skewed. More vulnerable people that are
 dependent on technology have a different analytical framework and come
-to radically different solutions (more to that later).
+to radically different solutions (more on that in a future post).
 
 It is this narrative that inspired these posts, at least in part. I
 feel that to proclaim to "blow up the internet" (for example) is lazy
@@ -82,16 +82,16 @@ There is this notion that computers are fundamentally flawed, not
 because they are fallible and replicate a human's biases, but because
 of their foundational inner workings: binary! The sheere fact that
 computers operate on the basic assumptions of truths and falsehoods
-means that there is to assume to _be_ universal truths. Right?
+means that there is to assume to _be_ universal truths.
 
-Wrong! Not only are conclusions from this hypothesis often shallow and
+Not only are conclusions from this hypothesis often shallow and
 reductionist, they also misunderstand the performative,
 interpretational nature of computers. On the wire every signal is
 analog. It is the interpolation to binary that gives them
-meaning. But: this does not mean it is represantative of a truth, it
+meaning. But: this does not mean it is representative of a truth, it
 is merely a projection of an assumption. The same way that axioms in
-mathematicts are not "truths", but rather assumptions to build
-discoveries on top.
+mathematics are not "truths", but rather assumptions to build
+discoveries on top of.
 
 The same can be applied to binary data: on the wire all data looks
 pretty much the same. Again, it is an interpretation that turns

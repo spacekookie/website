@@ -25,7 +25,7 @@ STATIC_PATHS = ['images', 'downloads', '.well-known',
                 'keys.txt', '555F2E4B6F87F91A4110.txt' ]
 SITE_LOGO = 'favicon.ico'
 
-SUMMARY_MAX_LENGTH = 140
+SUMMARY_MAX_LENGTH = 120
 # SUMMARY_END_MARKER = "( ... )"
 
 #############################################

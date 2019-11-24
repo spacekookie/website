@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ DEFAULT_LANG }}">
 
-    {% block head %}
-    {% endblock head %}
-
+    <head>
+      {% block metatags %}
+      {% endblock %}
+      {% block head %}
+      {% endblock %}
+    </head>
+    
     {% block body %}
     <body>
         <div class="container">

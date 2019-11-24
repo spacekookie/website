@@ -1,19 +1,18 @@
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ SITENAME }}</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ SITENAME }}</title>
 
-    {% if type == 'home' %}
-        <link href="{{ SITEURL }}/theme/css/crumbs.css" rel="stylesheet">
-        <link href="{{ SITEURL }}/theme/css/cr_title.css" rel="stylesheet"> {# This contains various overrides #}
-        <a rel="me" href="https://octodon.social/@spacekookie"></a>
-    {% else %}
-        <link href="{{ SITEURL }}/theme/css/pygment.css" rel="stylesheet">
-        <link href="{{ SITEURL }}/theme/css/crumbs.css" rel="stylesheet">
-    {% endif %}
+{% if type == 'home' %}
+<link href="{{ SITEURL }}/theme/css/crumbs.css" rel="stylesheet">
+<link href="{{ SITEURL }}/theme/css/cr_title.css" rel="stylesheet"> {# This contains various overrides #}
+<a rel="me" href="https://octodon.social/@spacekookie"></a>
+{% else %}
+<link href="{{ SITEURL }}/theme/css/pygment.css" rel="stylesheet">
+<link href="{{ SITEURL }}/theme/css/crumbs.css" rel="stylesheet">
+{% endif %}
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
-    <link rel="alternate" type="application/rss+xml" href="{{ SITEURL }}/rss.xml" title="{{ SITENAME }} — Latest Posts" />
-</head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+<link rel="alternate" type="application/rss+xml" href="{{ SITEURL }}/rss.xml" title="{{ SITENAME }} — Latest Posts" />
+

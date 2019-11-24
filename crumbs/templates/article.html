@@ -2,6 +2,30 @@
 
 {% block title %}{{ article.title }} {% endblock title %}
 
+{% block metatags %}
+{% autoescape true %}
+
+<!-- Primary Meta Tags -->
+<meta name="title" content="{{ article.title }}">
+<meta name="description" content="{{ article.summary | striptags }}">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://spacekookie.de">
+<meta property="og:title" content="{{ article.title }}">
+<meta property="og:description" content="{{ article.summary | striptags }}">
+<meta property="og:image" content="https://spacekookie.de/theme/img/card.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:image" content="https://spacekookie.de/theme/img/card.png">
+<meta property="twitter:url" content="https://spacekookie.de">
+<meta property="twitter:title" content="{{ article.title }}">
+<meta property="twitter:description" content="{{ article.summary | striptags }}">
+
+{% endautoescape %}
+{% endblock metatags %}
+
 {% block content %}
     {% with type='single' %}
     {% include "components/card_content.html" %}
