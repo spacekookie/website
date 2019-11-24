@@ -44,22 +44,24 @@ with: what about medicine, what about artificial aids?
 ## Against the internet
 
 It is true, that in the modern world technology has been turned
-against us. Except for a small group of technologists (software
-developers, hackers, ...) the usage of technology is heavily
-controlled by companies, that use it to spy on people, control their
-behaviour and more...
+against us. Large companies control the way that people interact with
+technology, track them, and more. While it is possible to live outside
+of this system, only a few people actually do. Even a lot of
+technologists (software developers, hackers, ...) don't fully manage
+to decouple themselves from the corporately controlled tech
+bubble. i.e. how many hackers use Google, Twitter, etc.
 
 On some level it is understandable that the narrative of primitivism
 has emerged. This is not to say that these ideas are in any way new,
 but in a way they are making a comeback in certain leftist circles.
 
-For someone, not being able to code and only having minor
-technological literacy, this fight might seem lost. Approaches like
-the one previously outlined seem welcome. I feel it is important to
-point out though that the demographic of people coming to this
-conclusion is already skewed. More vulnerable people that are
-dependent on technology have a different analytical framework and come
-to radically different solutions (more on that in a future post).
+For someone who doesn't know how to code or has only minor technical
+literacy, this fight might seem lost. Approaches like the one
+previously outlined seem welcome. I feel it is important to point out
+though that the demographic of people coming to this conclusion is
+already skewed. More vulnerable people that are dependent on
+technology have a different analytical framework and come to radically
+different solutions (more on that in a future post)
 
 It is this narrative that inspired these posts, at least in part. I
 feel that to proclaim to "blow up the internet" (for example) is lazy
@@ -68,8 +70,8 @@ about improving technology and using it in our struggles to liberate
 ourselves as regressive, and somehow collaborative with an abusive
 system. Suddenly instead of talking about strategy to our solutions
 you are thrust to justify your work to people who misunderstand it's
-basis asd see it as part of the thing you are trying to fight.
-
+basis and see it as part of the thing you are trying to fight.
+    
 ## Misunderstanding technology
 
 So what do I mean by that, and do I have an example? I'm not trying to
@@ -86,11 +88,11 @@ means that there is to assume to _be_ universal truths.
 Not only are conclusions from this hypothesis often shallow and
 reductionist, they also misunderstand the performative,
 interpretational nature of computers. On the wire every signal is
-analog. It is the interpolation to binary that gives them
-meaning. But: this does not mean it is representative of a truth, it
-is merely a projection of an assumption. The same way that axioms in
-mathematics are not "truths", but rather assumptions to build
-discoveries on top of.
+analog. It is the translation to binary that gives them meaning. But:
+this does not mean it is representative of a truth, it is merely a
+projection of an assumption. The same way that axioms in mathematics
+are not "truths", but rather assumptions to build discoveries on top
+of.
 
 The same can be applied to binary data: on the wire all data looks
 pretty much the same. Again, it is an interpretation that turns
@@ -103,7 +105,7 @@ computing, only the interpretations of those who make the
 instructions. This is why I argue that machines are merely an
 extention to ourselves rather than any "autonomous" system.
 
-I say "autonomous" systems, because it is another term that is deeply
-misunderstood. But this time it is because the creators of these
-systems want it to be misunderstood. This is what the next essay will
-cover.
+I say "autonomous" (in quotes) systems, because it is another term
+that is deeply misunderstood. But this time it is because the creators
+of these systems want it to be misunderstood. This is what the next
+essay will cover.
