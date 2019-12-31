@@ -1,14 +1,14 @@
 Title: Another decade down the drain
 Category: Blog
 Tags: /dev/diary
-Date: 2019-12-31
+Date: 2020-01-01
 
-Today, on the last day of this decade, there's some things I want to
-write about. I do this less so for others, and more for myself.
-Around this time of year, people usually make new year's resolutions,
-which is not quite what this is.  Instead, I want to reflect on what
-the last ten years have meant for me, and some plans I have for the
-next decade.
+Now that the last decade is officially over, there's some things I
+want to write about. I do this less so for others, and more for
+myself.  Around this time of year, people usually make new year's
+resolutions, which is not quite what this is.  Instead, I want to
+reflect on what the last ten years have meant for me, and some plans I
+have for the next decade.
 
 I graduated school in 2011, started uni twice, dropped out twice (for
 consistency), and found computer science and programming as my
