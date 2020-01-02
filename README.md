@@ -1,37 +1,34 @@
 # fun memory violations
 
-This is my website, running at https://spacekookie.de.
-It's built with Pelican and my own theme,
-called `crumbs` (because kookies...).
+This is my website, running at https://spacekookie.de.  It's built
+with Pelican and uses my own theme, called `crumbs` (because
+kookies...).
 
-The theme itself is pretty non-linear and uses a lot of sub-components
-that are included from multiple files to generate HTML as needed.
-This way there's not a lot of direct inheritence between templates,
-but rather "behaviours", that are included into coherent pages.
-
-If you have questions, just ask :)
+The theme itself is pretty easy, only implementing the bits that I
+need, and using some components to deduplicate template code.
 
 There's a ["permadraft"] folder of articles that never quite made it.
-Some of them are farely fleshed out but either the time to publish them passed
-or I otherwise thought it'd be a bad idea ot put them on the blog.
+Some of them are farely fleshed out but either the time to publish
+them passed or I otherwise thought it'd be a bad idea ot put them on
+the blog.
 
-Their HTML pages are still being built and published,
-but not included in any index page (like `blog`).
-If you can find one, feel free to hot-link to it.
+Their HTML pages are still being built and published, but not included
+in any index page (like `blog`).  If you can find one, feel free to
+hot-link to it.
 
 ## How to build
 
-The easiest way to build the website is with [nix].
-Simply run `nix-shell` in this directory to install require dependencies.
-Then you can use `make` to get access to a whole bunch of website
-commands, such as `build`, or `devserver`.
-The dev server is hosted on port 8000.
+The easiest way to build the website is with [nix].  Simply run
+`nix-shell` in this directory to install require dependencies.  Then
+you can use `make` to get access to a whole bunch of website commands,
+such as `build`, or `devserver`.  The dev server is hosted on port
+8000.
 
 **Manual install**
 
-If you don't use nix, you need to install `python3` and `pip`.
-The python dependencies are `pelican`, `markdown` and `webassets`.
-Please for the love of god use a `virtualenv` 😬.
+If you don't use nix, you need to install `python3` and `pip`.  The
+python dependencies are `pelican`, `markdown` and `webassets`.  Please
+for the love of god use a `virtualenv` 😬.
 
 ```bash
 pip install pelican markdown webassets
@@ -41,14 +38,14 @@ make devserver
 
 ## How to contribute
 
-This repository has recently moved from Github to [sourcehut].
-And while I will still (infrequently) mirror the repository to github,
-I don't want to accept contributions there anymore.
+This repository has recently moved from Github to [sourcehut].  And
+while I will still (infrequently) mirror the repository to github, I
+don't want to accept contributions there anymore.
 
-I have a [meta issue tracker][tracker], where you can post issues about
-any of my projects, [in theory, without requiring registration][bug].
-Alternatively, you can send me a patch via e-mail either to my personal
-address, or to my [public-inbox].
+I have a [meta issue tracker][tracker], where you can post issues
+about any of my projects, [in theory, without requiring
+registration][bug].  Alternatively, you can send me a patch via e-mail
+either to my personal address, or to my [public-inbox].
 
 ["permadraft"]: /~spacekookie/website/tree/master/content/permadraft
 [nix]: https://nixos.org/nix
@@ -59,13 +56,13 @@ address, or to my [public-inbox].
 
 ## License
 
-This program is free software: you can redistribute it and/or modify it 
-under the terms of the GNU General Public License as published by the 
-Free Software Foundation, either version 3 of the License,
-or (at your option) any later version.
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or (at
+your option) any later version.
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
-See the GNU General Public License for more details.
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+General Public License for more details.
 
