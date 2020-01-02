@@ -1,0 +1,9 @@
+{# GENERATE LINK SECTION #}
+
+{% for title, link in MENUITEMS %}
+    {% if 'http://' in link or 'https://' in link %}
+        <a class="nav-item" href="{{ link }}">{{ title }} </a>
+    {% else %}
+        <a class="nav-item" href="{{ SITEURL }}{{ link }}">{{ title }} </a>
+    {% endif %}
+{% endfor %}

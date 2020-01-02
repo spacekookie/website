@@ -1,0 +1,19 @@
+{% extends "normal.html" %}
+
+{% block title %}{{ page.title }} {% endblock title %}
+
+{% block content %}
+<div class="card">
+    <div class="card-content">
+        {{ page.content }}
+        
+        <p>Following is a signed key statement:</p>
+
+        <pre class="keys">
+            {% include "keys.txt" %}
+        </pre>
+    </div>
+</div>
+{% endblock %}
+
+

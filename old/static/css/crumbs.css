@@ -1,0 +1,281 @@
+/**************************************
+
+   BASIC DEFINITIONS
+
+**************************************/
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #EFEFEF;
+  background-color: #222222;
+  background-image: none;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  overflow-y: scroll;
+}
+
+a {
+  color: #ce7b59;
+  outline: 0;
+}
+
+a:hover {
+  color: #f6915f;
+  text-decoration: none;
+}
+
+ul {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+ol {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+li {
+  font-size: 19px;
+  margin-left: 15px;
+  text-indent: 5px;
+}
+
+strong {
+  font-weight: 600;
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 18px;
+    font-weight: 600;
+}
+
+h1 { font-size: 36px; }
+h2 { font-size: 28px; }
+
+h1.normal {
+  padding-top: 10px;
+}
+
+.footer {
+  border-top: 1px solid #BEBEBE;
+  margin-top: 15px;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 50px;
+  line-height: 50px;
+  font-weight: 500;
+  font-size: 22px;
+  padding-top: 22px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 32px;
+}
+
+.navigation a {
+  color:#FFF;
+  text-decoration: none;
+  padding-left: 48px;
+  text-transform: lowercase;
+  font-family: monospace;
+  font-size: 28px;
+}
+
+.page- {
+    flex-grow: 1;
+    font-size: 28px;
+    font-family: monospace;
+}
+
+.gay {
+  display: flex;
+  flex-direction: row;
+}
+
+/* This is a block */
+.colour {
+  max-height: calc(1000px / 15);
+  height: 12px;
+  flex-grow: 1;
+}
+
+pre, code {
+  background: #222222;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Inconsolata, monospace;
+  border-radius: 0px;
+  color: #BEBEBE;
+  margin: 34px 0;
+  font-weight: 600;
+}
+
+pre {
+  box-shadow: inset 0 0 0.5em black;
+  white-space: pre-wrap;       /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+code {
+  /* background-color: #E2E2E2; */
+  background-color: #DBDBDB;
+  color: #333333;
+}
+
+code { padding: 3px 3px; }
+
+.keys {
+  color: #BEBEBE;
+  background: #222222;
+
+  padding: 15px;
+  border-radius: 0px;
+  margin: 34px 0;
+  
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Inconsolata, monospace;
+  font-weight: 400;
+}
+
+
+/*
+
+    ✨ COLOUR DEFINITIONS ✨
+ 
+  These colours are re-used in many parts of the website
+
+*/
+
+.cursor {
+  animation: flash 0.75s infinite alternate;
+}
+
+@keyframes flash {
+  0%   { opacity: 1; }
+  49%  { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+#t-color-red { color: #ef787b; }
+#t-color-org { color: #f6915f; }
+#t-color-ylw { color: #fdcb71; }
+#t-color-grn { color: #99cb9b; }
+.tc-brown { color: #ce7b59; }
+
+
+.colour1  { background-color: #3c3c3c; }
+.colour2  { background-color: #525252; }
+.colour3  { background-color: #74736a; }
+.colour4  { background-color: #9f9e93; }
+.colour5  { background-color: #d2cfc7; }
+.colour6  { background-color: #e7e5df; }
+.colour7  { background-color: #f1f0ec; }
+.colour8  { background-color: #ef787b; } /* Red */
+.colour9  { background-color: #f6915f; } /* Orange */
+.colour10 { background-color: #fdcb71; } /* Yellow */
+.colour11 { background-color: #99cb9b; } /* Green */
+.colour12 { background-color: #6ccaca; } /* Cyan */
+.colour13 { background-color: #6997c8; } /* Blue */
+.colour14 { background-color: #ca98c9; } /* Purple */
+.colour15 { background-color: #ce7b59; } /* Brown */
+
+/*
+
+    ✨ CARD DEFINITIONS ✨
+
+*/
+
+.card {
+  box-shadow: 0 0 1em black;
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+  background-color: #E2E2E2;
+  color: #222222;
+  margin-bottom: 25px;
+}
+
+.card p, h2, h3, h4 {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+@media (max-width: 850px) {
+    .card {
+        padding: 20px;
+    }
+}
+
+.card-header {
+  border-bottom: 1px solid #222222;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-header-url {
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.card-content p {
+  font-size: 18px;
+  margin: 18px 0;
+}
+
+.card-content img {
+  width: calc(100% - 50px);
+  max-width: 1200px;
+}
+
+.card-content img.original {
+  max-width: 100%;
+  width: auto;
+}
+
+.article-meta p {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: right;
+}
+
+.card-content blockquote {
+  background: #EFEFEF;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+.card-content blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+.card-content blockquote p {
+  display: inline;
+}

@@ -1,0 +1,91 @@
+/*****************************************
+
+          CRUMBS HOME PAGE CSS
+
+
+The colours used on the social media links are the same as defined for
+the colour bar used as a divider between article bodies and the nav.
+
+*****************************************/
+
+
+/* Use different paddings for titles */
+.title {
+    padding: 1em 0;
+    font-size: 2.5em;
+    font-weight: 500;
+}
+
+.footer { padding: 1em 2em; }
+
+/* Use a white navigation divider */
+.nav { border-bottom: 1px solid white; }
+
+/* Use a larger text on the front page */
+p { font-size: 1.1em; }
+
+
+/* Colour blocks are bigger on the front page */
+.colour { height: calc((100vw - 2rem) / 15); }
+
+/* Override link behaviour differently */
+a, a:visited a:hover, a:active, a:link {
+    color: #BEBEBE;
+    text-decoration: none;
+    outline: 0;
+}
+
+/*** Social media definitions ***/
+
+.icons > a {
+    display: block;
+    font-family: Inconsolata;
+    font-size: 2.5em;
+    line-height: 1.3em;
+    font-style: normal;
+    font-variant: normal;
+}
+
+#twitter:hover, #twitter:focus {
+    color: #6997c8;
+    animation: .45s jump 2 linear;
+}
+
+#github:hover, #github:focus {
+    color: #ef787b;
+    animation: .45s jump 2 linear;
+}
+
+#flickr:hover, #flickr:focus {
+    color: #99cb9b;
+    animation: .45s jump 2 linear;
+}
+
+#keys:hover, #keys:focus {
+    color: #ca98c9;
+    animation: .45s jump 2 linear;
+}
+
+#email:hover, #email:focus { color: #6ccaca; }
+
+#legal:hover, #legal:focus {
+    color: #e7d853;
+    animation: .45s jump infinite linear;
+}
+
+.icons { padding: 0.25em 1em; }
+
+.icons h1 {
+    font-family: Inconsolata;
+    font-size: 42px;
+    line-height: 42px;
+    font-style: normal;
+    font-variant: normal;
+}
+
+@keyframes jump {
+  0%   { transform: translateY(0); }
+  20%  { transform: translateY(-.075em); }
+  80%  { transform: translateY(.025em); }
+  100% { transform: translateY(0); }
+}

@@ -1,3 +1,5 @@
+{# This file generates a list of links based on the pelican pages #}
+
 {% for title, link in MENUITEMS %}
     {# Do magic with http/https #}
     {% if 'http://' in link or 'https://' in link %}

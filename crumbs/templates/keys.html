@@ -1,19 +1,25 @@
-{% extends "normal.html" %}
+{% extends "base.html" %}
 
-{% block title %}{{ page.title }} {% endblock title %}
+{% block body %}
+<div class="gay nav">
+  {% include "components/title.html" %}
+  {% include "components/links.html" %}
+</div>
 
-{% block content %}
-<div class="card">
-    <div class="card-content">
-        {{ page.content }}
-        
-        <p>Following is a signed key statement:</p>
+{% include "components/gay.html" %}
 
-        <pre class="keys">
-            {% include "keys.txt" %}
-        </pre>
-    </div>
+<div class="content">
+  <h1>Keys</h1>
+
+  <div class="article">
+    {{ page.content }}
+    
+    <p>Following is a signed key statement:</p>
+
+    <pre class="keys">
+      {% include "keys.txt" %}
+    </pre>
+  </div>
+  
 </div>
 {% endblock %}
-
-

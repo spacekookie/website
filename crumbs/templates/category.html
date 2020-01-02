@@ -1,11 +1,21 @@
-{% extends "normal.html" %}
+{% extends "base.html" %}
 
-{% block title %} {{ category }} {% endblock title %}
+{% block body %}
+<div class="gay nav">
+  {% include "components/title.html" %}
+  {% include "components/links.html" %}
+</div>
 
-{% block content %}
-    {% for article in articles %}
-        {% with type='multi' %}
-        {% include "components/card_content.html" %}
-        {% endwith %}
-    {% endfor %}
-{% endblock content %}
+{% include "components/gay.html" %}
+
+<div class="content">
+  <h1>{{ category }}</h1>
+  
+  {% for article in articles %}
+  <ul class="list">
+    <li><time class="date">{{ article.locale_date }}</time>
+      <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+  </ul>
+  {% endfor %}
+</div>
+{% endblock %}

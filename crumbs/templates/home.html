@@ -1,16 +1,21 @@
 {% extends "base.html" %}
 
-{# Define what html head we include #}
-{% block head %}
-    {% with type='home' %}
-    {% include "components/html_head.html" %}
-    {% endwith %}
-{% endblock head %}
-
-{% block wrapped %}
-    {% with type='home' %} {% include "components/navbar_generator.html" %} {% endwith %}
-    {% with title_type='title' %} {% include "components/title_text.html" %} {% endwith %}
-    {% include "components/super_gay.html" %}
-
-    {{ page.content }}
+{% block css %}
+<link href="{{ SITEURL }}/theme/css/home.css" rel="stylesheet">
 {% endblock %}
+
+{% block body %}
+<div class="gay nav">
+  {% include "components/links.html" %}
+</div>
+
+{% include "components/title.html" %}
+{% include "components/gay.html" %}
+
+<div>
+{{ page.content }}
+</div>
+
+{% endblock %}
+
+

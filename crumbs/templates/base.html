@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="{{ DEFAULT_LANG }}">
+  <head>
+    {% block metatags %}{% endblock %}
 
-    <head>
-      {% block metatags %}
-      {% endblock %}
-      {% block head %}
-      {% endblock %}
-    </head>
+    <title>{{ SITENAME }}</title>
     
-    {% block body %}
-    <body>
-        <div class="container">
-            {% block wrapped %}
-            {% endblock %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-            {# This can be used for a footer #}
-            <div>
-                {% block footer %}
-                {% endblock %}
-            </div>
+    {# Mastodon verification link #}
+    <a rel="me" href="https://octodon.social/@spacekookie"></a>
+    
+    <link href="{{ SITEURL }}/theme/css/crumbs.css" rel="stylesheet">
+    {% block css %}{% endblock %}
+    
+    <!-- TODO: remove  -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
 
-        </div>
-    </body>
-    {% endblock %}
+    <!-- TODO: remove  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+    <link rel="alternate" type="application/rss+xml" href="{{ SITEURL }}/rss.xml" title="{{ SITENAME }} — Latest Posts" />
+  </head>
+
+  <body>
+    <div class="wrap">
+      {# Wrappen body block #}
+      {% block body %}{% endblock %}
+
+      {# Footer only used on 'home' #}
+      {% block footer %}{% endblock %}
+    </div>
+  </body>
 </html>

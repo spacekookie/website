@@ -1,4 +1,6 @@
-{% extends "base.html" %}
+{% extends "normal.html" %}
+
+{% block title %}{{ article.title }} {% endblock title %}
 
 {% block metatags %}
 {% autoescape true %}
@@ -24,35 +26,8 @@
 {% endautoescape %}
 {% endblock metatags %}
 
-
-{% block body %}
-<div class="gay nav">
-  {% include "components/title.html" %}
-  {% include "components/links.html" %}
-</div>
-
-{% include "components/gay.html" %}
-
-<div class="content">
-  <h1>{{ article.title }}</h1>
-  
-  <div class="header">
-    <hr/>
-    <a href="{{ SITEURL }}/{{ article.category|lower }}"> ⇠ back</a>
-    {% if article.tags|length > 0 %}
-    <span> | tags:</span>
-    {% for tag in article.tags|sort %}
-    <span><strong>{{ tag }}</strong>{% if loop.index < article.tags|length %}, </span>{% endif %}
-    {% endfor %}
-    {% endif %}
-    <span> | duration: <strong>{{article.read_time_string}}</strong></span>
-    <hr/>
-  </div>
-  
-
-  <div class="article">
-    {{ article.content }}
-  </div>
-  
-</div>
+{% block content %}
+    {% with type='single' %}
+    {% include "components/card_content.html" %}
+    {% endwith %}
 {% endblock %}

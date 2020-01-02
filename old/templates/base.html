@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+
+    <head>
+      {% block metatags %}
+      {% endblock %}
+      {% block head %}
+      {% endblock %}
+    </head>
+    
+    {% block body %}
+    <body>
+        <div class="container">
+            {% block wrapped %}
+            {% endblock %}
+
+            {# This can be used for a footer #}
+            <div>
+                {% block footer %}
+                {% endblock %}
+            </div>
+
+        </div>
+    </body>
+    {% endblock %}
+</html>
