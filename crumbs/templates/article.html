@@ -36,7 +36,7 @@
 <div class="content">
   <h1>{{ article.title }}</h1>
   
-  <div class="header">
+  <div class="header no-side-padding-mobile">
     <hr/>
     <a href="{{ SITEURL }}/{{ article.category|lower }}"> ⇠ back</a>
     {% if article.tags|length > 0 %}
@@ -50,7 +50,7 @@
   </div>
   
 
-  <div class="article">
+  <div class="article no-side-padding-mobile">
     {{ article.content }}
   </div>
   

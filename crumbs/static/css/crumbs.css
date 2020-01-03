@@ -167,3 +167,14 @@ body {
 .colour13 { background-color: #6997c8; }
 .colour14 { background-color: #ca98c9; }
 .colour15 { background-color: #ce7b59; }
+
+@media (max-width: 480px) {
+    .nav.gay {
+        display: initial;
+    }
+
+    .content .no-side-padding-mobile {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
