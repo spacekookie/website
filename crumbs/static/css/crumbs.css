@@ -63,6 +63,12 @@ body {
     background-color: #353535;
     border: 1px solid black;
     padding: 1em;
+
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
 }
 
 .article img {

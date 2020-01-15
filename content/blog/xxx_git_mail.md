@@ -5,9 +5,9 @@ Tags: /dev/diary, git, email
 Status: Draft
 
 There's is a conversation that I keep having with various people, and
-while I've written some of my thoughts down in emails that are
-available on my [public-inbox], I felt like it was maybe it was time
-to write a blog post about it too.
+while some of my thoughts are available in e-mail threads on my
+[public-inbox], I felt like maybe it was time to write a blog post
+about it as well.
 
 [public-inbox]: https://lists.sr.ht/~spacekookie/public-inbox/%3C87woa41sgn.fsf%40kookie.space%3E
 
@@ -18,6 +18,10 @@ the resulting workflow beyond a single patch.
 I won't pretend that the tools couldn't use some work or that it
 doesn't take a bit of getting used to, but the reward is well worth
 it, and something that I feel deserves more attention.
+
+At the end of this I will talk a bit about why I think this mode of
+collaboration is good, and could potentially be better than existing
+collaboration models.
 
 
 ## The basics
@@ -41,15 +45,15 @@ anyway).
 
 I think one of the main advantages of git mail collaboration is that
 the workflow of sending patches and creating meaningful discussion on
-patches is so interlinked.  While you're using different clients to
-send patches and replying to feedback, but the code that you send is
-still available in your e-mail client, so it's easy to reply to both
+patches is so interlinked.  While you are using different clients to
+send patches and replying to feedback, the code that you send is still
+available in your e-mail client. So it's easy to reply to both
 feedback, while coping parts of a patch for reference.
 
 It's important here to send e-mail as plain text, because otherwise it
-might make it weird for people to reply to.  There's a great website
-that helps you make sure your e-mail client is in plain text mode:
-[useplaintext.email].
+might cause for people to reply to.  There's a great website that
+helps you make sure your e-mail client can and is configured to use
+plain text: [useplaintext.email].
 
 [useplaintext.email]: https://useplaintext.email/
 
@@ -59,12 +63,12 @@ that helps you make sure your e-mail client is in plain text mode:
 So having the basics out the way, I think it's important to discuss a
 more complete workflow.  When people send contribtions to projects
 using pull-requests, often a set of changes will go through several
-revisions before getting merged.  It's also nice to quickly force-push
-to fix a small typo or similar before anyone has the chance to give
-feedback.
+revisions before getting merged.  It's also nice to quickly force push
+to fix a small typo or similar without having to let that typo ever be
+part of the history of the commits that get merged.
 
-When collaborating with git over email this is still possible via
-"revisions".  When sending a patchset, you can provide a `-V`
+When collaborating with git over e-mail this is still possible via
+"revisions".  When sending a patchset, you can provide a `-v`
 parameter with a number.  The patches you send will then have a
 revision number in them, as follows: `[PATCH v2]`.  It's recommended
 to send newer revisions of your patchset as a reply to the previous
@@ -88,8 +92,8 @@ fixes" before sending them out to a project's mailing list.
 One neat thing that many people also don't know about are cover
 letters.  Sometimes a set of changes is so large and requires some
 preface to make sense, it's a good idea to write an introduction for
-someone to read first.  This is essentially what GitHub pull-request
-descriptions were derived from.
+someone to read first.  This is what GitHub pull-request descriptions
+were derived from.
 
 To generate a cover letter you need to create your patches in two
 stages:
@@ -97,41 +101,38 @@ stages:
 **git-format-patches** to generate a series of `.patch` files that can
 later be turned into e-mails.  This tool takes a `--cover-letter`
 paramenter that indicates to it to generate an empty patch called
-`0000-cover-letter.patch`, which contains the diff-stat of your
-proposed changes.  You are then free to edit this file in your
+`0000-cover-letter.patch`, which contains the diff-stat (git-shortlog) of
+your proposed changes.  You are then free to edit this file in your
 favourite text editor to write a friendly introduction to your
 patchset.
 
-Another often overlooked feature here is "timely commentary", which is
-a way for you to include a comment in the patch e-mail, that won't
-make it into the actual commit message, but that also isn't part of
-the patch itself.  It's a way to convay additional information to
-maintainers that might not be relevant past the e-mail thread itself.
+Another often overlooked feature here is "timely commentary", are
+comments in the patch e-mail that won't be part of the patch or the
+commit message itself.  They can be made after the `---` marker in a
+patch mail, but before the actual patch starts.  This section is
+usually used for the diff-stat of that particular patch.
 
 After that you can use **git-send-email**, almost the same as before,
 but instead of giving it a series of commits to send (say `HEAD~3`),
 you now just say `*.patch` or wherever you saved the patch files
 earlier.
 
-This way the thread with your patches will start with the cover letter
-that someone can read to get a good overview of your changes.  The
-description won't actually make it into the repo and you don't have to
-resend it every time you send a new revision of your whole patch-set.
-On the other hand, if fundamental changes have been made, it might be
-a good idea to add one again, just to make sure people joining the
-feedback process later don't have to stort from the beginning of a
-thread to understand the latest state of changes.
+You don't have to resend the cover letter every time you send a new
+revision of your whole patchset.  On the other hand, if things have
+fundamentally changed, it might be a good idea to add one again, just
+to make sure it's up to date for new people joining the thread for
+feedback.
 
 
 ## An example
 
 I always work well with examples and I think it's good to illustrate
-how all of this can work, especially for people who might seem scared
-by the concept of collaborating this way.
+how all of this can work, especially for people who might be scared by
+the concept of collaborating this way.
 
-So, I'm creating some patches for my `libkookie` repo and I want to
-get some feedback from myself, so I decide not to push to master,
-which I totally could do, but to my public-inbox instead.
+I'm creating some patches for my `libkookie` repo and I want to get
+some feedback from myself, so I decide not to push to master, which I
+totally could do, but to my public-inbox instead.
 
 There's two commits that I want some feedback on, so I make my
 commits, and verify that they are indeed what I want them to be:
@@ -151,9 +152,10 @@ Date:   Wed Jan 15 20:59:40 2020 +0000
     ws: adding gpg submodule by default
 ```
 
-Well, perfect.  This way I can also verify that my range syntax in git
-(`HEAD~2..HEAD`, meaning all commits `HEAD~2`, so 2 commits ago, and
-`HEAD`, so now) works the way I'm expecting it to.
+Well, perfect.  This way I can also verify that the sometimes
+confusing range syntax in git (`HEAD~2..HEAD`, meaning all commits
+`HEAD~2`, so 2 commits ago, and `HEAD`, so now) works the way I'm
+expecting it to.
 
 I think this is quite an impressive set of changes so I decide to
 reward myself with a good ol' cover letter.
@@ -174,7 +176,7 @@ From: Katharina Fey <kookie@spacekookie.de>
 Date: Wed, 15 Jan 2020 21:06:37 +0000
 Subject: [PATCH 0/2] The best patchset in the universe
 
-To who it may concearn,
+To whom it may concearn,
 
 I have created the most magnificent patch set in the history of the
 universe and I really think you should merge it because otherwise
@@ -231,9 +233,8 @@ Send this email? ([y]es|[n]o|[e]dit|[q]uit|[a]ll):
 You can get the question about the Cc not to show up by providing
 `--supress-cc all` as a parameter, but I find it useful.  Basically a
 Cc is just a ping, and if you're mentioning people by e-mail address
-in your patchset or commits (for example, if you have `Co-Authored-By`
-lines in there) the appropriate people can be pinged for you
-automatically.
+in your patchset (for example, if you have `Co-Authored-By` lines in
+there) the appropriate people can be pinged for you automatically.
 
 So, I'm happy with things as they are, so I hit "a", for all and send
 off all three e-mails.  (You can find them in the archive
@@ -241,7 +242,7 @@ off all three e-mails.  (You can find them in the archive
 
 [thread]: https://lists.sr.ht/~spacekookie/public-inbox/%3C20200115211246.1832-1-kookie@spacekookie.de%3E
 
-I wait, drink some chocolate milk, and wait for a reply.
+I wait, drink some chocolate oat milk, and wait for a reply.
 
 ```
 Katharina Fey <kookie@spacekookie.de> (0 mins. ago) (inbox unread)
@@ -268,18 +269,22 @@ becomes relevant again.
 
 What's interesting is how feedback can be layered into the patch
 itself, to comment on changes that need to be made.  This way it's
-possible to keep track of what a conversation is about, while also
-being able to have a threaded conversation.
+possible to keep track of the relevant lines of code, and also be able
+to have a threaded conversation.
 
 I guess I have a fair point here, the emoji fonts have been broken on
-my computer for ages, so while I'm somewhat annoyed for having to
-change things again, but I can understand why.
+my computer for ages. So while I'm somewhat annoyed by having to
+change things again, I can also understand why.
 
 What I want to do now is reply with only a second revision on this one
 commit because I don't know if there's more feedback coming for the
 rest of the patchset.  First, we need to figure out what the
 `Message-Id` of the previous reply is, either via you e-mail client,
 or the public mail archive of the project.
+
+**Note**: this can sometimes be tricky, but usually you should be able
+to see the "raw" message in most mail clients to find the `Message-Id`
+of the e-mail you care about.
 
 ```
  ❤ libkookie> git send-email \
@@ -314,31 +319,46 @@ this:
       ↳ [PATCH v2] ws/kitty: setting default shell to tmux
 ```
 
-And that's basically it: the maintainers now have all your changes and
-can apply them to the tree.  Usually you'll get an e-mail back to tell
-you that your changes were accepted and will be available on the
-upstream repo soon.  It can sometimes be nice to re-generate a
-patchset with all the latest versions of patches, even if they've been
-sent to the lest before, just to make it easier to apply them.  But
-that's ofter also not required.
+I wait a bit longer and I get another e-mail thanking me for my
+contributions, and saying that the patches have been merged.
+
+Sometimes it can be nice to re-generate a patchset with all the latest
+versions of patches, even if they've been sent to the list before,
+just to make it easier to apply them.  But that's often also not
+required.
 
 
 ## The conclusion
 
-I'm impressed you made if you've made it all the way through this
-post.  I think there's a lot of value in this type of collaboration
-workflow.  People talk about wanting to decentralise development,
-getting away form GitHub, and they often disagree on how this can best
-be done.
+Hey, you made it all the way to the end of this post, congrats!
+
+I think the way of collaborating I outlined in this post has a lot of
+advantages over currently popular models (i.e. pull-requests on GitHub
+or merge-requests on GitLab).  People talk about wanting to
+decentralise development, escaping these walled gardens that companies
+have built, and they often disagree on how this can best be done.
+
+There's even people who gladly opt into this model because they feel
+that the added gamification of the platform will get people to work
+more.  Not only do I think that the relationship that people have with
+maximising a number on a website can be abusive, but also that I've
+felt better getting patches into projects via a mailing list than any
+PR has ever made me feel.
 
 I'm not gonna pretend that the tooling for all of this couldn't use
-some work.  In fact, I'm working on some tools to make both sending
-and receiving patches easier.  But I think the underlying idea is a
-good one.  It's a basic technology that we're all already using and it
-doesn't require you to sign up on yet another service, or make a bunch
-of servers federate with each other (okay, e-mail is federated, but
-that's not the point), or even having to host a version of the code
-somewhere.
+some work: git-send-email has a 1000 confusing options and also
+getting the `Message-Id` to reply to patches with can be hard and
+annoying.
+
+In fact, I'm working on some tools to make both sending and applying
+patches easier (as part of the [dev-suite] project started by my
+friend Michael.  I'll write more about this soon!)
+
+[dev-suite]: https://git.sr.ht/~spacekookie/dev-suite/
+
+In this model of development there's no need for a central service
+like GitHub, no need for special software to make pull-requests
+federate or even for you to host a copy of the project anywhere.
 
 All you need is the code the project provided you, a text editor and a
 mail address.

@@ -61,7 +61,10 @@ def calculate_wpm(text, data, language):
     new_text = ""
     skipping = False
     for word in text.split(' '):
+        print(word)
         if '<skip>' in word:
+            skipping = True
+        elif '<pre>' in word:
             skipping = True
 
         if not skipping:
@@ -69,7 +72,9 @@ def calculate_wpm(text, data, language):
 
         if '</skip>' in word:
             skipping = False
-
+        elif '</pre>' in word:
+            skipping = False
+            
     read_time = len(new_text.split(' ')) / wpm
 
     # Articles cannot take 0 minutes to read
