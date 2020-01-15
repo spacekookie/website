@@ -2,7 +2,6 @@ Title: Collaborating with git-send-email
 Category: Blog
 Date: 2020-01-16
 Tags: /dev/diary, git, email
-Status: Draft
 
 There's is a conversation that I keep having with various people, and
 while some of my thoughts are available in e-mail threads on my
