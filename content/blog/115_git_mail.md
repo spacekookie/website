@@ -47,12 +47,12 @@ the workflow of sending patches and creating meaningful discussion on
 patches is so interlinked.  While you are using different clients to
 send patches and replying to feedback, the code that you send is still
 available in your e-mail client. So it's easy to reply to both
-feedback, while coping parts of a patch for reference.
+feedback, while copying parts of a patch for reference.
 
 It's important here to send e-mail as plain text, because otherwise it
-might cause for people to reply to.  There's a great website that
-helps you make sure your e-mail client can and is configured to use
-plain text: [useplaintext.email].
+might cause problems for people to reply to.  There's a great website
+that helps you make sure your e-mail client can and is configured to
+use plain text: [useplaintext.email].
 
 [useplaintext.email]: https://useplaintext.email/
 
@@ -97,7 +97,7 @@ were derived from.
 To generate a cover letter you need to create your patches in two
 stages:
 
-**git-format-patches** to generate a series of `.patch` files that can
+**git format-patch** to generate a series of `.patch` files that can
 later be turned into e-mails.  This tool takes a `--cover-letter`
 paramenter that indicates to it to generate an empty patch called
 `0000-cover-letter.patch`, which contains the diff-stat (git-shortlog) of
@@ -345,9 +345,8 @@ felt better getting patches into projects via a mailing list than any
 PR has ever made me feel.
 
 I'm not gonna pretend that the tooling for all of this couldn't use
-some work: git-send-email has a 1000 confusing options and also
-getting the `Message-Id` to reply to patches with can be hard and
-annoying.
+some work: git-send-email has 1000 confusing options and also getting
+the `Message-Id` to reply to patches with can be hard and annoying.
 
 In fact, I'm working on some tools to make both sending and applying
 patches easier (as part of the [dev-suite] project started by my
