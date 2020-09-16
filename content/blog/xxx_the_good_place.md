@@ -78,27 +78,37 @@ The moral compass of the show is a character called Chidi, a professor
 of moral philosophy who died and was sent to the "bad place".  He was
 deemed a bad person because of his indecisiveness.  It is shown that
 he tried to be a good person, but got too caught up in the details of
-what that means, that he caused great pain to the people around him
-(and which got him killed).
+what that meant, which caused great pain to the people around him (and
+which got him killed).
 
 Throughout the show he quotes Kant a lot, with some other racist white
 men from history sprinkled in there.  His understanding of philosophy
 isn't very deep, or nuanced.  Either he was supposed to be bad at his
-job, at which point the show didn't really take time to develop this
-point enough to be poignant, or it just demonstrates that the show was
-written by someone with basically no knowledge in this field.
+job, at which point the show didn't really take the time to develop
+this point enough to be poignant, or it just demonstrates that the
+show was written by people with basically no knowledge in this field.
 
 I argue that the way that "the good place" portraits philosophy and
 moral choices in philosophical frameworks is very representative of
 how our society works, and how people think about "good vs bad".
 
-But let's back up a bit.  For most of watching the show (if you did/
-will) the thought it is trying the hardest to communicate is "there's
-no bad people", "hell is a bad concept", etc.  This becomes pretty
-obvious.  However, the larger system of afterlife remains pretty much
-entirely un-examined.  Why is there an afterlife, and why do we need
-one, these are questions the show never asks, or attepmts to answer.
 
-Any critism against the system is phrased in a coy way, that will lead
-to reform of it, not abolishment, i.e. changing what the "good place"
-and "bad place" means, not their core existence.
+But let's back up a bit.  For most of the show (if you watched it/
+will) the thoughts it is trying the hardest to communicate are
+"there's no bad people", "hell is a bad concept", etc.  This becomes
+pretty obvious.  However, the larger system of afterlife remains
+pretty much entirely un-examined.  Why is there an afterlife, and why
+do we need one, these are questions the show never asks, or attempts
+to answer.  Any critism against the system is phrased in a coy way,
+that will lead to reform of it, not abolishment, i.e. changing what
+the "good place" and "bad place" means, not their core existence.
+
+
+## Morial individualism
+
+I said the show is representative of how people think about morality,
+and this doesn't just start and end at "what is a good person".  It
+also applies to individualism.
+
+What is individualism you may ask?  I'm glad you did (not really, now
+this post has to be longer...)
