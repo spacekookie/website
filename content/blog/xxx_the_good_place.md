@@ -75,7 +75,11 @@ throughout, that are rooted in a very flawed understanding of
 philosophy and morality.
 
 The moral compass of the show is a character called Chidi, a professor
-of moral philosophy who died and was sent to the "bad place".
+of moral philosophy who died and was sent to the "bad place".  He was
+deemed a bad person because of his indecisiveness.  It is shown that
+he tried to be a good person, but got too caught up in the details of
+what that means, that he caused great pain to the people around him
+(and which got him killed).
 
 Throughout the show he quotes Kant a lot, with some other racist white
 men from history sprinkled in there.  His understanding of philosophy
@@ -96,4 +100,5 @@ entirely un-examined.  Why is there an afterlife, and why do we need
 one, these are questions the show never asks, or attepmts to answer.
 
 Any critism against the system is phrased in a coy way, that will lead
-to reform of it, not abolishment.
+to reform of it, not abolishment, i.e. changing what the "good place"
+and "bad place" means, not their core existence.
