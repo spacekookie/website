@@ -64,12 +64,12 @@ that there is no such thing as a "bad person", and that everybody
 could go to the "good place", if they accepted that they have flaws,
 and worked on them.
 
-They also mildly restructure the "good place" to have "an end" which
+They also mildly restructure the "good place" to have "an end", which
 is death.  Isn't that nice, everybody gets to live their perfect life
 in heaven, then they die.
 
 
-## Good people, bad people
+## Good people & bad people?
 
 So that was the plot.  As I said, I'm not gonna criticise the show for
 it's scene-to-scene writing, or even the overarching plot.  It mostly
@@ -159,13 +159,12 @@ Maybe this is controvertial, but there are bad people.  If it is your
 job to harass homeless people, you are a bad person.  If it is your
 job to enforce the "war on drugs" that overwealmingly affects black
 people, you are a bad person.  If you are a billionaire, you are a bad
-person.  I'm sorry, but you are. You are in a position where you
-_could_ change society for the better. You _could_ give all your
-wealth away, and actually help people.  But you don't.  And no, I
-don't mean the fake philanthropy that rich people indulge in because
-those are usually just schemes to pay less takes and work on their
-public image.  No billionaire ever gives away so much money that they
-stop being a billionaire.  Because why would they?
+person.  You are in a position where you _could_ change society for
+the better. You _could_ give all your wealth away, and actually help
+people.  But you don't.  And no, I don't mean the fake philanthropy
+that rich people indulge in because those are usually just schemes to
+pay less taxes and massage on their public image.  No billionaire ever
+gives away so much money that they stop being a billionaire.
 
 The ending of the good place is framed as a beautiful thing where
 everybody gets to live a life in heaven in the end, if they manage to
@@ -176,17 +175,59 @@ It doesn't matter how much suffering you've caused others, you get to
 go to the good place if you manage to accept that you were bad.
 
 
-## There could be heaven on earth
+## Why an afterlife?
 
-I mentioned earlier that the system of the afterlife isn't called into
-question in this show.  Well, I want to call it into question.  The
-ending is framed in a way that is meant to make you feel happy and
-hopeful, but all it makes me feel is wonder why we needed to wait
-until the afterlife for people to deserve happyness.
+So I mentioned that in the show, the existence of an afterlife is
+never explained, rationalised or called into question.  It exists in a
+vacuum, the same way that people in it live in a vacuum.
+
+The ending of "the good place" is framed in a way that is meant to
+make you feel happy and hopeful, but all it makes me feel is wonder
+why we needed to wait until the afterlife for people to deserve
+happiness.
 
 The world is an awful place because of people, sure, but it's the
 system that makes people into monsters.  Not only will it corrupt
 people going in with good intentions, it will turn people with bad
 intentions into powerful rulers.
 
-"The good place" fails to or refuses to understand that society exists.
+"The good place" fails to or refuses to understand that society
+exists, and portrays a moral system in which all actions are
+unconnected from the bigger picture.  If you were a nice person to
+people in person, and generally tried to be `g o o d` then it doesn't
+matter if your employees need to pee into bottles, or if your company
+is burning the rainforest to ash.
+
+Hell, the ruthless business lady in the "medium place" was sent there
+because she saved someone in her _last_ moment.  But the "bad things"
+she did???  SHE WAS RUDE TO PEOPLE.  Don't worry the exploitation
+through the capitalist machine, that's all fine.
+
+
+## The shape of art & paradise
+
+To wrap up this article I want to at least mention why I'm writing
+about this.  Because I said earlier that I didn't find the show
+special, funny, or intentionally bad enough to really engage with it.
+And now here I am, writing upwards of 2000 words about it :)
+
+The media we consume as people shapes us, and influences us in quite
+profound ways.  The way we tell stories is symptomatic of how society
+perceives itself, and how people see themselves in society.  Media
+that doesn't aknowledge the existence of society then and the
+suffering it brings will inevitably white-wash reality, and push this
+influence on anyone consuming it.
+
+At this point I would have liked to mention a better show or movie, or
+even book, but none really come to mind.  I guess it's hard to point
+to any text and demand it delivers a coherent world philosophy, while
+also being a story with characters and plot.
+
+As a society we need to grow the fuck up.  The stories we tell each
+other of heroes and villains, the balance between good and evil
+hanging in the balance, all while these actors exist outside of
+anything that could be called a power hierarchy, needs to end.  Only
+when we grow up from this world view can we realise that paradise is
+within us, and that collectively we can create it here on earth.
+
+Not gonna lie though, trains that go through space are pretty cool.
