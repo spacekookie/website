@@ -2,7 +2,6 @@ Title: "The good place" vs. the ethics of society
 Category: Blog
 Date: 2020-09-20
 Tags: culture, politics, philosophy
-Status: Draft
 
 A few months ago I was bored and I decided to watch "The good place".
 It's a show that had been introduced to me before, and I even watched
@@ -58,7 +57,7 @@ place, it becomes clear that eternal bliss with no ups and downs, and
 no end in sight is just a different type of hell.
 
 The show concludes by restructuring the system, making the "bad place"
-not into a torterous nightmare, but a place where your actions and
+not into a torturous nightmare, but a place where your actions and
 emotions are being tested, and called into question.  The idea being
 that there is no such thing as a "bad person", and that everybody
 could go to the "good place", if they accepted that they have flaws,
@@ -113,7 +112,7 @@ and this doesn't just start and end at "what is a good person".  It
 also applies to how the show deals with individualism.
 
 What is individualism you may ask?  I'm glad you did (not really, now
-this post has to be longer...).  Indivualism is one of the axiomatic
+this post has to be longer...).  Individualism is one of the axiomatic
 philosophies that the western world is built on.  It's the idea that
 each individual is responsible for their own destiny, and identity.
 
@@ -155,9 +154,9 @@ but we _all_ suffer under the ruling class.  This is a reality the
 show refuses to acknowledge and it makes it's arguments about moral
 philosophy feel almost dystopian.
 
-Maybe this is controvertial, but there are bad people.  If it is your
+Maybe this is controversial, but there are bad people.  If it is your
 job to harass homeless people, you are a bad person.  If it is your
-job to enforce the "war on drugs" that overwealmingly affects black
+job to enforce the "war on drugs" that overwhelmingly affects black
 people, you are a bad person.  If you are a billionaire, you are a bad
 person.  You are in a position where you _could_ change society for
 the better. You _could_ give all your wealth away, and actually help
@@ -214,7 +213,7 @@ And now here I am, writing upwards of 2000 words about it :)
 The media we consume as people shapes us, and influences us in quite
 profound ways.  The way we tell stories is symptomatic of how society
 perceives itself, and how people see themselves in society.  Media
-that doesn't aknowledge the existence of society then and the
+that doesn't acknowledge the existence of society then and the
 suffering it brings will inevitably white-wash reality, and push this
 influence on anyone consuming it.
 
