@@ -36,24 +36,6 @@ pelican content
 make devserver
 ```
 
-## How to contribute
-
-This repository has recently moved from Github to [sourcehut].  And
-while I will still (infrequently) mirror the repository to github, I
-don't want to accept contributions there anymore.
-
-I have a [meta issue tracker][tracker], where you can post issues
-about any of my projects, [in theory, without requiring
-registration][bug].  Alternatively, you can send me a patch via e-mail
-either to my personal address, or to my [public-inbox].
-
-["permadraft"]: /~spacekookie/website/tree/master/content/permadraft
-[nix]: https://nixos.org/nix
-[sourcehut]: https://git.sr.ht/~spacekookie/website
-[tracker]: https://todo.sr.ht/~spacekookie/meta
-[bug]: https://todo.sr.ht/~sircmpwn/todo.sr.ht/103
-[public-inbox]: https://lists.sr.ht/~spacekookie/public-inbox
-
 ## License
 
 This program is free software: you can redistribute it and/or modify
