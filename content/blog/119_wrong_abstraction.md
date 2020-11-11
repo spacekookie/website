@@ -87,9 +87,9 @@ work with.  But this is where some problems appeared.
 
 The main reason why I'm writing this more Rustic wrapper around
 `libgit2` is to make it easier to determine what the history of a file
-has been.  This is pretty simple to find out via the git CLI (`git --
-<your file here>`), but not something that `libgit2` exposes, because
-that's not how git stores data.
+has been.  This is pretty simple to find out via the git CLI (`git log
+-- <your file here>`), but not something that `libgit2` exposes,
+because that's not how git stores data.
 
 To git, all data is stored in a key-value store indexed by a SHA1
 (soon to be SHA256 I think?) hash reference.  That applies to files,
