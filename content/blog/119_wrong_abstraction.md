@@ -17,6 +17,9 @@ solve issues such as: rename detection, path-history, and subtree
 management.  I'm writing this library for [octopus], which will
 eventually host my monorepo.
 
+[supergit]: https://git.spacekookie.de/kookienomicon/tree/apps/servers/octopus/supergit?h=main
+[octopus]: https://git.spacekookie.de/kookienomicon/tree/apps/servers/octopus/?h=main
+
 In `supergit` the main workflow is around iterating things, seeing as
 git is an acyclical graph, and iterators are a decent way to view this
 datastructure.  But git graphs can get pretty big.  I wanted the
@@ -131,6 +134,8 @@ My first instinct was to implement branching in the `BranchIter`
 itself; allowing it to branch off, essentially pushing commits it
 would have to get back to onto a stack, and resuming from a previous
 position.  That turned out to be a really [bad idea][badidea].
+
+[badidea]: https://git.spacekookie.de/kookienomicon/commit/apps/servers/octopus/supergit?h=main&id=0728c2f325e2eaac2c3b834260a8d0a97afaff63
 
 It took me about an hour of banging my head against this abstraction
 before I realised that it wasn't meant to be.  Sometimes systems are
